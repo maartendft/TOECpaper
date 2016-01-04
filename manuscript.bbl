@@ -190,6 +190,30 @@
   {Yoo}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Metallurgical Transactions A}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo
   {pages} {409} (\bibinfo {year} {1981})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{\L}opuszy{\'n}ski}\ and\ \citenamefont
+  {Majewski}(2007)}]{lopuszynski2007ab}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{\L}opuszy{\'n}ski}}\ and\ \bibinfo {author} {\bibfnamefont {J.~A.}\
+  \bibnamefont {Majewski}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo
+  {pages} {045202} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wang}\ and\ \citenamefont
+  {Li}(2009{\natexlab{b}})}]{wang2009ab}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Wang}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Li}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  B}\ }\textbf {\bibinfo {volume} {79}},\ \bibinfo {pages} {224102} (\bibinfo
+  {year} {2009}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wang}\ and\ \citenamefont
+  {Li}(2012)}]{wang2012nonlinear}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Wang}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Li}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  B}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages} {104103} (\bibinfo
+  {year} {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wallace}(1998)}]{wallace1998thermodynamics}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~C.}\ \bibnamefont
@@ -213,6 +237,18 @@
    {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
   {volume} {71}},\ \bibinfo {pages} {4182} (\bibinfo {year}
   {1993})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wang}\ \emph {et~al.}(1995)\citenamefont {Wang},
+  \citenamefont {Li}, \citenamefont {Yip}, \citenamefont {Phillpot},\ and\
+  \citenamefont {Wolf}}]{wang1995mechanical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Wang}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Li}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Yip}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Phillpot}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Wolf}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo
+  {volume} {52}},\ \bibinfo {pages} {12627} (\bibinfo {year}
+  {1995})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Rao}\ and\ \citenamefont
   {Srinivasan}(1969)}]{rao1969third}%
   \BibitemOpen
@@ -253,30 +289,6 @@
   {Fumi}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical
   Review}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages} {561} (\bibinfo
   {year} {1952})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {{\L}opuszy{\'n}ski}\ and\ \citenamefont
-  {Majewski}(2007)}]{lopuszynski2007ab}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {{\L}opuszy{\'n}ski}}\ and\ \bibinfo {author} {\bibfnamefont {J.~A.}\
-  \bibnamefont {Majewski}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
-  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo
-  {pages} {045202} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Wang}\ and\ \citenamefont
-  {Li}(2009{\natexlab{b}})}]{wang2009ab}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Wang}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Li}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
-  B}\ }\textbf {\bibinfo {volume} {79}},\ \bibinfo {pages} {224102} (\bibinfo
-  {year} {2009}{\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Wang}\ and\ \citenamefont
-  {Li}(2012)}]{wang2012nonlinear}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Wang}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Li}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
-  B}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages} {104103} (\bibinfo
-  {year} {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kresse}\ and\ \citenamefont
   {Furthm\"uller}(1996)}]{PhysRevB.54.11169}%
   \BibitemOpen
@@ -379,11 +391,4 @@
   {Scheffler}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Computer Physics Communications}\ }\textbf {\bibinfo {volume} {119}},\
   \bibinfo {pages} {67} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pugh}(1954)}]{pugh1954xcii}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Pugh}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {The
-  London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}\
-  }\textbf {\bibinfo {volume} {45}},\ \bibinfo {pages} {823} (\bibinfo {year}
-  {1954})}\BibitemShut {NoStop}%
 \end{thebibliography}%
