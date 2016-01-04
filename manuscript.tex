@@ -21,7 +21,7 @@
  \usepackage{ulem}
 \usepackage{bm} %revtex4.1 for bold symbols
 \usepackage{array}
-\usepackage{color} % STEFANO
+\usepackage{color} 
 
 
 \begin{document}
@@ -46,68 +46,16 @@ In this work we consider the deformation behavior of the HCP metals, a class of 
 For the HCP metals Be, Mg, Sc, Y, Ti, Zr, Hf, Tc, Re, Ru, Os and Zn, we compute the ideal strength and associated mechanical instabilities under tensile loading along the crystallographic $c$ axis, i.e., perpendicular to the basal plane.  This is a particularly important loading condition for the consideration of the intrinsic ductility of HCP metals, as the basal plane is a typical cleavage plane in these materials \cite{yoo1981slip}, and slip of the dominant $a$-type dislocations does not provide a mechanism for plastic elongation along the $c$ direction. Based on the ideal deformation behavior, each of the HCP metals is characterized as intrinsically brittle or ductile, i.e., as  possessing elastic instabilities that are either tensile or shear in nature, respectively. We further study map out domains of $d$-band filling for HCP transition metals where ductile vs brittle behavior can be expected.  Finally, we provide an analytical formalism which enables the ideal strength and the nature of the intrinsic instability under tensile loading along the $c$ axis to be derived solely from a knowledge of the second and third-order elastic elastic constants.  The analytical model is shown to yield predictions in reasonable agreement with explicit density-functional-theory (DFT) calculations across all of HCP metals considered in this work, with reduced computational cost.
 
 \section{Methodology}
-\subsection{Wallace formalism and elastic instabilities in HCP materials}
-The elastic stability of a solid under zero stress is governed by the eigenvalues of its elastic-constant tensor; specifically, all 6 eigenvalues of this tensor must be larger than zero for the solid to be elastically stable. For a solid under an applied stress, elastic stability is governed instead by the Wallace tensor, defined as follows:
-\begin{equation}
-\label{eqn:Wallace1}
-B_{ijkl} = C_{ijkl}' + \frac{1}{2} \left(\sigma_{il} \delta_{jk} + \sigma_{jl} \delta_{ik} + \sigma_{ik} \delta_{jl} + \sigma_{jk} \delta_{il} - 2\sigma_{ij} \delta_{kl} \right)
-\end{equation}
-where $C_{ijkl}'$ represents the elastic constants in the deformed configuration \cite{wallace1998thermodynamics,ray1988elastic,wang1993crystal}, $\sigma_{ij}$ denotes the applied stress acting on the solid, and $\delta_{ij}$ is the Kronecker-delta. The eigenvalues of the symmetrized Wallace tensor govern the elastic stability of a solid under stress \cite{wang1995mechanical}. In the present context, the symmetrized Wallace tensor, B$_{sym}$ is defined as  $B_{sym}$ = 1/2 ($B$ + $B^{T}$) (with B given in Eq. \ref{eqn:Wallace1}), where the use of Voigt notation is implied so that both $B$ and $B_{sym}$ reduce to 6$\times$6 matrices. In the remainder of this paper, the Wallace-tensor $B_{ijkl}$ refers to the symmetrized Wallace tensor. 
-%MDA:  You need a reference here.  Also, please elaborate on what you mean by "symmetrized". --> fixed
+\subsection{Derivation of third-order elastic constants for different crystal systems}
+General derivation procedure goes here, both for cubic and hexagonal. 
 
-For the special case of an HCP structured material loaded in tension along the $c$ axis, i.e., with only the stress component $\sigma_{33}$ being non-zero, the Wallace tensor  takes the following form:
-\begin{widetext}
-\begin{equation}
-\label{eqn:Wallace2}
-B_{ijkl} = \begin{bmatrix}
-C_{11}' & C_{12}' & C_{13}' + \frac{\sigma_{33}}{2} & 0  & 0 & 0  \\[0.20em]
-C_{12}' & C_{11}' & C_{13}' + \frac{\sigma_{33}}{2} & 0  & 0 & 0   \\[0.20em]
-C_{13}' + \frac{\sigma_{33}}{2} & C_{13}' + \frac{\sigma_{33}}{2}  & C_{33}'-\sigma_{33}  & 0  & 0 & 0  \\[0.20em]
-0  & 0 & 0 & C_{44}'-\frac{\sigma_{33}}{2} & 0 & 0 \\[0.20em]
-0  & 0 & 0 & 0 & C_{44}'-\frac{\sigma_{33}}{2} & 0  \\[0.20em]
-0  & 0 & 0 & 0 & 0 & \frac{C_{11}'-C_{12}'}{2}  \\[0.20em]
-\end{bmatrix}
-\end{equation}
-\end{widetext}
-where the terms $C_{ij}'$ are the elastic constants in the deformed configuration.  The eigenvalues of Eq. \ref{eqn:Wallace2} determine the elastic stability of an HCP material under uniaxial tension along the $c$-axis.  In this case there are 5 distinct eigenvalues, 3 of which involve the stress $\sigma_{33}$ explicitly. From the 5 distinct eigenvalues, 2 are associated with a shear mode: $\lambda^{(1)} = C_{44}' - \frac{\sigma_{33}}{2}$ and $\lambda^{(2)} = \frac{1}{2} \left(C_{11}'-C_{12}'\right)$. The other 3 eigenvalues ($\lambda^{(3)}$, $\lambda^{(4)}$ and $\lambda^{(5)}$) relate to non-shear modes. In particular, $\lambda^{(3)}$ represents a tensile failure in the basal plane and is given as: $\lambda^{(3)} = \left(C_{11}'-C_{12}'\right)$. Finally, $\lambda^{(4)}$ and $\lambda^{(5)}$ occur as a pair of solutions to a quadratic equation, with $\lambda^{(4)} < \lambda^{(5)}$. From these 5 eigenvalues, only the eigenvectors corresponding to $\lambda^{(4)}$ and $\lambda^{(5)}$ have a non-zero component along the $c$ axis an hence, correspond to tensile failure along the loading direction. Since $\lambda^{(4)} < \lambda^{(5)}$, $\lambda^{(4)}$ is the relevant eigenvalue governing tensile failure. The 2 eigenvalues considered in the remainder of this work are $\lambda_{1} = \lambda^{(1)}$ and $\lambda_{2} = \lambda^{(4)}$, see Eqs. \ref{eqn:Wallace3} and \ref{eqn:Wallace4}. In principle, $\lambda^{(2)}$ and $\lambda^{(3)}$ have to be considered as well for the study of elastic instabilities. However these eigenvalues in fact increase along the deformation path for the materials and loading case studied in this paper and do not attain a value of zero. Hence, these do not contribute to elastic instabilities in the present case and will not be considered further. This can be rationalized by considering the strain state of the materials and elastic constants of second and higher order (see below).
-%MDA:  you need to elaborate more on why only these two eigenvalues are relevant.  What about the other three?  Explain why they are not relevant. --> fixed
-\begin{equation}
-\label{eqn:Wallace3} 
-\lambda_{1} = C_{44}' - \frac{\sigma_{33}}{2} 
-\end{equation}
-\begin{widetext}
-\begin{multline}
-\label{eqn:Wallace4}
-\lambda_{2} =  \frac{C_{11}' + C_{12}' + C_{33}' - \sigma_{33}}{2} - \\ \frac{\sqrt{(C_{11}'^2 + 2C_{11}'C_{12}' - 2C_{11}'C_{33}' + 2C_{11}'\sigma_{33} +  C_{12}'^2 - 2C_{12}'C_{33}' + 2C_{12}'\sigma_{33} + 8C_{13}'^2 + 8C_{13}'\sigma_{33} + C_{33}'^2 - 2C_{33}'\sigma_{33} + 3\sigma_{33}^2)}}{2}
-\end{multline}
-\end{widetext}
-With increasing tensile stress, if $\lambda_{1}$ becomes negative before $\lambda_{2}$, the crystal fails in shear, with the opposite case corresponding to failure in tension.
+\subsubsection{Cubic under uniaxial tension}
+State results for cubic symmetry $C'$ for tension along $c$.
 
-The eigenvalues given in Eq.~\ref{eqn:Wallace3} and \ref{eqn:Wallace4} contain the elastic constants of the crystal in its deformed state. These can be obtained in principle by calculating the elastic tensor from DFT as a function of applied stress. However, this is a computationally expensive procedure that does not lead to a clear physical understanding of the underlying physics underlying the elastic instabilities. Alternatively, the elastic constants in the deformed configuration, $C_{ij}'$, can also be approximated from the third order elastic constants (TOEC's) and the standard second order elastic constants at zero stress (SOEC's).
-%For small strains, the elastic constants can be approximated to be constant as a function of strain, i.e. $C_{ij} = C_{ij}'$. However, elastic instabilities typically occur for strains of over 10 \% (with some exceptions, such as Nb) and hence, the elastic constants in the strained configuration will deviate significantly from those in the zero strain-configuration, i.e. $C_{ij} \neq C_{ij}'$.
-The TOEC's dictate how the elastic constants $C_{ij}'$ evolve as a function of the imposed strain. Let $\xi = \eta_{33}$ represent the (imposed) tensile strain along the $c$-axis of an HCP-materials and let $\eta = \eta_{11} = \eta_{22}$ be the resulting strain in the basal plane (usually contraction in accordance with a positive Poisson's ratio) corresponding to zero normal stress in these directions. For this strain state, the expressions for $C_{11}'$, $C_{12}'$, $C_{13}'$, $C_{33}'$ and $C_{44}'$ are given as follows \ref{eqn:Cprime} \cite{rao1969third,rao1974anderson}:
- \begin{widetext}
-\begin{subequations}
-\label{eqn:Cprime} 
-\begin{align}
-        C_{11}' &=C_{11} + \eta \left(4 C_{11} + 2C_{12} + C_{111} + C_{112}\right) + \xi \left(-C_{11} + 2C_{13} + C_{113}\right),\\
-        C_{12}' &=C_{12} + \eta \left(C_{111} + 2C_{112} - C_{222} + 2C_{12}\right) + \xi \left(-C_{12} + C_{123}\right),\\
-				C_{13}' &=C_{13} + \eta \left(C_{113} + C_{123} \right) + \xi \left(C_{13} + C_{133}\right),\\
-				C_{33}' &=C_{33} + \eta \left(4C_{13} - 2C_{33} + 2C_{133} \right) + \xi \left(5C_{33} + C_{333}\right),\\
-				C_{44}' &=C_{44} + \eta \left(\frac{1}{2} C_{11} + \frac{1}{2} C_{12} + C_{13} + C_{144} + C_{155} \right) + \xi \left(\frac{1}{2} C_{13} + \frac{1}{2} C_{33} + C_{44} + C_{344}\right)
-\end{align}
-\end{subequations}
-\end{widetext}
-where the terms $C_{ijk}$ denote the 10 independent TOEC's for the HCP-materials studied in this work \cite{hearmon1953third,rose1968higher,fumi1951third,fumi1952third}. We now proceed by eliminating $\eta$ from Eqs. \ref{eqn:Cprime} by expressing it in terms of $\xi$.  As shown in Appendix A, from a third-order expansion of the energy versus strain, it can be derived that this value of $\eta=\bar{\eta}$ for a given $\xi$ can be obtained from the solution to the following equation:
-\begin{widetext}
-\begin{equation}
-\label{eqn:minexpression1}
-\bar{\eta}^{2} \left(2C_{111} + 3C_{112} - C_{222} \right) + \bar{\eta} \left(C_{11} + 2C_{12} + 2C_{113} \xi + 2C_{123} \xi \right) + \xi^{2} C_{133} + 2\xi C_{13} = 0.
-\end{equation}
-\end{widetext} 
-This resulting expression for $\bar{\eta}(\xi)$ is lengthy and is not presented here.  When this expression is substituted into Eqs. \ref{eqn:Cprime}, $\xi$ becomes the only remaining (control) variable. The resulting expressions for $C_{ij}'$ can be substituted into Eqs. \ref{eqn:Wallace3} and \ref{eqn:Wallace4} to determine which eigenvalue becomes negative first under applied strain, and the associated stress which defines the ideal strength.
+\subsubsection{Hexagonal under uniaxial tension}
+State results for hexagonal symmetry $C'$ for tension along $c$.
 
-To obtain the final closed-form expressions, we express the stress $\sigma_{33}$ in terms of the strain state, SOEC's and TOEC's, using the relations given in Appendix B.  An equation can then be set up to determine the value of the strain $\xi$, at which a shear instability first occurs; starting from Eq. \ref{eqn:Wallace3}, we substitute the expression for $C_{44}'$ from Eq. \ref{eqn:Cprime}, with $\xi$ is the control variable and $\eta = \eta_{1} = \eta_{2} = \bar{\eta}$ the resulting contraction in the basal plane of the material, as given in Eq. \ref{eqn:minexpression1}, and $\sigma_{33}$ specified from the expressions in Appendix II.  Similarly, the strain $\xi$ at which a tensile elastic instability occurs can be derived by considering the eigenvalue in Eq. \ref{eqn:Wallace4} and substituting the expressions for $C_{ij}'$ and $\sigma_{33}$. The smallest strain $\xi$ at which an elastic instability (either shear or tensile) first occurs is indicated by $\bar{\xi}$ hereafter.
+\subsubsection{Do we want to include other symmetries?}
 
 \subsection{Calculation of second and third-order elastic constants}
 The previous section has laid out a methodology to study elastic instabilities in HCP materials loaded in tension along the $c$ axis, in terms of SOEC's and TOEC's. In this section, it is shown how these quantities can be calculated in a robust manner.  By applying a set of carefully constructed deformations to a cell, all 10 independent TOEC's can be extracted by fitting the stress components, as calculated from DFT, to the applied strains. The pertinent expressions used in this work are given as follows:
@@ -195,13 +143,89 @@ Note that this strain range is considerably larger than what is commonly used fo
 
 The set of Eqs. \ref{eqn:s1}-\ref{eqn:s12} give rise to an overdetermined system that is solved for the 5 independent SOEC's and 10 independent TOEC's. A pseudo-inverse is employed, calculated from a singular value decomposition. The values of the calculated TOEC's are found in this work to be rather sensitive to the precise strain range that is employed in the fitting, which has been observed also in the literature \cite{wang2009ab,lopuszynski2007ab,wang2012nonlinear}. For the HCP systems studied in this work, the TOEC's converge to a plateau when approximately 11-16 \% maximum strain is used in the fit. Using smaller or larger maximum strains than those corresponding to the plateau can lead to TOEC's differing by up to a factor 5 for the systems studied in this work. For maximum strains within the plateau-region, TOEC's are generally converged to within 25 \% in this work. Consistent with other work in the literature, the location of this plateau dictates which precise strain range is used in the fitting \cite{wang2009ab,wang2012nonlinear}.
 
+
+
+
+\subsection{Wallace formalism and elastic instabilities}
+\subsubsection{Cubic materials}
+Derive (analytical) expressions for falure point using Wallace tensor.
+
+\subsubsection{Hexagonal materials}
+\textbf{This section has to be updated with our correct TOEC's}
+
+The elastic stability of a solid under zero stress is governed by the eigenvalues of its elastic-constant tensor; specifically, all 6 eigenvalues of this tensor must be larger than zero for the solid to be elastically stable. For a solid under an applied stress, elastic stability is governed instead by the Wallace tensor, defined as follows:
+\begin{equation}
+\label{eqn:Wallace1}
+B_{ijkl} = C_{ijkl}' + \frac{1}{2} \left(\sigma_{il} \delta_{jk} + \sigma_{jl} \delta_{ik} + \sigma_{ik} \delta_{jl} + \sigma_{jk} \delta_{il} - 2\sigma_{ij} \delta_{kl} \right)
+\end{equation}
+where $C_{ijkl}'$ represents the elastic constants in the deformed configuration \cite{wallace1998thermodynamics,ray1988elastic,wang1993crystal}, $\sigma_{ij}$ denotes the applied stress acting on the solid, and $\delta_{ij}$ is the Kronecker-delta. The eigenvalues of the symmetrized Wallace tensor govern the elastic stability of a solid under stress \cite{wang1995mechanical}. In the present context, the symmetrized Wallace tensor, B$_{sym}$ is defined as  $B_{sym}$ = 1/2 ($B$ + $B^{T}$) (with B given in Eq. \ref{eqn:Wallace1}), where the use of Voigt notation is implied so that both $B$ and $B_{sym}$ reduce to 6$\times$6 matrices. In the remainder of this paper, the Wallace-tensor $B_{ijkl}$ refers to the symmetrized Wallace tensor. 
+%MDA:  You need a reference here.  Also, please elaborate on what you mean by "symmetrized". --> fixed
+
+For the special case of an HCP structured material loaded in tension along the $c$ axis, i.e., with only the stress component $\sigma_{33}$ being non-zero, the Wallace tensor  takes the following form:
+\begin{widetext}
+\begin{equation}
+\label{eqn:Wallace2}
+B_{ijkl} = \begin{bmatrix}
+C_{11}' & C_{12}' & C_{13}' + \frac{\sigma_{33}}{2} & 0  & 0 & 0  \\[0.20em]
+C_{12}' & C_{11}' & C_{13}' + \frac{\sigma_{33}}{2} & 0  & 0 & 0   \\[0.20em]
+C_{13}' + \frac{\sigma_{33}}{2} & C_{13}' + \frac{\sigma_{33}}{2}  & C_{33}'-\sigma_{33}  & 0  & 0 & 0  \\[0.20em]
+0  & 0 & 0 & C_{44}'-\frac{\sigma_{33}}{2} & 0 & 0 \\[0.20em]
+0  & 0 & 0 & 0 & C_{44}'-\frac{\sigma_{33}}{2} & 0  \\[0.20em]
+0  & 0 & 0 & 0 & 0 & \frac{C_{11}'-C_{12}'}{2}  \\[0.20em]
+\end{bmatrix}
+\end{equation}
+\end{widetext}
+where the terms $C_{ij}'$ are the elastic constants in the deformed configuration.  The eigenvalues of Eq. \ref{eqn:Wallace2} determine the elastic stability of an HCP material under uniaxial tension along the $c$-axis.  In this case there are 5 distinct eigenvalues, 3 of which involve the stress $\sigma_{33}$ explicitly. From the 5 distinct eigenvalues, 2 are associated with a shear mode: $\lambda^{(1)} = C_{44}' - \frac{\sigma_{33}}{2}$ and $\lambda^{(2)} = \frac{1}{2} \left(C_{11}'-C_{12}'\right)$. The other 3 eigenvalues ($\lambda^{(3)}$, $\lambda^{(4)}$ and $\lambda^{(5)}$) relate to non-shear modes. In particular, $\lambda^{(3)}$ represents a tensile failure in the basal plane and is given as: $\lambda^{(3)} = \left(C_{11}'-C_{12}'\right)$. Finally, $\lambda^{(4)}$ and $\lambda^{(5)}$ occur as a pair of solutions to a quadratic equation, with $\lambda^{(4)} < \lambda^{(5)}$. From these 5 eigenvalues, only the eigenvectors corresponding to $\lambda^{(4)}$ and $\lambda^{(5)}$ have a non-zero component along the $c$ axis an hence, correspond to tensile failure along the loading direction. Since $\lambda^{(4)} < \lambda^{(5)}$, $\lambda^{(4)}$ is the relevant eigenvalue governing tensile failure. The 2 eigenvalues considered in the remainder of this work are $\lambda_{1} = \lambda^{(1)}$ and $\lambda_{2} = \lambda^{(4)}$, see Eqs. \ref{eqn:Wallace3} and \ref{eqn:Wallace4}. In principle, $\lambda^{(2)}$ and $\lambda^{(3)}$ have to be considered as well for the study of elastic instabilities. However these eigenvalues in fact increase along the deformation path for the materials and loading case studied in this paper and do not attain a value of zero. Hence, these do not contribute to elastic instabilities in the present case and will not be considered further. This can be rationalized by considering the strain state of the materials and elastic constants of second and higher order (see below).
+
+\begin{equation}
+\label{eqn:Wallace3} 
+\lambda_{1} = C_{44}' - \frac{\sigma_{33}}{2} 
+\end{equation}
+\begin{widetext}
+\begin{multline}
+\label{eqn:Wallace4}
+\lambda_{2} =  \frac{C_{11}' + C_{12}' + C_{33}' - \sigma_{33}}{2} - \\ \frac{\sqrt{(C_{11}'^2 + 2C_{11}'C_{12}' - 2C_{11}'C_{33}' + 2C_{11}'\sigma_{33} +  C_{12}'^2 - 2C_{12}'C_{33}' + 2C_{12}'\sigma_{33} + 8C_{13}'^2 + 8C_{13}'\sigma_{33} + C_{33}'^2 - 2C_{33}'\sigma_{33} + 3\sigma_{33}^2)}}{2}
+\end{multline}
+\end{widetext}
+With increasing tensile stress, if $\lambda_{1}$ becomes negative before $\lambda_{2}$, the crystal fails in shear, with the opposite case corresponding to failure in tension.
+
+The eigenvalues given in Eq.~\ref{eqn:Wallace3} and \ref{eqn:Wallace4} contain the elastic constants of the crystal in its deformed state. These can be obtained in principle by calculating the elastic tensor from DFT as a function of applied stress. However, this is a computationally expensive procedure that does not lead to a clear physical understanding of the underlying physics underlying the elastic instabilities. Alternatively, the elastic constants in the deformed configuration, $C_{ij}'$, can also be approximated from the third order elastic constants (TOEC's) and the standard second order elastic constants at zero stress (SOEC's).
+%For small strains, the elastic constants can be approximated to be constant as a function of strain, i.e. $C_{ij} = C_{ij}'$. However, elastic instabilities typically occur for strains of over 10 \% (with some exceptions, such as Nb) and hence, the elastic constants in the strained configuration will deviate significantly from those in the zero strain-configuration, i.e. $C_{ij} \neq C_{ij}'$.
+The TOEC's dictate how the elastic constants $C_{ij}'$ evolve as a function of the imposed strain. Let $\xi = \eta_{33}$ represent the (imposed) tensile strain along the $c$-axis of an HCP-materials and let $\eta = \eta_{11} = \eta_{22}$ be the resulting strain in the basal plane (usually contraction in accordance with a positive Poisson's ratio) corresponding to zero normal stress in these directions. For this strain state, the expressions for $C_{11}'$, $C_{12}'$, $C_{13}'$, $C_{33}'$ and $C_{44}'$ are given as follows \ref{eqn:Cprime} \cite{rao1969third,rao1974anderson}:
+ \begin{widetext}
+\begin{subequations}
+\label{eqn:Cprime} 
+\begin{align}
+        C_{11}' &=C_{11} + \eta \left(4 C_{11} + 2C_{12} + C_{111} + C_{112}\right) + \xi \left(-C_{11} + 2C_{13} + C_{113}\right),\\
+        C_{12}' &=C_{12} + \eta \left(C_{111} + 2C_{112} - C_{222} + 2C_{12}\right) + \xi \left(-C_{12} + C_{123}\right),\\
+				C_{13}' &=C_{13} + \eta \left(C_{113} + C_{123} \right) + \xi \left(C_{13} + C_{133}\right),\\
+				C_{33}' &=C_{33} + \eta \left(4C_{13} - 2C_{33} + 2C_{133} \right) + \xi \left(5C_{33} + C_{333}\right),\\
+				C_{44}' &=C_{44} + \eta \left(\frac{1}{2} C_{11} + \frac{1}{2} C_{12} + C_{13} + C_{144} + C_{155} \right) + \xi \left(\frac{1}{2} C_{13} + \frac{1}{2} C_{33} + C_{44} + C_{344}\right)
+\end{align}
+\end{subequations}
+\end{widetext}
+where the terms $C_{ijk}$ denote the 10 independent TOEC's for the HCP-materials studied in this work \cite{hearmon1953third,rose1968higher,fumi1951third,fumi1952third}. We now proceed by eliminating $\eta$ from Eqs. \ref{eqn:Cprime} by expressing it in terms of $\xi$.  As shown in Appendix A, from a third-order expansion of the energy versus strain, it can be derived that this value of $\eta=\bar{\eta}$ for a given $\xi$ can be obtained from the solution to the following equation:
+\begin{widetext}
+\begin{equation}
+\label{eqn:minexpression1}
+\bar{\eta}^{2} \left(2C_{111} + 3C_{112} - C_{222} \right) + \bar{\eta} \left(C_{11} + 2C_{12} + 2C_{113} \xi + 2C_{123} \xi \right) + \xi^{2} C_{133} + 2\xi C_{13} = 0.
+\end{equation}
+\end{widetext} 
+This resulting expression for $\bar{\eta}(\xi)$ is lengthy and is not presented here.  When this expression is substituted into Eqs. \ref{eqn:Cprime}, $\xi$ becomes the only remaining (control) variable. The resulting expressions for $C_{ij}'$ can be substituted into Eqs. \ref{eqn:Wallace3} and \ref{eqn:Wallace4} to determine which eigenvalue becomes negative first under applied strain, and the associated stress which defines the ideal strength.
+
+To obtain the final closed-form expressions, we express the stress $\sigma_{33}$ in terms of the strain state, SOEC's and TOEC's, using the relations given in Appendix B.  An equation can then be set up to determine the value of the strain $\xi$, at which a shear instability first occurs; starting from Eq. \ref{eqn:Wallace3}, we substitute the expression for $C_{44}'$ from Eq. \ref{eqn:Cprime}, with $\xi$ is the control variable and $\eta = \eta_{1} = \eta_{2} = \bar{\eta}$ the resulting contraction in the basal plane of the material, as given in Eq. \ref{eqn:minexpression1}, and $\sigma_{33}$ specified from the expressions in Appendix II.  Similarly, the strain $\xi$ at which a tensile elastic instability occurs can be derived by considering the eigenvalue in Eq. \ref{eqn:Wallace4} and substituting the expressions for $C_{ij}'$ and $\sigma_{33}$. The smallest strain $\xi$ at which an elastic instability (either shear or tensile) first occurs is indicated by $\bar{\xi}$ hereafter.
+
+
+
 \subsection{DFT-calculations}
 For the elemental metals all calculations were performed using the Vienna Ab Initio Simulation Package (VASP) \cite{PhysRevB.54.11169,PhysRevB.47.558}. In these calculations use was made of the Perdew-Burke-Ernzerhof generalized gradient functional (PBE-GGA) \cite{PhysRevLett.77.3865}, and the projector augmented wave (PAW) method \cite{PhysRevB.50.17953,PhysRevB.59.1758}.  An energy cutoff for the plane waves of 700 eV was used, and smearing of the electronic occupancies was performed using the Methfessel-Paxton scheme \cite{PhysRevB.40.3616}, with a broadening of 0.05 eV.  Integrations in the Brillouin zone were carried out using Monkhorst-Pack $k$-point sampling \cite{PhysRevB.13.5188} with a density chosen such that the number of $k$-points in the first Brillouin zone times the number of atoms in the cell equals approximately 25,000. The employed PAW potentials for Sc, Ti, Y, Zr and Hf include $s$ and $p$ semi-core states as valence electrons. For the other elements, only the outermost $s$ and $d$-states are used as valence. The maximum calculated tensile stress $\sigma_{33}$ that occurs along the deformation path (similar to the ultimate tensile strength) is converged to within approximately 2\% with these DFT settings.
 %MDA:  The above is correct if you used the Sc_sv, Ti_sv, Y_sv, Zr_sv and Hf_sv potentials.  If you used _pv potentials instead, change "include $s$ and $p$ semi-core states" to "include $p$ semi-core states" --> I used _sv for early transition metals
 %MDA:  you should say how well the ideal strength numbers are converged with respect to your choice of kpoints and plane wave cutoff --> fixed.
 
 For the purpose of investigating $d$-band filling effects on ideal deformation behavior, we also employed calculations based on the virtual crystal approximation (VCA). The VCA calculations were performed using the Quantum Espresso software \cite{giannozzi2009quantum}, employing norm-conserving Troullier-Martin pseudopotentials \cite{troullier1991efficient,romaner2010effect}. Use was made of the generalized gradient approximation, based on the Perdew-Burke-Ernzerhof exchange-correlation functional \cite{PhysRevLett.77.3865}. The pseudopotentials were generated using the fhi98PP code with intermediate nuclear charges \cite{fuchs1999ab} to approximate a given alloy composition. The plane-wave cutoff, k-point sampling and broadening employed for these DFT calculations based on VCA are the same as those described earlier, employing PAW pseudopotentials. The maximum calculated tensile stress for these calculations is converged to within approximately 3\%.
-%MDA:  You need to say what plane-wave cutoff, k-point sampling and broadening you used here also, and how well the results were converged --> I used consistent settings with the VASP calculations from before. Convergence seemed to be comparable but a bit worse. I included this info in the text.
+
+\subsection{Alloys and SQS generation}
+Describe SQS procedure here, also rationale for looking at Mo-Nb.
 
 \section{Results and Discussion}
 In this section, results for HCP Be, Mg, Sc, Y, Ti, Zr, Hf, Tc, Re, Ru, Os and Zn are presented. Lattice stabilities are calculated as a function of the strain $\eta_{33}$ along the $c$ axis, and the failure modes are determined. This results in a categorization of the HCP metals considered into two classes: those that fail in shear (intrinsically ductile) or in tension (intrinsically brittle) for this loading condition. Further, the effect of $d$-band filling is studied on the failure modes for the HCP transition metals, leading to guidelines for the compositions where their solid solutions are expected to be intrinsically brittle or ductile for tensile loading along $c$.
@@ -400,7 +424,6 @@ t_{ij} = \text{det} \left(\bm{F}\right) \bm{F}^{-1} \bm{\sigma} \left(\bm{F}^{T}
 \sigma_{33}  = \frac{\sqrt{2 \xi + 1}}{\sqrt{2 \bar{\eta} + 1}}t_{33}
 \end{equation}
 
-%MDA:  Can you clean this up a little and make it a self-contained section?
 
 \bibliography{refs.bib}
 
