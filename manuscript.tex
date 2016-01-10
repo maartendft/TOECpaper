@@ -47,13 +47,38 @@ For the HCP metals Be, Mg, Sc, Y, Ti, Zr, Hf, Tc, Re, Ru, Os and Zn, we compute 
 
 \section{Methodology}
 \subsection{Derivation of third-order elastic constants for different crystal systems}
-General derivation procedure goes here, both for cubic and hexagonal. 
+In this subsection, consider materials under an applied strain $\xi$, causing a Poisson contraction $\eta$.
 
 \subsubsection{Cubic under uniaxial tension}
 State results for cubic symmetry $C'$ for tension along $c$.
 
 \subsubsection{Hexagonal under uniaxial tension}
-State results for hexagonal symmetry $C'$ for tension along $c$.
+Consider a hexagonal material under a uniaxial tension along the $c$-axis, thus allowing for Poisson contraction in the basal plane. The expressions for the effective SOEC's are then as given in Eqs. \ref{eqn:Cprime_hexagonal}. Note that for this particular deformation mode, the hexagonal symmetry of the material remains intact and hence, the relation $C_{66} = \frac{1}{2} \left(C_{11} - C_{12}\right)$ holds true along the strain path. 
+
+  
+
+ \begin{widetext}
+\begin{subequations}
+\label{eqn:Cprime_hexagonal} 
+\begin{align}
+        C_{11}' &=C_{11} + \eta \left(3C_{11} + C_{12} + 2C_{222} - 3C_{661} - C_{662}\right) + \xi \left(-C_{11} + C_{23} + C_{223}\right),\\
+        C_{12}' &=C_{12} + \eta \left(-C_{11} + C_{12} + 2C_{222} -5C_{661} - 3C_{662}\right) + \xi \left(-C_{12} + C_{223} - C_{23} - 2C_{663}\right),\\
+				C_{23}' &=C_{23} + \eta \left(-C_{11}-C_{12}+2C_{223}-2C_{663} \right) + \xi \left(C_{332}\right),\\
+				C_{33}' &=C_{33} + \eta \left(2C_{23}-2C_{33}+2C_{332} \right) + \xi \left(4C_{33}+C_{333}\right),\\
+				C_{44}' &=C_{44} + \eta \left(\frac{1}{2} C_{11} + \frac{1}{2} C_{12} + C_{23} + C_{551} + C_{552} \right) + \xi \left(\frac{1}{2} C_{23} + \frac{1}{2} C_{33} + C_{44} + C_{553}\right),\\
+				C_{66}' &=\frac{1}{2} \left(C_{11}'-C_{12}'\right)
+\end{align}
+\end{subequations}
+\end{widetext} 
+
+
+
+
+
+
+
+
+
 
 \subsubsection{Do we want to include other symmetries?}
 
