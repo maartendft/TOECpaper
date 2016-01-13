@@ -8,8 +8,15 @@ import matplotlib.pyplot as plt
 import elastic_interface as elast
 
 #### INPUTS ####
+# emax:     maximum strain applied 
+# nstrain:  number of strains applied for a given strain state
+# runjob:   'y' means that jobs will be submitted to the queue automatically as the POSCARs are produced
+# param:    0 for analysis 1 for production
+# timer:    amount of time between each job submission
+# symon:    'y' if symmetry is applied to the elastic constants 'n' if no symmetry is applied
+# gen:      The generators of the point group.  This is only important if symon is 'y'
 ## NOTES:
-# nstrain must be an even
+# nstrain must be odd
 
 emax    = 0.04
 nstrain = 7
