@@ -1,0 +1,716 @@
+%\documentclass[article,preprint]{revtex4}
+%\usepackage{amsmath, amsthm, amssymb,graphicx,subfigure,array}
+\documentclass[showpacs,aps,floatfix,prb,reprint,superscriptaddress,onecolumn]{revtex4-1} 
+%\documentclass[showpacs,floatfix,aps,prb,preprint,superscriptaddress]{revtex4-1}
+%\documentclass[reprint,aps,groupedaddress]{revtex4-1}
+\usepackage{xfrac}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{graphicx}
+%\usepackage{floatfix}
+\usepackage{verbatim}
+\usepackage{etoolbox}
+\usepackage{amsfonts} %maths
+\usepackage{amsmath} %maths
+%\usepackage[fleqn]{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{mathtools}
+\usepackage{soul,xcolor,colortbl}
+\usepackage{lipsum}
+\usepackage{hyperref} \hypersetup{colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue} % HYPERLINKS
+%\usepackage{widetext} %ELSEVIER
+
+ \usepackage{ulem}
+\usepackage{bm} %revtex4.1 for bold symbols
+\usepackage{array}
+\usepackage{color} 
+
+
+
+
+
+\renewcommand{\figurename}{Figure}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\begin{document}
+
+
+\title{Ideal Strength and Intrinsic Ductility in Metals and Alloys From Second and Third Order Elastic Constants}
+
+%\author{Maarten de Jong$^{1}$\footnote{Corresponding author: maartendft@gmail.com}, J. Kacher$^{1,2}$, M.H.F. Sluiter$^{3}$, L. Qi$^{1}$\footnote{Present Address: Department of Materials Science and Engineering, University of Michigan, Ann Arbor, MI, USA.}, D.L. Olmsted$^{1}$, A. van de Walle$^{4}$, J. W. Morris, Jr.$^{1}$, A.M. Minor$^{1,2}$,  M. Asta$^{1}$}
+%
+%\affiliation{$^1$Department of Materials Science and Engineering, University of California, Berkeley, CA 94720, USA} 
+%\affiliation{$^2$National Center for Electron Microscopy, Molecular Foundry, Lawrence Berkeley National Laboratory, Berkeley, CA, USA}
+%\affiliation{$^3$Department of Materials Science and Engineering, 3mE, Delft University of Technology, Delft, 2628 CD, The Netherlands}
+%\affiliation{$^4$School of Engineering, Brown University, RI 02912, USA} 
+
+\date{\today}
+
+\maketitle
+
+\section{Strain energy density: foramlism and results}
+
+\subsection{General expressions}
+Consider the mapping between the reference and current configuration of a continuum solid. In the reference configuration, a particle occupies a point $\bm{p}$ with spatial coordinates $\bm{X} = X_{1}\bm{e}_{1} +  X_{2}\bm{e}_{2} + X_{3}\bm{e}_{3}$, where ${e}_{1}, {e}_{2}, {e}_{3}$ is a Cartesian reference triad and $X_{1}, X_{2}, X_{3}$ are the reference coordinates. Upon deformation of the body, the point originally at $\bm{X}$ is translated by the displacement vector $\bm{u} \left(X_{1}, X_{2}, X_{3} \right)$ to its final coordinates $\bm{x} \left(X_{1}, X_{2}, X_{3} \right)$, see Eq. \ref{eqn:displ1} .
+\begin{equation}
+\label{eqn:displ1} 
+\bm{x} \left(X_{1}, X_{2}, X_{3} \right) = \bm{u} \left(X_{1}, X_{2}, X_{3} \right) + \bm{X} \left(X_{1}, X_{2}, X_{3} \right)
+\end{equation}
+
+Based on this description, a deformation gradient is formulated as in Eq. \ref{eqn:defgrad1}. The Green-Lagrange strain tensor $\bm{\eta}$ then follows from $\bm{F}$ as shown in Eq. \ref{eqn:GL1}, where $\bm{I}$ denotes the identity matrix.
+\begin{equation}
+\label{eqn:defgrad1} 
+\bm{F} = \frac{\partial x_{i}}{ \partial X_{j}}
+\end{equation}
+
+\begin{equation}
+\label{eqn:GL1} 
+\bm{\eta} = \frac{1}{2} \left(\bm{F}^{T} \bm{F} - \bm{I} \right)
+\end{equation}
+
+With the notation now established, the strain energy density can be expanded in terms of the second-order elastic constants (SOEC's), third-order elastic constants (TOEC's) and the Green-Lagrange strain  as in Eq. \ref{eqn:expansion1}, where $\rho_{0}$ represents the mass density in the undeformed state and the terms $\eta_{i}$ represent the components of the tensor defined in Eq. \ref{eqn:GL1}. The symmetry of the SOEC's and TOEC's will be applied in the expansions, which simplifies the resulting expressions considerably.
+\begin{equation}
+\label{eqn:expansion1} 
+\rho_{0} E \left(\bm{\eta}\right) = \frac{1}{2!} \sum_{i,j=1}^{6} C_{ij} \eta_{i} \eta_{j} + \frac{1}{3!} \sum_{i,j,k=1}^{6} C_{ijk} \eta_{i} \eta_{j} \eta_{k} + \ldots
+\end{equation}
+
+In this section, it is assumed that strain control is applied along the $c$-axis of the crystal. To make this more explicit, we employ the notation $\xi = \eta_{3}$ in the following sections.
+
+\subsection{Cubic crystal system}
+We consider a cubic material that is loaded along the $c$-axis by a Green Lagrangian strain denoted by $\xi$. Initially, we allow for additional strains denoted by $\eta_1, \eta_2, \eta_4, \eta_5, \eta_6$. Consider an expansion of the strain energy density up to and including SOEC's. When the symmetry of the SOEC's is invoked, the expression in Eq. \ref{eqn:cubicexpansion1} is obtained.
+\begin{equation}
+\label{eqn:cubicexpansion1} 
+\rho_{0} E \left(\bm{\eta}\right) = C_{11}\frac{\eta_{1}^2}{2} + C_{11}\frac{\eta_{2}^2}{2} +  C_{33}\frac{\xi^2}{2} + C_{44}\frac{\eta_{4}^2}{2} + C_{44}\frac{\eta_{5}^2}{2} + C_{44}\frac{\eta_{6}^2}{2} + C_{12}\eta_{1}\eta_{2} + C_{12}\xi\eta_{2} + C_{12}\eta_{1}\xi
+\end{equation}
+
+Eq. \ref{eqn:cubicexpansion1} generally suffices for small strains. For larger strains, a higher-order expansion of the strain energy density involving TOEC's is required, as shown in Eq. \ref{eqn:cubicexpansion2}, where the terms $P_{i}$ are given in Eqs. \ref{eqn:expansioncubic2detailed}.  
+\begin{equation}
+\label{eqn:cubicexpansion2} 
+\rho_{0} E \left(\bm{\eta}\right) = C_{11}P_{1c} + C_{44}P_{2c} + C_{12}P_{3c} +  C_{111}P_{4c} + C_{112}P_{5c} + C_{123}P_{6c} + C_{144}P_{7c} + C_{155}P_{8c} + C_{456}P_{9c}
+\end{equation}
+
+\begin{subequations}
+\label{eqn:expansioncubic2detailed} 
+\begin{align}
+        P_{1c} &=\frac{\eta_{1}^2}{2}  + \frac{\eta_{2}^2}{2} + \frac{\xi^2}{2} ,\\
+        P_{2c} &=\frac{\eta_{4}^2}{2} + \frac{\eta_{5}^2}{2} + \frac{\eta_{6}^2}{2} ,\\
+				P_{3c} &=\eta_{1}\eta_{2} + \eta_{2}\xi + \eta_{1}\xi,\\
+				P_{4c} &=\frac{1}{6} \left(\eta_{1}^{3}+\eta_{2}^{3}+\xi^{3} \right) ,\\
+				P_{5c} &=\frac{1}{2} \left(\eta_{2}\eta_{1}^{2} + \xi\eta_{1}^{2} + \eta_{2}^{2}\eta_{1} + \xi^{2}\eta_{1} + \eta_{2}\xi^{2} + \eta_{2}^{2}\xi \right)  ,\\
+				P_{6c} &=\eta_{1}\eta_{2}\xi  ,\\
+				P_{7c} &=\frac{1}{2} \left(\eta_{1}\eta_{4}^2 + \eta_{2}\eta_{5}^{2} + \xi\eta_{6}^{2}\right)  ,\\
+				P_{8c} &=\frac{1}{2} \left(\eta_{2}\eta_{4}^2 + \xi\eta_{4}^{2} + \eta_{1}\eta_{5}^{2} + \xi\eta_{5}^{2}  + \eta_{1}\eta_{6}^{2}  +  \eta_{2}\eta_{6}^{2} \right) ,\\
+				P_{9c} &=\eta_{4}\eta_{5}\eta_{6}  
+\end{align}
+\end{subequations}
+
+
+
+
+
+
+
+
+
+\subsection{Hexagonal crystal system}
+Consider an imposed strain $\xi$ along the $c$-axis of an HCP-metal, in addition to strains denoted by $\eta_1, \eta_2, \eta_4, \eta_5, \eta_6$. Consider first the expansion of Eq. \ref{eqn:expansion1}, retaining only terms up to and including the SOEC's (hence, ignoring the TOEC's for now). This gives the energy-expression in Eq. \ref{eqn:expansion3}, in which the symmetry of the SOEC's has been applied. 
+
+%To obtain the equilibrium strain in the basal plane due to the application of $\xi$, we perform strain energy-minimization and set $\bar{\eta} = \eta = \eta_{1} = \eta_{2}$, $\eta_{3} = \xi$ and $\eta_{4} = \eta_{5} = \eta_{6} = 0$ in Eq. \ref{eqn:expansion3} and solve $\frac{\partial \left(\rho_{0} E\right)}{\partial \eta}|_{\xi} = 0$. We find the equilibrium strain $\eta = \bar{\eta}$, given in Eq. \ref{eqn:eqstr1}, where the minus-sign signifies the Poisson-contraction in the basal plane.
+
+\begin{equation}
+\label{eqn:expansion3} 
+\rho_{0} E \left(\bm{\eta}\right) = C_{11}\frac{\eta_{1}^2}{2} + C_{11}\frac{\eta_{2}^2}{2} +  C_{33}\frac{\xi^2}{2} + C_{44}\frac{\eta_{4}^2}{2} + C_{44}\frac{\eta_{5}^2}{2} + \frac{1}{2} \left(C_{11}-C_{12}\right)\frac{\eta_{6}^2}{2} + C_{12}\eta_{1}\eta_{2} + C_{13}\eta_{1}\xi + C_{13}\eta_{2}\xi
+\end{equation}
+
+%\begin{equation}
+%\label{eqn:eqstr1} 
+%\eta = \bar{\eta} = -\frac{\xi C_{13}}{C_{11} + C_{12}}
+%\end{equation}
+
+For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient and instead, TOEC's have to be included as well. The expansion of the strain energy up to the third order in strain is given in Eq. \ref{eqn:expansion2}, in which the terms $P$ are given in Eq. \ref{eqn:expansion2detailed}. Note that in Eq. \ref{eqn:expansion2}, the symmetry of the SOEC's and TOEC's has been incorporated to simplify the resulting expression. 
+\begin{multline}
+\label{eqn:expansion2} 
+\rho_{0} E \left(\bm{\eta}\right) = C_{11} P_{1} +  C_{12} P_{2} + C_{13} P_{3} + C_{33} P_{4} + C_{44} P_{5} + C_{111} P_{6} + C_{222} P_{7} + C_{333} P_{8} + \\ C_{133} P_{9} +  C_{113} P_{10} + C_{112} P_{11} + C_{123} P_{12} + C_{144} P_{13} + C_{155} P_{14} + C_{344} P_{15}
+\end{multline}
+
+\begin{subequations}
+\label{eqn:expansion2detailed} 
+\begin{align}
+        P_{1} &=\frac{\eta_{1}^2}{2}  + \frac{\eta_{2}^2}{2} + \frac{\eta_{6}^2}{4} ,\\
+        P_{2} &=-\frac{\eta_{6}^2}{4} + \eta_{1}\eta_{2} ,\\
+				P_{3} &=\eta_{1}\xi + \eta_{2}\xi , \\
+				P_{4} &=\frac{\xi^2}{2} , \\
+				P_{5} &=\frac{\eta_{4}^2}{2} + \frac{\eta_{5}^2}{2} , \\
+				P_{6} &=\frac{\eta_{1}^3}{6} + \frac{\eta_{1}\eta_{2}^2}{2} - \frac{\eta_{1}\eta_{6}^2}{4} + \frac{\eta_{2}\eta_{6}^2}{4} , \\
+				P_{7} &=\frac{\eta_{2}^3}{6} - \frac{\eta_{1}\eta_{2}^2}{2} - \frac{\eta_{2}\eta_{6}^2}{8} + 3\frac{\eta_{1}\eta_{6}^2}{8} , \\
+				P_{8} &=\frac{\xi^3}{6} , \\
+				P_{9} &=\frac{\eta_{1}\xi^2}{2} + \frac{\eta_{2}\xi^2}{2} , \\
+				P_{10} &=\frac{\xi \eta_{1}^2}{2} + \frac{\xi \eta_{2}^2}{2} + \frac{\xi \eta_{6}^2}{4} , \\
+				P_{11} &=\frac{\eta_{1}^2\eta_{2}}{2} +  \frac{\eta_{1}\eta_{2}^2}{2} - \frac{\eta_{6}^2\eta_{1}}{8} - \frac{\eta_{6}^2\eta_{2}}{8} , \\
+				P_{12} &=\eta_{1}\eta_{2}\xi - \frac{\xi\eta_{6}^2}{4} , \\
+				P_{13} &=\frac{\eta_{1}\eta_{4}^2}{2} + \frac{\eta_{2}\eta_{5}^2}{2} - \frac{\eta_{4}\eta_{5}\eta_{6}}{2} , \\
+				P_{14} &=\frac{\eta_{2}\eta_{4}^2}{2} + \frac{\eta_{1}\eta_{5}^2}{2} + \frac{\eta_{4}\eta_{5}\eta_{6}}{2} , \\
+				P_{15} &=\frac{\xi \eta_{4}^2}{2} + \frac{\xi \eta_{5}^2}{2} 
+\end{align}
+\end{subequations}
+
+\section{Details of calculating TOEC's}
+In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. We also provide the form of the deformation gradients that give rise to desired Green-Lagrange strain tensors that are required for the calculation of specific (linear combinations) of SOEC's and TOEC's. The terms $\delta$ appearing in the deformation gradients represent distortions applied to the crystal. Note that the deformation gradients have to be carefully constructed as to leave only the desired (non-zero) elements in the resulting Green-Lagrange strain tensor.
+
+\begin{equation}
+\label{eqn:SM-GL1} 
+\bm{\eta} = \frac{1}{2} \left(\bm{F}^{T} \bm{F} - \bm{I} \right)
+\end{equation}
+
+\begin{equation}
+\label{eqn:SM-stressexpansion1} 
+t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
+\end{equation}
+
+\subsection{Cubic symmetry}
+
+
+\begin{equation}
+\label{eqn:SM-hexs1}
+  \left.\begin{aligned}
+        t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{111}\eta_{1}^2}{2} + C_{11}\eta_{1}\\
+        \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-hexs2}
+  \left.\begin{aligned}
+        t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}\\
+        \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+\begin{equation}
+\label{eqn:SM-hexs3}
+  \left.\begin{aligned}
+        t_{1} \left(\eta_{2}, \eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\substack{\eta_1=\eta_4=\eta_5=\eta_6=0 \\ \eta_{2}=\eta_{3}}} = C_{12}\eta_{3} + C_{12}\eta_{2} + C_{123}\eta_{2}\eta_{3} + C_{112}\frac{\eta_{2}^{2}}{2} + C_{112}\frac{\eta_{3}^{2}}{2} \\
+        \bm{F}&=\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1+\delta & 0 \\ 0 & 0 & 1+\delta \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-hexs4}
+  \left.\begin{aligned}
+        t_{4} \left(\eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_1=\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4} \\
+        \bm{F}&=\begin{bmatrix} 1 & 0 & 0 \\ 0 & \sqrt{1-\delta^2} & \delta \\ 0 & \delta & \sqrt{1-\delta^2} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-hexs5}
+  \left.\begin{aligned}
+        t_{4} \left(\eta_{1}, \eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\substack{\eta_2=\eta_3=\eta_5=\eta_6=0 \\ \eta_{1} = \eta_{4}}} = C_{44}\eta_{4} + C_{144}\eta_{1}\eta_{4} \\
+        \bm{F}&=\begin{bmatrix} \frac{\delta}{2}+\sqrt{\delta \sqrt{1-\delta^2}-\frac{3 \delta^2}{4}+1} & 0 & 0 \\ 0 & \sqrt{1-\delta^2} & \delta \\ 0 & \delta & \sqrt{1-\delta^2} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-hexs6}
+  \left.\begin{aligned}
+        t_{5} \left(\eta_{1}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\substack{\eta_2=\eta_3=\eta_4=\eta_6=0 \\ \eta_{1} = \eta_{5}}} = C_{44}\eta_{5} + C_{155}\eta_{1}\eta_{5} \\
+        \bm{F}&=\begin{bmatrix} \frac{\delta}{2}+\sqrt{\delta \sqrt{1-\delta^2}-\frac{3 \delta^2}{4}+1} & 0 & \delta \\ 0 & 1 & 0 \\ \delta & 0 & \sqrt{1-\delta^2} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-hexs7}
+  \left.\begin{aligned}
+        t_{4} \left(\eta_{4}, \eta_{5}, \eta_{6} \right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\substack{\eta_1=\eta_2=\eta_3=0 \\ \eta_{4}=\eta_{5}=\eta_{6}}} = C_{44} \eta_{4} + C_{456}\eta_{5}\eta_{6} \\
+        \bm{F}&=\begin{bmatrix} \sqrt{1-\delta^{2}} & \delta & \delta \\ \delta & \sqrt{1-\delta^{2}} & \delta \\ \delta & \delta & \sqrt{1-\delta^{2}} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+
+
+
+\subsection{Hexagonal symmetry}
+
+
+\begin{equation}
+\label{eqn:SM-s1}
+  \left.\begin{aligned}
+        t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{111}\eta_{1}^2}{2} + C_{11}\eta_{1}\\
+        \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+\begin{equation}
+\label{eqn:SM-s2}
+  \left.\begin{aligned}
+        t_{2} \left(\eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_1=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{222}\eta_{2}^2}{2} + C_{11}\eta_{2}\\
+        \bm{F}&=\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1+\delta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s3}
+  \left.\begin{aligned}
+        t_{3} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3}\\
+        \bm{F}&=\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1+\delta \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s4}
+  \left.\begin{aligned}
+        t_{3} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{13}\eta_{1}\\
+        \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s5}
+  \left.\begin{aligned}
+        t_{1} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{133}\eta_{3}^2}{2} + C_{13}\eta_{3}\\
+        \bm{F}&=\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1+\delta \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s6}
+  \left.\begin{aligned}
+        t_{2} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}\\
+        \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s7}
+  \left.\begin{aligned}
+        t_{4} \left(\eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_1=\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4}\\
+        \bm{F}&=\begin{bmatrix} 1 & 0 & 0 \\ 0 & \sqrt{1-\delta^2} & \delta \\ 0 & \delta & \sqrt{1-\delta^2} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+%1+(1 - F23)^(1/2)*(F23 + 1)^(1/2) - 1 F23
+
+
+\begin{equation}
+\label{eqn:SM-s8}
+  \left.\begin{aligned}
+        t_{3} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\substack{\eta_1=\eta_2=\eta_4=\eta_6=0\\ \eta_{3}=\eta_{5}}} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}\\
+        \bm{F}&=\begin{bmatrix} \sqrt{1-\delta^2} & 0 & \delta \\ 0 & 1 & 0 \\ \delta & 0 & \frac{\delta}{2} + \sqrt{\delta \sqrt{1-\delta^2} - \frac{3 \delta^{2}}{4} + 1} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+%$\sqrt{\delta \sqrt{1-\delta}\sqrt{1+\delta} - \frac{3 \delta^{2}}{4} + 1}$
+
+
+\begin{equation}
+\label{eqn:SM-s9}
+  \left.\begin{aligned}
+        t_{5} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\substack{\eta_1=\eta_2=\eta_4=\eta_6=0 \\ \eta_3=\eta_5}} = C_{44}\eta_{5} + C_{344}\eta_{3}\eta_{5}\\
+        \bm{F}&=\begin{bmatrix} \sqrt{1-\delta^2} & 0 & \delta \\ 0 & 1 & 0 \\ \delta & 0 & \frac{\delta}{2} + \sqrt{\delta \sqrt{1-\delta^2}- \frac{3 \delta^{2}}{4} + 1} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s10}
+  \left.\begin{aligned}
+        t_{3} \left(\eta_{1}, \eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\substack{\eta_3=\eta_4=\eta_5=\eta_6=0 \\ \eta_1 = \eta_2}} = \frac{C_{113}\eta_{1}^2}{2} + C_{123}\eta_{1}\eta_{2} + C_{13}\eta_{1} +  \frac{C_{113}\eta_{2}^2}{2} + C_{13}\eta_{2}\\
+        \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1+\delta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+\begin{equation}
+\label{eqn:SM-s11}
+  \left.\begin{aligned}
+        t_{4} \left(\eta_{1}, \eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\substack{\eta_2=\eta_3=\eta_5=\eta_6=0 \\ \eta_{1}=\eta_{4}}} = C_{44}\eta_{4} + C_{144}\eta_{1}\eta_{4}\\
+        \bm{F}&=\begin{bmatrix} \frac{\delta}{2}+\sqrt{\delta \sqrt{1-\delta^2}-\frac{3 \delta^2}{4}+1} & 0 & 0 \\ 0 & \sqrt{1-\delta^2} & \delta \\ 0 & \delta & \sqrt{1-\delta^2} \end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+%F = [F23/2 + (F23*(1 - F23^2)^(1/2) - (3*F23^2)/4 + 1)^(1/2) 0 0; 0 sqrt(1-F23^2) F23; 0 F23 sqrt(1-F23^2)]
+
+\begin{equation}
+\label{eqn:SM-s12}
+  \left.\begin{aligned}
+        t_{5} \left(\eta_{1}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\substack{\eta_2=\eta_3=\eta_4=\eta_6=0 \\ \eta_{1}=\eta_{5}}} = C_{44}\eta_{5} + C_{155}\eta_{1}\eta_{5}\\
+        \bm{F}&=\begin{bmatrix} \frac{\delta}{2}+\sqrt{\delta \sqrt{1-\delta^2}-\frac{3 \delta^2}{4}+1} & 0 & \delta \\ 0 & 1 & 0 \\ \delta & 0 & \sqrt{1-\delta^2} 
+				\end{bmatrix}
+       \end{aligned}
+			\right\}
+\end{equation}
+
+
+%[F23/2 + (F23*(1 - F23^2)^(1/2) - (3*F23^2)/4 + 1)^(1/2) 0 F23; 0 1 0; F23 0 sqrt(1-F23^2)]
+
+
+
+
+
+
+
+%\begin{equation}
+%\label{eqn:s1} 
+%t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{111}\eta_{1}^2}{2} + C_{11}\eta_{1}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s2} 
+%t_{2} \left(\eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_1=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{222}\eta_{2}^2}{2} + C_{11}\eta_{2}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s3} 
+%t_{3} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s4} 
+%t_{3} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{13}\eta_{1}
+%\end{equation}
+
+
+%\begin{equation}
+%\label{eqn:s5} 
+%t_{1} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{133}\eta_{3}^2}{2} + C_{13}\eta_{3}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s6} 
+%t_{2} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s7} 
+%t_{4} \left(\eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_1=\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s8} 
+%t_{3} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s9} 
+%t_{5} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{344}\eta_{3}\eta_{5}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s9} 
+%t_{3} \left(\eta_{3}, \eta_{5}\right) = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
+%\end{equation}
+
+
+%\begin{equation}
+%\label{eqn:s10} 
+%t_{3} \left(\eta_{1}, \eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{123}\eta_{1}\eta_{2} + C_{13}\eta_{1} +  \frac{C_{113}\eta_{2}^2}{2} + C_{13}\eta_{2}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s11} 
+%t_{4} \left(\eta_{1}, \eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4} + C_{144}\eta_{1}\eta_{4}
+%\end{equation}
+
+%\begin{equation}
+%\label{eqn:s12} 
+%t_{5} \left(\eta_{1}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{155}\eta_{1}\eta_{5}
+%\end{equation}
+
+
+
+
+%Given an applied $\xi$, we can again find an analytical expression for the Poisson contraction $\eta = \bar{\eta}$ in terms of $\xi$ and the SOEC's and TOEC's. The resulting equation that has to be solved is shown in Eq. \ref{eqn:minexpression1}. Solving Eq. \ref{eqn:minexpression1} in terms of $\eta = \bar{\eta} = \eta_{1} = \eta_{2}$ gives the equilibrium strain in the basal plane.
+
+%\section{}
+%A simple expression for the relations between strains and stresses can be derived for an HCP-structured material that is loaded in tension along the $c$-axis, while allowing for contraction in the basal plane. For this situation, with an applied (Lagrangian) strain $\eta_{3}$ along $c$, we have $\eta_{1}=\eta_{2}=\bar{\eta}$ and $\eta_{3}=\xi$ . Eq. \ref{eqn:stressexpansion1} expresses the Lagrangian stress tensor in terms of the strain energy and Lagrangian strain tensor \cite{lopuszynski2007ab}. From Eq. \ref{eqn:stressexpansion1}, the Lagrangrian stress $t_{33}$ can be found under the combined strain state currently under investigation, see Eq. \ref{eqn:t33eq1}. Further, from Eq. \ref{eqn:stressconversion1}, we have that $\bm{\sigma} = \frac{1}{\text{det} \left(\bm{F}\right)} \bm{F} \bm{t} \bm{F}^{T}$ which governs the relation between Lagrangian and true stress. This expression can be expanded, with the result given in Eq. \ref{eqn:t33eq2}, where $t_{33}$ is given in Eq. \ref{eqn:t33eq1}. 
+
+
+%We first derive an expression for the true stress component $\sigma_{33}$. Eq. \ref{eqn:stressexpansion1} expresses the Lagrangian stress tensor in terms of the strain energy and Lagrangian strain tensor \cite{lopuszynski2007ab}. Eq. \ref{eqn:stressexpansion1} is employed to calculate the Lagrangian stress $t_{33}$, under a combined loading condition of $\eta_{1}=\eta_{2}=\bar{\eta}$ and $\eta_{3}=\xi$ simultaneously. The result is shown in Eq. \ref{eqn:t33eq1}. From Eq. \ref{eqn:stressconversion1}, we have that $\bm{\sigma} = \frac{1}{\text{det} \left(\bm{F}\right)} \bm{F} \bm{t} \bm{F}^{T}$. This expression can be expanded, with the result given in Eq. \ref{eqn:t33eq2}, where $t_{33}$ is given in Eq. \ref{eqn:t33eq1}. 
+
+%\begin{equation}
+%\label{eqn:stressexpansion1} 
+%t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
+%\end{equation}
+%
+%\begin{multline}
+%\label{eqn:t33eq1} 
+%t_{33} \Bigr|_{\eta_4=\eta_5=\eta_6=0}  = \eta_{1}^{2} \left(C_{113} + C_{123} \right) + \eta_{1} \left(2C_{13} + 2C_{133}\eta_{3} \right) + \\ \frac{1}{2} C_{333} \eta_{3}^{2} + C_{33} \eta_{3}
+%\end{multline}
+%
+%\begin{equation}
+%\label{eqn:stressconversion1} 
+%t_{ij} = \text{det} \left(\bm{F}\right) \bm{F}^{-1} \bm{\sigma} \left(\bm{F}^{T}\right)^{-1}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:t33eq2} 
+%\sigma_{33}  = \frac{\sqrt{2 \xi + 1}}{\sqrt{2 \bar{\eta} + 1}}t_{33}
+%\end{equation}
+
+
+%\section{Computational and Experimental Methods}
+%\subsection{Computational}
+%With the exception of the Virtual Crystal Approximation (VCA) and Coherent Potential Approximation (CPA) results, all calculations were performed using the Vienna Ab Initio Simulation Package (VASP) \cite{PhysRevB.54.11169,PhysRevB.47.558}. The VASP calculations made use of the Local Density Approximation (LDA), employing the Ceperley-Alder (CA) exchange-correlation functional \cite{PhysRevLett.45.566}, based on the Perdew-Zunger parametrization \cite{PhysRevB.23.5048}.  All of these calculations made use of the projector augmented wave (PAW) method \cite{PhysRevB.50.17953,PhysRevB.59.1758}.  An energy cutoff for the plane waves of 600 eV was used, and smearing of the electronic occupancies was performed using the Methfessel-Paxton scheme \cite{PhysRevB.40.3616}, with a broadening of 0.1 eV.  Integrations in the Brillouin zone were carried out using Monkhorst-Pack $k$-point sampling \cite{PhysRevB.13.5188} with a density chosen such that the number of $k$-points in the first Brillouin zone times the number of atoms in the cell equals approximately 20,000. The PAW potentials for Re included 7 valence electrons, corresponding to a configuration 5$d^5$6$s^2$. For the elements Ta, W, Os, Ir, the related valence electron configurations are of the form  5$d^{x}$6$s^{2}$ where $x= 3, 4, 6, 7$, respectively. 
+%
+%For the purpose of investigating the origins of alloying effects on calculated TB energies, we also employed calculations based on the VCA and CPA methods. The VCA calculations were performed using the Quantum Espresso software \cite{giannozzi2009quantum}, employing norm-conserving Troullier-Martin pseudopotentials \cite{troullier1991efficient,romaner2010effect}.  Use was made of the local density approximation, based on the Perdew-Wang 91 exchange-correlation functional \cite{perdew1986accurate}.  The pseudopotentials were generated using the fhi98PP code with intermediate nuclear charges \cite{fuchs1999ab}. The VCA pseudopotentials were generated for Re-Ta, Re-W, Re-Os and Re-Ir aloys, with electron per atom ratios corresponding to solute concentrations of 4.9 and 9.8 \%. KKR-CPA calculations were performed with the Munich SPR-KKR package, version 6.3 \cite{ebert2011calculating}, kindly provided by Prof. H. Ebert. The most important settings were: LDA exchange correlation functional of Vosko et al.~\cite{vosko1980accurate}, Atomic Sphere Approximation (ASA) with identical sphere sizes for all elements, valence electrons described up to \textit{l} = 3, and 484 special $k$-points in the irreducible Brillouin zone, structurally relaxed atomic positions and cell parameters were taken from VASP calculations on pure Re. 
+%
+%For the pure elements, the twin boundary (TB) energies were calculated by employing supercells ranging from 32 to 64 atoms, depending on the type of TB. Tests with varying supercell size established that these cells lead to calculated values for the TB energy converged to within approximately 5 mJ/ m$^{2}$. A comparable level of convergence was established relative to the choices of plane-wave cutoff and k-point sampling. 
+%
+%The Special Quasirandom Structure (SQS) \cite{PhysRevLett.65.353,PhysRevB.42.9622} approach was applied to the calculation of the $\left\{11\bar{2}1\right\}$ TB energy, and in this case, a 128-atom supercell was used, as described in Section \ref{section:SQS}, below. The TB energy was computed by averaging over ten 128-atom SQS cells, in order to derive an estimate of the TB energy for a randomly substitutionally disordered alloy with a statistical uncertainty within 10 mJ/ m$^{2}$.
+%
+%\subsection{Experimental}
+%\label{subsec:exper}
+%99.99 \% pure Re and Re-10 at. \% W samples were obtained from Rhenium Alloys Inc. in the form of 3 mm diameter rods. Prior to delivery, the samples, originally in powder form, were pressed, pre-sintered, swaged, heat treated at 1600 $^{o}$C for 10 minutes, and finally ground to the finish size. As-received samples were prepared from this material. Samples used for mechanical testing were cut from the original rods using electrical discharge machining (EDM) and annealed for 20 hr in a 50 \% H - 50 \% Ar atmosphere at 1100 $^{o}$C. 
+%
+%Electron back-scattered diffraction (EBSD) scans were collected from four different samples: two pure Re samples strained in compression to values of 0.043 and 0.068 and two Re-10 at. \% W samples strained at room temperature to values of 0.025 and 0.055. EDAX-TSL  Orientation Imaging Microscopy (OIM) software \cite{adams1993orientation} was used for data collection and analysis. Scans were collected from each sample from 70 $\times$ 70 $\mu$m regions using an accelerating voltage of 20 keV and at a step size of 100 nm. The polycrystals were found to be weakly textured with most grains oriented with the c-axis perpendicular to the compression axis, though c-axis-oriented grains were also present in the scan, see Fig. \ref{fig:polefigureEBSD} for the inverse pole figure map and pole figure. Twin boundaries were automatically detected in the software using the criteria for $\left\{11\bar{2}1\right\}$-type twins of a 34.8$^{o}$ rotation about the $\left[1\bar{1}00\right]$ axis. Criteria for $\left\{10\bar{1}2\right\}$-, $\left\{11\bar{2}2\right\}$-, and $\left\{10\bar{1}1\right\}$-type twins were also included but none were detected in the scan. The twin width was measured manually in each grain to calculate the average twin width for the two different materials. 
+%
+%Additional scans were taken to verify the dominant twin type. In all, 1,040 twins were investigated in pure Re. Of these, 1,035 were found to be $\left\{11\bar{2}1\right\}$-type and 5 were found to be $\left\{10\bar{1}2\right\}$-type twins. 68 twins were characterized in the ReW sample, all of which were found to be $\left\{11\bar{2}1\right\}$-type. No twinning was observed in $\left\{0001\right\}$-oriented grains.
+%
+%As-received samples were prepared for Transmission Electron Microscopy (TEM) characterization by first sectioning them from a rod into 3 mm diameter disks with a thickness of approximately 100 $\mu$m using electron discharge machining. These samples were expected to have heavy levels of deformation as material synthesis involved powder consolidation and swaging. Thinning to electron transparency was achieved by jet-polishing using an ethanol-butoxyethanol-perchloric electrolyte. TEM characterization was done using a JEOL 3010 operated at 300 keV. Figure \ref{fig:TEM_Repic1} shows TEM images for pure hcp Re and a Re-10 at.\% W alloy.  
+%
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.23]{BigScanIPF_andmap_flattened.jpg}
+%\caption{a) Inverse pole figure map of the deformed Re showing extensive twinning behavior. All twins present in the scan are $\left\{11\bar{2}1\right\}$ - type. b) $(0001)$ - Pole figure constructed from the data shown in (a) showing that the microstructure is weakly textured orthogonal to the $(0001)$-orientation. The legend is in terms of times random.}
+%\label{fig:polefigureEBSD}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=1.30]{SM_FIGURE_6.pdf}
+%\caption{Bright-field TEM images showing twin deformation in a) pure Re and b) Re-10 at. \% W.}
+%\label{fig:TEM_Repic1}
+%\end{figure}
+%
+%\section{Twin Crystallography} 
+%In the computational work, 5 commonly observed TBs in hcp metals and alloys have been studied. Their twinning elements $K_{1}$, $K_{2}$, $\eta_{1}$ and $\eta_{2}$ are listed in Table \ref{tab:TBxtallography}. See Fig. \ref{fig:twinsall5} for a visualization of these 5 TBs.
+%
+%
+%\begin{table}[tbh]
+%\centering
+%\label{tab:TBxtallography}
+%\begin{tabular}{c c c c}
+    %%\hline
+		%\toprule
+		 %%$K_{1}$ & $K_{2}$  & $\eta_{1}$ & $\eta_{2}$ & $S$   \\  
+%
+				 %$K_{1}$ & $K_{2}$  & $\eta_{1}$ & $\eta_{2}$   \\  
+%
+		%\hline
+		%%$\left\{10\bar{1}1\right\}$ & $\left\{10\bar{1}\bar{3}\right\}$ & $\left\langle 10\bar{1}\bar{2} \right\rangle$ & $\left\langle 30\bar{3}\bar{2} \right\rangle$ & $\frac{1}{3} \left\langle 1\bar{2}10 \right\rangle$ \\
+				%%$\left\{10\bar{1}2\right\}$ & $\left\{10\bar{1}\bar{2}\right\}$ & $\pm \left\langle 10\bar{1}\bar{1} \right\rangle$ & $\pm \left\langle 10\bar{1}1 \right\rangle$ & $\pm \frac{1}{3} \left\langle 1\bar{2}10 \right\rangle$ \\
+				%%$\left\{11\bar{2}1\right\}$ & $\left\{0001\right\}$ & $\frac{1}{3} \left\langle \bar{1}\bar{1}26 \right\rangle$ & $\frac{1}{3} \left\langle 1120 \right\rangle$ & $\left\langle \bar{1}100 \right\rangle$ \\	
+				%%$\left\{11\bar{2}2\right\}$ & $\left\{11\bar{2}\bar{4}\right\}$ & $\frac{1}{3} \left\langle 11\bar{2}\bar{3} \right\rangle$ & $\frac{1}{3} \left\langle 22\bar{4}3 \right\rangle$ & $\left\langle 1\bar{1}00 \right\rangle$ \\	
+				%%$\left\{10\bar{1}3\right\}$ & $\left\{\bar{1}011\right\}$ & $\left\langle \bar{3}032 \right\rangle$ & $\left\langle 10\bar{1}2 \right\rangle$ & $\left\langle 1\bar{1}00 \right\rangle$ \\		
+				%
+		%$\left\{10\bar{1}1\right\}$ & $\left\{10\bar{1}\bar{3}\right\}$ & $\left\langle 10\bar{1}\bar{2} \right\rangle$ & $\left\langle 30\bar{3}\bar{2} \right\rangle$  \\
+				%$\left\{10\bar{1}2\right\}$ & $\left\{10\bar{1}\bar{2}\right\}$ & $\pm \left\langle 10\bar{1}\bar{1} \right\rangle$ & $\pm \left\langle 10\bar{1}1 \right\rangle$ \\
+				%$\left\{11\bar{2}1\right\}$ & $\left\{0001\right\}$ & $\frac{1}{3} \left\langle \bar{1}\bar{1}26 \right\rangle$ & $\frac{1}{3} \left\langle 1120 \right\rangle$  \\	
+				%$\left\{11\bar{2}2\right\}$ & $\left\{11\bar{2}\bar{4}\right\}$ & $\frac{1}{3} \left\langle 11\bar{2}\bar{3} \right\rangle$ & $\frac{1}{3} \left\langle 22\bar{4}3 \right\rangle$   \\	
+				%$\left\{10\bar{1}3\right\}$ & $\left\{\bar{1}011\right\}$ & $\left\langle \bar{3}032 \right\rangle$ & $\left\langle 10\bar{1}2 \right\rangle$  \\	\toprule
+			%
+%\end{tabular}
+%\caption{Twinning elements of the 5 twin boundaries studied in this work.}
+%\end{table}
+%
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.38]{twin_all5.png}
+%\caption{Projection-view of 5 twin boundaries considered in this work: (a) $K_{1} = \left\{10\bar{1}1\right\}$ (projection along $\left[1\bar{2}10\right]$), (b) $K_{1} = \left\{10\bar{1}2\right\}$ (projection along $\left[1\bar{2}10\right]$), (c) $K_{1} = \left\{10\bar{1}3\right\}$ (projection along $\left[1\bar{2}10\right]$), (d) $K_{1} = \left\{11\bar{2}1\right\}$ (projection along $\left[1\bar{1}00\right]$), (e) $K_{1} = \left\{11\bar{2}2\right\}$ (projection along $\left[1\bar{1}00\right]$).}
+%\label{fig:twinsall5}
+%\end{figure}
+%
+%%\clearpage
+%
+%\section{Calculated Twin Boundary Energies}
+%Table \ref{VCAss} lists the 10 elemental HCP metals considered in this work, and their corresponding TB energies for each of the 5 TBs in Fig. \ref{fig:twinsall5}. Table \ref{VCAss} also shows that only the elements Re and Tc energetically prefer the $\left\{11\bar{2}1\right\}$ TB. All other HCP metals considered in this work prefer the $\left\{10\bar{1}1\right\}$ orientation energetically.
+%
+%\begin{table}[tbh]
+%\centering
+%\label{VCAss}
+%\begin{tabular}{c | c c c c c c c}
+    %%\hline
+		%\toprule
+		 %&  & & Twin Boundary  & &   \\  \cline{2-6}
+      %&  $\left\{10\bar{1}1\right\}$ &  $\left\{10\bar{1}2\right\}$ & $\left\{10\bar{1}3\right\}$ & $\left\{11\bar{2}1\right\}$ & $\left\{11\bar{2}2\right\}$ & Min. energy TB & $G \Omega^{1/3}$ $\left(J/m^{2}\right)$ \\ \hline
+     %Y & 41 & 117 & 171 & 117 & 231  &   $\left\{10\bar{1}1\right\}$      & 8.3 		\\ 
+     %Zr & 53 & 221 & 302 & 209 & 373  &  $\left\{10\bar{1}1\right\}$      & 9.0		\\ 
+     %Sc & 85 &  166 & 274 & 122 & 296 &  $\left\{10\bar{1}1\right\}$      & 10.6		\\ 
+     %Ti & 103 & 320  & 409 & 253 & 446 &  $\left\{10\bar{1}1\right\}$     & 11.3 		\\ 
+     %Hf & 147 & 395  & 399 & 339 & 473 &  $\left\{10\bar{1}1\right\}$     & 15.7 		\\ 
+		 %Co & 433 & 666  & 555 & 507 & 710 	&  $\left\{10\bar{1}1\right\}$    & 39.5		\\ 
+		 %Tc & 297 & 497  & 506 & 191 & 506 	&  $\left\{11\bar{2}1\right\}$    & 43.9		\\ 
+		%Re & 395 & 707  & 613 & 248 & 643 	&  $\left\{11\bar{2}1\right\}$    & 47.1		\\ 
+		%Ru & 637 & 1055  & 869 & 1064 & 872 	&  $\left\{10\bar{1}1\right\}$  & 50.3  		\\ 
+     %Os & 824 & 1359 & 1040 & 1348 & 1002 &  $\left\{10\bar{1}1\right\}$  & 68.6 		\\   \toprule
+%\end{tabular}
+%\caption{Calculated twin boundary energies for selected HCP metals ($mJ$/m$^{2}$), twin boundary with the lowest energy and $G \Omega^{1/3}$ $\left(J/m^{2}\right)$ in $mJ$/$m^{2}$, where $G$ is the Voigt-Reuss-Hill averaged shear modulus, and $\Omega$ is the atomic volume.}
+%\end{table}
+%
+%
+%%\clearpage
+%
+%Fig. \ref{fig:VCAtwins1} shows the variation of the $\left\{11\bar{2}1\right\}$ and $\left\{10\bar{1}1\right\}$ TB energies in Re-based alloys as a function of band filling. The energy of the $\left\{11\bar{2}1\right\}$ TB depends strongly on band filling. Lowering band filling with respect to pure Re significantly decreases the $\left\{11\bar{2}1\right\}$ TB energy, whereas increasing band filling leads to an increase in TB energy that is similar in magnitude. The behavior of the $\left\{10\bar{1}1\right\}$ TB energy with band filling near Re is fundamentally different. First, the energy of this TB varies much less with band filling than the $\left\{11\bar{2}1\right\}$ TB energy. Second, for the $\left\{10\bar{1}1\right\}$ TB, increasing band filling leads to a slight decrease in TB energy, which is the opposite trend compared to the $\left\{11\bar{2}1\right\}$ TB.
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.80]{SM_FIGURE_2.png}
+%\caption{The energy of the $\left\{11\bar{2}1\right\}$ and $\left\{10\bar{1}1\right\}$ twin boundary in pure Re and Re-X alloys
+%as a function of band filling, as calculated from the VCA. The composition of the alloys is Re- 10 at. \% W and Re- 10 at. \% Os.}
+%\label{fig:VCAtwins1}
+%\end{figure}
+%
+%The dependence of $\gamma_{t}$ on band filling was further analyzed by computing TB energies for both $\left\{11\bar{2}1\right\}$ and $\left\{10\bar{1}1\right\}$ twin orientations, for all 5$d$ transition metals, including those not stable in the HCP structure.  The results are plotted in Fig.~\ref{fig:suptwin} and show that both twins display maximum values of $\gamma_{t}$ for Os.  The values of $\gamma_{t}$ decrease with decreasing band filling, reaching minimum (negative) values for W (Ta) for the $\left\{11\bar{2}1\right\}$ ($\left\{10\bar{1}1\right\}$ ) twin before increasing again (to positive values) as the band filling reaches Hf.  As was found in the consideration of alloying effects, the results in Fig.~\ref{fig:suptwin} show that the $\left\{11\bar{2}1\right\}$ twin displays a much larger (approximately four times) variation in TB energy relative to $\left\{10\bar{1}1\right\}$ across the 5$d$ transition metal series.
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.80]{pic_1121TB_1011TB.png}
+%\caption{Calculated energies for $\left\{11\bar{2}1\right\}$ and $\left\{10\bar{1}1\right\}$ TBs for all 5$d$ transition metals, including those stable in bcc and hcp crystal structures.}
+%\label{fig:suptwin}
+%\end{figure}
+%
+%\section{Calculated Electronic Structure}
+%Plotted in Fig. \ref{fig:HCP_twin_DOS} is a comparison of the calculated electronic density of states (DOS) for bulk HCP Re, and supercells of Re containing \{11$\bar{2}$1\} and \{10$\bar{1}$1\} twins.  The DOS show a shallower slope at the Fermi level for the supercell with the \{11$\bar{2}$1\} twin than it does for the bulk structure.  As a consequence, the band energy for this twin decreases (increases) with a shift in the Fermi energy to lower (higher) band fillings]\. Further, a comparison of the DOS of the \{11$\bar{2}$1\} and $\{10\bar{1}1\}$ shows that the former attains more states at lower energies, whereas the latter has a higher DOS at higher energies just below the Fermi level, as indicated by the arrows in the inset of Fig. \ref{fig:HCP_twin_DOS}. This contributes to the lower energy of the \{11$\bar{2}$1\} TB relative to the $\{10\bar{1}1\}$ TB. To the right of the Fermi level, the DOS of the \{11$\bar{2}$1\} TB attains higher values than that of the $\{10\bar{1}1\}$ TB, with the HCP DOS lying approximately in between. This is consistent with our findings that as band filling is increased, the  \{11$\bar{2}$1\} TB gradually loses stability with respect to the $\{10\bar{1}1\}$ TB. Although the calculated TB energy is clearly influenced by contributions to the total energy beyond just the band energy, the results in Fig.~\ref{fig:HCP_twin_DOS} are consistent with the trends for the concentration dependence of the calculated values of $\gamma_t$.
+%
+%\begin{figure}[h!]
+%\includegraphics[width=0.8\textwidth]{HCP_twin_DOS5.png}
+%\caption{Electronic DOS for the $\left\{11\bar{2}1\right\}$ and $\left\{10\bar{1}1\right\}$ TB and HCP Re. The inset shows that the DOS of the $\left\{11\bar{2}1\right\}$ TB is lower than the $\left\{10\bar{1}1\right\}$ TB DOS just left of the Fermi-level, with the opposite behavior to the right of the Fermi-level.}
+%\label{fig:HCP_twin_DOS}
+%\end{figure}
+%
+%\section{SQS approach}
+%\label{section:SQS}
+%As part of this work, a method has been developed to study planar interfaces such as free surfaces, twin boundaries, and stacking faults within a Special Quasirandom Structure (SQS) approach \cite{PhysRevLett.65.353,PhysRevB.42.9622}. In order to model defect energies in substitutionally disordered alloys, very large supercells are required in principle - far beyond the capabilities of DFT-techniques. The use of SQS cells for defect calculations on planar interfaces has not been attempted in the past. We will show here using a classical Embedded Atom Method (EAM) potential for the Ti-Al system \cite{zope2003interatomic} that small SQS (which are tractable in DFT-calculations) can provide a statistically proper representation of defect energies in the limit of randomly substitutionally disordered alloys. The key idea is to construct large bulk EAM-supercells at various solute concentrations with up to 1,000,000(1M) atoms in total and to map these onto supercells, incorporating a twin boundary or free surface. These large EAM cells are intended to mimic the fully random alloy of converged size. The planar defect energy can then be computed by subtracting the energy of the bulk cell from the energy of the corresponding cell contaning a planar defect. A reliable estimate of the planar defect energy in the random alloy can be obtained by averaging over a few of these large supercells. This procedure can be repeated for different solute concentrations such that the concentration-dependence of the defect energies can be computed. \\
+%
+%The defect energies computed as described in the previous paragraph form a benchmark for the defect energies in disordered substitutional alloys and the goal is to construct small unit cells that i) accurately reproduce the planar defect energy of the benchmark random alloy ii) are small enough such that DFT can be used to perform quantum mechanical total energy calculations. We generate 2 types of small cells: i) a set of structures according to the recipe described below for generating SQS and ii) another set of structures that are not specially generated SQS but randomly populated cells. One of the goals is to see how well SQS perform relative to the randomly populated cells in prediciting planar defect energies. The defect energies for the small unit cells - both SQS and random - are computed and compared to the benchmark values at the same composition. If the results are consistent, it is concluded that the small cell contaning a planar defect is representative for the benchmark disordered alloy. For obtaining a better estimate of the defect energies of the disordered alloy, averaging is done over 10 inequivalent configurations, both for the SQS-cells and the random supercells. \\
+%
+%
+%Our SQS-method is applied to model the composition dependence of the $\left\{0001\right\}$ surface and the $\left\{11\bar{2}1\right\}$ twin boundary. The $\left\{11\bar{2}1\right\}$ twin boundary in hcp metals and alloys can be described by 4 twinning elements $K_{1} = \left(11\bar{2}1 \right)$, $K_{2} = \left(0001 \right)$, $\eta_{1} = \left[\bar{1} \bar{1} 26\right]$ and $\eta_{2} = \left[11 \bar{2} 0\right]$. These twinning elements denote the twinning plane, conjugate twinning plane, twinning direction and conjugate twinning direction, respectively. The amount of twinning shear for this twin is $S = \gamma^{-1}$, where $\gamma = c/a$ i.e. the axial ratio. Since hcp metals have 2 atoms in the motif corresponding to a hexagonal Bravais lattice-point, in general twins cannot be formed by the application of homogeneous twinning shear alone and additional atomic shuffles are required. For the $\left\{11\bar{2}1\right\}$ twin boundary, the required atomic shuffles on both sides of the twin boundary plane are given by the vector $\tau = \pm 0.5 \left[1\bar{1}00 \right]$. In this work, the $\left\{11\bar{2}1\right\}$ twin boundary is constructed directly from an appropriate bulk cell as follows. Let $\textbf{a}$, $\textbf{b}$ and $\textbf{c}$ be the conventional hcp lattice vectors, where the angle between $\textbf{a}$ and $\textbf{b}$ is 120$^{o}$ and all other angles are 90$^{o}$. First, a bulk cell is constructed with lattice vectors $\textbf{a}'= N\left|\textbf{a}\right|$, $\textbf{b}'= \textbf{a} + 2 \textbf{b}$ and $\textbf{c}'= \textbf{a} + \textbf{c}$, where $N$ is proportional to the number of planes in the to-be-formed twin boundary cell. In the second step, the twin boundary cell is formed by i) applying a twinning shear $S$ to all atoms located on one side of the twin plane in the middle, halfway along $\textbf{a}'$, followed by ii) an atomic shuffle on one side of the twin plane to restore the correct crystal structure. This results in a twinned cell with a twin plane in the middle and another on the edge of the cell. Note that there exists a direct mapping between atoms in the bulk and twinned cell, which will prove to be important when studying alloys. The procedure is illustrated schematically in Fig. \ref{fig:sgentwinpic1}. Ionic relaxations are performed for the supercell containing the twins and the twin boundary energy is extracted by subtracting the energy of the bulk cell from the corresponding twinned cell and dividing by the twin boundary surface area, taking into account the presence of 2 twin boundaries per cell.\\
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.44]{POSCARbulk_direct_64Recombo.png}
+%\caption{Schematic of the generation of the $\left\{11\bar{2}1\right\}$ twin boundary from the bulk, by applying a twinning shear to one half on the crystal. Not shown is the atomic shuffle, required to restore the crystal structure on one side of the twin boundary plane.}
+%\label{fig:sgentwinpic1}
+%\end{figure}
+%
+%Binary SQS for the defect calculations are generated in the bulk and subsequently, this bulk cell is mapped into the twin configuration according to the procedure described above. The binary SQS are optimized for the bulk cell at different compositions starting at approximately 3 at.\% up to a concentration of 25 at.\% solute, with increments of approximately 3 at.\%. A genetic algorithm (GA) is used for finding the optimized SQS as follows. First, a bulk cell consisting of $N$ atoms is constructed using the lattice vectors defined above for either of the 3 planar faults. Now, any binary alloy for the chosen cell shape can be represented by a chromosome of length $N$ of the form $\left[01101001 \ldots \right]$, where each location $i$ in the chromosome uniquely corresponds to an atomic position in the bulk cell and the value is either 0 or 1, indicating the position $i$ is occupied by either an A or a B-atom, for example Ti or Al in the present case. The objective function to be minimized is the euclidian difference norm between the vector describing the atomic correlation functions of the perfectly random (infinite size) alloy, $\mathbf{x}^{random}$ and the vector describing the correlation functions of the actual supercell with finite size, $\mathbf{x}^{alloy}$. The fitness of any alloy is inversely proportional to $\left\|\mathbf{x}^{random}-\mathbf{x}^{alloy}\right\|$. In this work, atomic correlation functions are computed for pairs up to the 5th nearest neighbor and for all triplets within the 2nd nearest neighbor. In defining the fitness function, weighting factors were applied to the atomic correlation functions such that for example shorter pairs have higher importance than longer pairs and geometric figures with high multiplicity have higher importance than those with lower multiplicity. Several different sets of weights were used and even though different SQS are obtained for each set, we found no large influence on the interface energies. \\
+ %
+%The optimization procedure is started by generating an initial population of 800 randomly generated alloys at a given composition. The selection method used is roulette wheel selection \cite{lipowski2012roulette}, in which selection probability for mating is proportional to the fitness score. Crossover cannot be performed using standard schemes such as 1 or 2-point crossover, since these will change alloy composition during the optimization. Instead, crossover is performed using the edge crossover algorithm, which ensures the composition of the alloys remains constant i.e. the number of 0's and 1's remains unchanged during the optimization process. Further, a 0.5 \% probability of mutation is allowed and the algorithm is run for 1000 generations. \\
+%
+%The methods for constructing binary SQS for the $\left\{11\bar{2}1\right\}$ twin boundary and the surface are rather similar and are based on the same principle that the atomic configuration close to the defect plane should be as random as possible. On the other hand, further away from the defect, the precise atomic arrangement becomes less important. This is because far away from the interface, both the bulk cell and the corresponding defect cell have similar atomic environments and these regions are not expected to contribute to the energy \textit{difference} and hence, not to the planar fault energy. An SQS is created for the $\left\{11\bar{2}1\right\}$ twin boundary as follows. The bulk cell in Fig. \ref{fig:sgentwinpic1} is taken and from this, a supercell is created by doubling one dimension in the twin plane, keeping the long direction normal to the twin plane constant. This doubling is done to minimize spurious correlations accross the periodic boundaries in the 2 short directions in the twin plane of the SQS. This bulk supercell is then used to generate the SQS with the GA described above. Convergence studies have shown that beyond 6 planes from the twin boundary, the solute formation energy is essentially converged to the true bulk value, indicating that the strain fields associated with the twin boundary extend about 6 planes on both sides. \\
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.41]{bulk_twin_alloy_combo.png}
+%\caption{Schematic of the generation of the $\left\{11\bar{2}1\right\}$ twin boundary from the bulk in a concentrated alloy.}
+%\label{fig:sgentwinpic2}
+%\end{figure}
+%
+%This motivates our method for generating SQS in the bulk: after the mapping from bulk to defect cell, one of the twin boundaries will be located as indicated in Fig. \ref{fig:sgentwinpic1}. We cut out a region from the bulk around the middle twin plane, which contains 48 atoms in total. An SQS is optimized for this 48-atom bulk block with periodic boundary conditions. The number of solute atoms is chosen such that it matches the overall concentration of the SQS. This leads to perfectly random point correlations close to the twin boundary. This block is then inserted in the larger 128-atom block in the supercell. Because it is desirable to have 2 identical twin boundaries in the cell, the generated atomic configuration around one twin boundary is translated such that it is identical to the environment at the second twin boundary in the cell. After the deformation mapping, this results in 2 identical twin boundaries. Part of the bulk cell is still further removed than 6 planes from either twin plane and these portions will not contribute much to the defect energy. Solute atoms are randomly distributed in those regions, consistent with the overall concentration of the cell. Fig. \ref{fig:sgentwinpic2} shows schematically how a bulk SQS-concentrated alloy is mapped into the twinned configuration.  \\
+%
+%It is next investigated how well the 128-atom SQS can reproduce twin boundary energies in the nearly random limit of the 1M cells. Fig. \ref{fig:superrandomcells3} shows the variation of the $\left\{11\bar{2}1\right\}$ twin boundary energy for Ti-Al alloys with Al solute composition and the associated errors in the mean for random alloys. For both the SQS and the small random cells, an average was performed over 10 configurations and these results are shown in the figure. \\
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.60]{SQSRandomSuper_new_errorbars_updated.png}
+%\caption{$\left\{11\bar{2}1\right\}$ twin boundary energy in Ti$_{1-x}$Al$_{x}$ alloy supercells: Random-1M, SQS-128 and Random-128, with errorbars. For the small cells, the indicated results are an average over 10 configurations. The line is a guide to the eye.}
+%\label{fig:superrandomcells3}
+%\end{figure}
+%
+%The concentration dependence of the planar defect energies of the $\left\{11\bar{2}1\right\}$ twin boundary is characterized by a dimensionless parameter, defined as $\eta_{\gamma} = \partial \ln \left(\gamma \right) / \partial x$, where the $\gamma$ represents the planar defect energyof the $\left\{11\bar{2}1\right\}$ twin boundary. $x$ denotes the atomic concentration in the Ti$_{1-x}$Al$_{x}$ binary alloy. The results are shown in Table \ref{tab:defect_conc_coeff}. A linear least squares fit was performed through the calculated datapoints and the fit was constructed such that the datapoint for pure Ti is exactly on the curve.
+%
+%Table \ref{tab:defect_conc_coeff} shows that for the $\left\{11\bar{2}1\right\}$ twin boundary, the SQS-128 yield a value for $\eta_{\gamma}$ that is about 15 \% larger in magnitude than the corresponding value for the random-1M cells. However, the random-128 structures give values for $\eta_{\gamma}$ that are about 30 \% larger in magnitude that the random-1M cells and hence we conclude that the SQS provide a significant better description of the concentration dependence of the $\left\{11\bar{2}1\right\}$ twin boundary energy in random alloys than random cells of equal size.
+%Moreover, referring to Fig. \ref{fig:superrandomcells3}, we note that the random-1M twin boundary energy lies within the errorbars calculated for the SQS-128 for all compositions considered in this work. Further, the SQS-128 cells exhibit twin boundary energies that are a few mJ/m$^{2}$ lower than the random-1M over the whole composition range, with the offset getting larger for more concentrated alloys. The random-128 cells show an offset in twin boundary energy relative to the SQS of several mJ/m$^{2}$ over the whole composition range. Interestingly, the error bars of the random-128 cells are such that the random-1M twin boundary energy is never within its range, except fot the lowest concentration of 6.25 at. \% Al. Hence, for the case of the $\left\{11\bar{2}1\right\}$ twin boundary, we conclude that both SQS-128 and random-128 cells are within about 10 mJ/m$^{2}$ of the random-1M cells in terms of twin boundary energy, however the SQS-128 perform systematically better and show errorbars in which the random-1M twin boundary energy is contained, as opposed to the random-128 cells, where this is only the case for the most dilute concentration considered in this work. \\
+%
+%\begin{table*}
+%\caption{\label{tab:defect_conc_coeff} Calculated concentration dependence of the $\left\{11\bar{2}1\right\}$ twin boundary energy, $\eta_{\gamma} = \partial \ln \left(\gamma \right) / \partial x$, for Random-1M, SQS-128 and Random-128 structures.}
+%\begin{ruledtabular}
+%\begin{tabular}{l c c c c}
+ %& &  Random-1M & SQS-128 & Random-128 \\
+%\hline
+%$\left\{11\bar{2}1\right\}$ twin boundary & &  -1.4752 & -1.6999 & -1.9124  \\
+%%USF &  & 0.5691 & 0.5480 & 0.5371 \\\cline{2-5}
+%%$\left\{1\bar{1}00\right\}$ Surface  & $x \approx 0.083$ &  -0.1176 &  -0.1067 & -0.1105 \\
+%%$\left\{1\bar{1}00\right\}$ Surface  & $x \approx 0.195$ &  -0.1879 & -0.2011 & -0.1602 \\
+%\end{tabular}
+%\end{ruledtabular}
+%\end{table*}
+%
+%%\section{Experimental Transmission-Electron-Microscopy Image of Twins in Re and Re-10 at. \% W alloys}
+%
+%
+%%Figure \ref{fig:TEM_Repic1} shows TEM images for pure hcp Re and a Re-10 at.\% W alloy.  The sample preparation and imaging details are described in the Section \ref{subsec:exper}.
+%%
+%%\begin{figure}[h!]
+%%\centering
+%%\includegraphics[scale=1.30]{SM_FIGURE_6.pdf}
+%%\caption{Bright-field TEM images showing twin deformation in a) pure Re and b) Re-10 at. \% W.}
+%%\label{fig:TEM_Repic1}
+%%\end{figure}
+%
+%
+%
+%
+%
+%
+%%\begin{table}[tbh]
+%%\centering
+%%\label{VCAss}
+%%\begin{tabular}{c c c c c c}
+    %%%\hline
+		%%\toprule
+		 %%&  & & Twin Boundary  & &   \\  
+      %%&  $\left\{10\bar{1}1\right\}$ &  $\left\{10\bar{1}2\right\}$ & $\left\{10\bar{1}3\right\}$ & $\left\{11\bar{2}1\right\}$ & $\left\{11\bar{2}2\right\}$  \\ \hline
+     %%Y & x & y & z & x & x\\ 
+     %%Zr & x & y & z & x & x\\ 
+     %%Sc & x &  y & z & x & x \\ 
+     %%Ti & x & y  & z & x & x \\ 
+     %%Hf & x & y  & z & x & x \\ 
+		 %%Co & x & y  & z & x & x \\ 
+		 %%Tc & x & y  & z & x & x \\ 
+		%%Re & x & y  & z & x & x \\ 
+		%%Ru & x & y  & z & x & x \\ 
+     %%Os & x & y & z & x & x \\  \toprule
+%%\end{tabular}
+%%\caption{Calculated twin boundary energies for selected HCP metals (mJ/m$^{2}$).}
+%%\end{table}
+
+
+%\bibliography{refs3}
+
+
+
+\end{document} 
+
