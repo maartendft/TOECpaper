@@ -25,7 +25,7 @@
 
 
 \begin{document}
-\title{\Large Ideal Strength and Intrinsic Ductility in Hexagonal Close Packed Metals From Second and Third Order Elastic Constants}
+\title{\Large Ideal Strength and Intrinsic Ductility in Metals and Alloys From Second and Third Order Elastic Constants}
 %\author{Maarten de Jong, Mark Asta}
 %\affiliation{Department of Materials Science and Engineering, University of California, Berkeley, CA   94720, USA}
 
@@ -39,11 +39,12 @@ Under tensile loading the ideal strength of a solid is governed by mechanical in
 \maketitle
 
 \section{Introduction}
-For a given loading condition, the ideal strength of a crystalline solid forms an upper bound on the mechanical stress that the material can sustain prior to reaching a mechanical instability. The nature of the instability reached at this stress level can provide insights into the intrinsic failure mechanisms for a material.  For example, under tensile loading crack initiation requires that the local normal stress perpendicular to the cleavage plane is equal to or larger than the ideal tensile strength \cite{li2007ideal,clatterbuck2003ideal,kelly1986strong,wang2013estimate}.  However, when a material yields under tensile loading, it is possible for it to fail through a shear instability \cite{PhysRevLett.91.135501,PhysRevLett.112.115503,macmillan1983ideal,roundy2001ideal,wang2009elastic}. The tensile versus shear nature of the mechanical instability realized under tensile loading is of considerable interest as an indicator of whether a material will behave in an intrinsically brittle or ductile manner. For cubic metals, first-principles calculations of ideal strength under tensile loading have revealed shear instabilities for the ductile metals V and Nb, whereas more brittle materials such as W and Mo have been shown to fail in tension \cite{PhysRevLett.112.115503}. Similar studies in alloys \cite{PhysRevLett.82.2713,PhysRevB.87.214203,vsob1997theoretical,PhysRevB.58.6006} have been undertaken recently, yielding insights into compositional effects. For example, it has been shown that BCC-based Mo-alloys can be made intrinsically more ductile by tuning the $d$ band filling through alloying \cite{PhysRevLett.112.115503}.
-
-In this work we consider the deformation behavior of the HCP metals, a class of materials that find use in diverse technological applications, spanning biomedical to automotive and aerospace. These materials can possess attractive properties such as high strength-to-weight ratios, high stiffness and/or high melting temperatures. However applications of these materials is often limited by low ductility, associated with the limited number of active slip systems in the HCP structure. Substantial efforts have been devoted to optimizing the ductility of HCP metals and alloys, for example by alloying and through the control of microstructure. Despite this significant body of work, the fundamental ideal strengths of HCP-metals have been reported for only a few systems \cite{fu2012first}, and no attempts at using the results of such studies to derive insights into the intrinsic ductility of these materials, and how they may be altered through alloying, have been made to the best of our knowledge.
-
-For the HCP metals Be, Mg, Sc, Y, Ti, Zr, Hf, Tc, Re, Ru, Os and Zn, we compute the ideal strength and associated mechanical instabilities under tensile loading along the crystallographic $c$ axis, i.e., perpendicular to the basal plane.  This is a particularly important loading condition for the consideration of the intrinsic ductility of HCP metals, as the basal plane is a typical cleavage plane in these materials \cite{yoo1981slip}, and slip of the dominant $a$-type dislocations does not provide a mechanism for plastic elongation along the $c$ direction. Based on the ideal deformation behavior, each of the HCP metals is characterized as intrinsically brittle or ductile, i.e., as  possessing elastic instabilities that are either tensile or shear in nature, respectively. We further study map out domains of $d$-band filling for HCP transition metals where ductile vs brittle behavior can be expected.  Finally, we provide an analytical formalism which enables the ideal strength and the nature of the intrinsic instability under tensile loading along the $c$ axis to be derived solely from a knowledge of the second and third-order elastic elastic constants.  The analytical model is shown to yield predictions in reasonable agreement with explicit density-functional-theory (DFT) calculations across all of HCP metals considered in this work, with reduced computational cost.
+Intro goes here
+%For a given loading condition, the ideal strength of a crystalline solid forms an upper bound on the mechanical stress that the material can sustain prior to reaching a mechanical instability. The nature of the instability reached at this stress level can provide insights into the intrinsic failure mechanisms for a material.  For example, under tensile loading crack initiation requires that the local normal stress perpendicular to the cleavage plane is equal to or larger than the ideal tensile strength \cite{li2007ideal,clatterbuck2003ideal,kelly1986strong,wang2013estimate}.  However, when a material yields under tensile loading, it is possible for it to fail through a shear instability \cite{PhysRevLett.91.135501,PhysRevLett.112.115503,macmillan1983ideal,roundy2001ideal,wang2009elastic}. The tensile versus shear nature of the mechanical instability realized under tensile loading is of considerable interest as an indicator of whether a material will behave in an intrinsically brittle or ductile manner. For cubic metals, first-principles calculations of ideal strength under tensile loading have revealed shear instabilities for the ductile metals V and Nb, whereas more brittle materials such as W and Mo have been shown to fail in tension \cite{PhysRevLett.112.115503}. Similar studies in alloys \cite{PhysRevLett.82.2713,PhysRevB.87.214203,vsob1997theoretical,PhysRevB.58.6006} have been undertaken recently, yielding insights into compositional effects. For example, it has been shown that BCC-based Mo-alloys can be made intrinsically more ductile by tuning the $d$ band filling through alloying \cite{PhysRevLett.112.115503}.
+%
+%In this work we consider the deformation behavior of the HCP metals, a class of materials that find use in diverse technological applications, spanning biomedical to automotive and aerospace. These materials can possess attractive properties such as high strength-to-weight ratios, high stiffness and/or high melting temperatures. However applications of these materials is often limited by low ductility, associated with the limited number of active slip systems in the HCP structure. Substantial efforts have been devoted to optimizing the ductility of HCP metals and alloys, for example by alloying and through the control of microstructure. Despite this significant body of work, the fundamental ideal strengths of HCP-metals have been reported for only a few systems \cite{fu2012first}, and no attempts at using the results of such studies to derive insights into the intrinsic ductility of these materials, and how they may be altered through alloying, have been made to the best of our knowledge.
+%
+%For the HCP metals Be, Mg, Sc, Y, Ti, Zr, Hf, Tc, Re, Ru, Os and Zn, we compute the ideal strength and associated mechanical instabilities under tensile loading along the crystallographic $c$ axis, i.e., perpendicular to the basal plane.  This is a particularly important loading condition for the consideration of the intrinsic ductility of HCP metals, as the basal plane is a typical cleavage plane in these materials \cite{yoo1981slip}, and slip of the dominant $a$-type dislocations does not provide a mechanism for plastic elongation along the $c$ direction. Based on the ideal deformation behavior, each of the HCP metals is characterized as intrinsically brittle or ductile, i.e., as  possessing elastic instabilities that are either tensile or shear in nature, respectively. We further study map out domains of $d$-band filling for HCP transition metals where ductile vs brittle behavior can be expected.  Finally, we provide an analytical formalism which enables the ideal strength and the nature of the intrinsic instability under tensile loading along the $c$ axis to be derived solely from a knowledge of the second and third-order elastic elastic constants.  The analytical model is shown to yield predictions in reasonable agreement with explicit density-functional-theory (DFT) calculations across all of HCP metals considered in this work, with reduced computational cost.
 
 \section{Methodology}
 \subsection{Derivation of third-order elastic constants for different crystal systems}
@@ -54,8 +55,6 @@ State results for cubic symmetry $C'$ for tension along $c$.
 
 \subsubsection{Hexagonal under uniaxial tension}
 Consider a hexagonal material under a uniaxial tension along the $c$-axis, thus allowing for Poisson contraction in the basal plane. The expressions for the effective SOEC's are then as given in Eqs. \ref{eqn:Cprime_hexagonal}. Note that for this particular deformation mode, the hexagonal symmetry of the material remains intact and hence, the relation $C_{66} = \frac{1}{2} \left(C_{11} - C_{12}\right)$ holds true along the strain path. 
-
-  
 
  \begin{widetext}
 \begin{subequations}
@@ -83,76 +82,81 @@ Consider a hexagonal material under a uniaxial tension along the $c$-axis, thus 
 \subsubsection{Do we want to include other symmetries?}
 
 \subsection{Calculation of second and third-order elastic constants}
-\textbf{MDJ: update this section}
-The previous section has laid out a methodology to study elastic instabilities in HCP materials loaded in tension along the $c$ axis, in terms of SOEC's and TOEC's. In this section, it is shown how these quantities can be calculated in a robust manner.  By applying a set of carefully constructed deformations to a cell, all 10 independent TOEC's can be extracted by fitting the stress components, as calculated from DFT, to the applied strains. The pertinent expressions used in this work are given as follows:
+
+\subsubsection{Cubic symmetry}
+
+
+\subsubsection{Hexagonal symmetry}
+
+Into SM.
 \onecolumngrid
 
-\begin{equation}
-\label{eqn:s1} 
-t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{111}\eta_{1}^2}{2} + C_{11}\eta_{1}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s2} 
-t_{2} \left(\eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_1=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{222}\eta_{2}^2}{2} + C_{11}\eta_{2}
-\end{equation}
-
-
-\begin{equation}
-\label{eqn:s3} 
-t_{3} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3}
-\end{equation}
-
-
-\begin{equation}
-\label{eqn:s4} 
-t_{3} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{13}\eta_{1}
-\end{equation}
-
-
-\begin{equation}
-\label{eqn:s5} 
-t_{1} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{133}\eta_{3}^2}{2} + C_{13}\eta_{3}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s6} 
-t_{2} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s7} 
-t_{4} \left(\eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_1=\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s8} 
-t_{3} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s9} 
-t_{5} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{344}\eta_{3}\eta_{5}
-\end{equation}
-
+%\begin{equation}
+%\label{eqn:s1} 
+%t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{111}\eta_{1}^2}{2} + C_{11}\eta_{1}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:s2} 
+%t_{2} \left(\eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_1=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{222}\eta_{2}^2}{2} + C_{11}\eta_{2}
+%\end{equation}
+%
+%
+%\begin{equation}
+%\label{eqn:s3} 
+%t_{3} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3}
+%\end{equation}
+%
+%
+%\begin{equation}
+%\label{eqn:s4} 
+%t_{3} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{13}\eta_{1}
+%\end{equation}
+%
+%
+%\begin{equation}
+%\label{eqn:s5} 
+%t_{1} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{133}\eta_{3}^2}{2} + C_{13}\eta_{3}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:s6} 
+%t_{2} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:s7} 
+%t_{4} \left(\eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_1=\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:s8} 
+%t_{3} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
+%\end{equation}
+%
 %\begin{equation}
 %\label{eqn:s9} 
-%t_{3} \left(\eta_{3}, \eta_{5}\right) = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
+%t_{5} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{344}\eta_{3}\eta_{5}
 %\end{equation}
-\begin{equation}
-\label{eqn:s10} 
-t_{3} \left(\eta_{1}, \eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{123}\eta_{1}\eta_{2} + C_{13}\eta_{1} +  \frac{C_{113}\eta_{2}^2}{2} + C_{13}\eta_{2}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s11} 
-t_{4} \left(\eta_{1}, \eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4} + C_{144}\eta_{1}\eta_{4}
-\end{equation}
-
-\begin{equation}
-\label{eqn:s12} 
-t_{5} \left(\eta_{1}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{155}\eta_{1}\eta_{5}
-\end{equation}
+%
+%%\begin{equation}
+%%\label{eqn:s9} 
+%%t_{3} \left(\eta_{3}, \eta_{5}\right) = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
+%%\end{equation}
+%\begin{equation}
+%\label{eqn:s10} 
+%t_{3} \left(\eta_{1}, \eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{123}\eta_{1}\eta_{2} + C_{13}\eta_{1} +  \frac{C_{113}\eta_{2}^2}{2} + C_{13}\eta_{2}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:s11} 
+%t_{4} \left(\eta_{1}, \eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4} + C_{144}\eta_{1}\eta_{4}
+%\end{equation}
+%
+%\begin{equation}
+%\label{eqn:s12} 
+%t_{5} \left(\eta_{1}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{155}\eta_{1}\eta_{5}
+%\end{equation}
 
 \twocolumngrid
 
@@ -163,11 +167,11 @@ where the following Voigt-notation is employed: $11 \mapsto 1$, $22 \mapsto 2$, 
 %MDA:  I am really confused by some of these equations.  For example, what is the difference between Eqs. 9 and 10?  I think you mean in one case that only \eta_3 is non-zero, and in the other only \eta_1 is non-zero?  If so, you need to give a more explicit expression such as:
 %t_3(\eta_3) \equiv \rho_0 \eval{\partial{E} \partial{\eta_3}}_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{333}}{2} \eta_3^2 + C_{33} \eta_3 --> OK, I fixed this, it's more explicit now what's being held constant at zero
 
-In the applications of Eqs. \ref{eqn:s1}-\ref{eqn:s12} to determine the SOEC's and TOEC's, strains are applied varying from -6 \% to + 20\%, in steps of 0.5 \%, and the resulting true stresses and Lagrangian stresses are computed from the true stress tensor obtained by DFT \cite{lopuszynski2007ab}.
+%In the applications of Eqs. \ref{eqn:s1}-\ref{eqn:s12} to determine the SOEC's and TOEC's, strains are applied varying from -6 \% to + 20\%, in steps of 0.5 \%, and the resulting true stresses and Lagrangian stresses are computed from the true stress tensor obtained by DFT \cite{lopuszynski2007ab}.
 %MDA:  I wonder if you could elaborate on this point.  Which stress do you get from the VASP stress tensor directly? --> clarified and inserted reference to similar work
-Note that this strain range is considerably larger than what is commonly used for the calculation of the SOEC's. The TOEC's give rise to a nonlinear stress-strain behavior and this effect only becomes apparent at relatively large strains (larger than approximately 10 \% for the materials studied in this work), hence the extended strain range.
+%Note that this strain range is considerably larger than what is commonly used for the calculation of the SOEC's. The TOEC's give rise to a nonlinear stress-strain behavior and this effect only becomes apparent at relatively large strains (larger than approximately 10 \% for the materials studied in this work), hence the extended strain range.
 
-The set of Eqs. \ref{eqn:s1}-\ref{eqn:s12} give rise to an overdetermined system that is solved for the 5 independent SOEC's and 10 independent TOEC's. A pseudo-inverse is employed, calculated from a singular value decomposition. The values of the calculated TOEC's are found in this work to be rather sensitive to the precise strain range that is employed in the fitting, which has been observed also in the literature \cite{wang2009ab,lopuszynski2007ab,wang2012nonlinear}. For the HCP systems studied in this work, the TOEC's converge to a plateau when approximately 11-16 \% maximum strain is used in the fit. Using smaller or larger maximum strains than those corresponding to the plateau can lead to TOEC's differing by up to a factor 5 for the systems studied in this work. For maximum strains within the plateau-region, TOEC's are generally converged to within 25 \% in this work. Consistent with other work in the literature, the location of this plateau dictates which precise strain range is used in the fitting \cite{wang2009ab,wang2012nonlinear}.
+%The set of Eqs. \ref{eqn:s1}-\ref{eqn:s12} give rise to an overdetermined system that is solved for the 5 independent SOEC's and 10 independent TOEC's. A pseudo-inverse is employed, calculated from a singular value decomposition. The values of the calculated TOEC's are found in this work to be rather sensitive to the precise strain range that is employed in the fitting, which has been observed also in the literature \cite{wang2009ab,lopuszynski2007ab,wang2012nonlinear}. For the HCP systems studied in this work, the TOEC's converge to a plateau when approximately 11-16 \% maximum strain is used in the fit. Using smaller or larger maximum strains than those corresponding to the plateau can lead to TOEC's differing by up to a factor 5 for the systems studied in this work. For maximum strains within the plateau-region, TOEC's are generally converged to within 25 \% in this work. Consistent with other work in the literature, the location of this plateau dictates which precise strain range is used in the fitting \cite{wang2009ab,wang2012nonlinear}.
 
 
 

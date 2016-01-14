@@ -1,4 +1,4 @@
-\BOOKMARK [0][-]{section*.2}{Ideal Strength and Intrinsic Ductility in Hexagonal Close Packed Metals From Second and Third Order Elastic Constants}{}% 2
+\BOOKMARK [0][-]{section*.2}{Ideal Strength and Intrinsic Ductility in Metals and Alloys From Second and Third Order Elastic Constants}{}% 2
 \BOOKMARK [1][-]{section*.1}{Abstract}{section*.2}% 1
 \BOOKMARK [1][-]{section*.3}{Introduction}{section*.2}% 3
 \BOOKMARK [1][-]{section*.4}{Methodology}{section*.2}% 4
@@ -7,15 +7,17 @@
 \BOOKMARK [3][-]{section*.7}{Hexagonal under uniaxial tension}{section*.5}% 7
 \BOOKMARK [3][-]{section*.8}{Do we want to include other symmetries?}{section*.5}% 8
 \BOOKMARK [2][-]{section*.9}{Calculation of second and third-order elastic constants}{section*.4}% 9
-\BOOKMARK [2][-]{section*.10}{Wallace formalism and elastic instabilities}{section*.4}% 10
-\BOOKMARK [3][-]{section*.11}{Cubic materials}{section*.10}% 11
-\BOOKMARK [3][-]{section*.12}{Hexagonal materials}{section*.10}% 12
-\BOOKMARK [2][-]{section*.13}{DFT-calculations}{section*.4}% 13
-\BOOKMARK [2][-]{section*.14}{Alloys and SQS generation}{section*.4}% 14
-\BOOKMARK [1][-]{section*.15}{Results and Discussion}{section*.2}% 15
-\BOOKMARK [2][-]{section*.16}{Elastic instabilities in HCP materials: A comparison of direct DFT and analytical model results}{section*.15}% 16
-\BOOKMARK [2][-]{section*.17}{Elastic instabilities and d-band filling}{section*.15}% 17
-\BOOKMARK [1][-]{section*.18}{Summary and Conclusions}{section*.2}% 18
-\BOOKMARK [1][-]{section*.19}{}{section*.2}% 19
-\BOOKMARK [1][-]{section*.20}{}{section*.2}% 20
-\BOOKMARK [1][-]{section*.21}{References}{section*.2}% 21
+\BOOKMARK [3][-]{section*.10}{Cubic symmetry}{section*.9}% 10
+\BOOKMARK [3][-]{section*.11}{Hexagonal symmetry}{section*.9}% 11
+\BOOKMARK [2][-]{section*.12}{Wallace formalism and elastic instabilities}{section*.4}% 12
+\BOOKMARK [3][-]{section*.13}{Cubic materials}{section*.12}% 13
+\BOOKMARK [3][-]{section*.14}{Hexagonal materials}{section*.12}% 14
+\BOOKMARK [2][-]{section*.15}{DFT-calculations}{section*.4}% 15
+\BOOKMARK [2][-]{section*.16}{Alloys and SQS generation}{section*.4}% 16
+\BOOKMARK [1][-]{section*.17}{Results and Discussion}{section*.2}% 17
+\BOOKMARK [2][-]{section*.18}{Elastic instabilities in HCP materials: A comparison of direct DFT and analytical model results}{section*.17}% 18
+\BOOKMARK [2][-]{section*.19}{Elastic instabilities and d-band filling}{section*.17}% 19
+\BOOKMARK [1][-]{section*.20}{Summary and Conclusions}{section*.2}% 20
+\BOOKMARK [1][-]{section*.21}{}{section*.2}% 21
+\BOOKMARK [1][-]{section*.22}{}{section*.2}% 22
+\BOOKMARK [1][-]{section*.23}{References}{section*.2}% 23
