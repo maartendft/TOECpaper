@@ -155,7 +155,9 @@ For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient a
 \end{subequations}
 
 \section{Details of calculating TOEC's}
-In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. We also provide the form of the deformation gradients that give rise to desired Green-Lagrange strain tensors that are required for the calculation of specific (linear combinations) of SOEC's and TOEC's. The terms $\delta$ appearing in the deformation gradients represent distortions applied to the crystal. Note that the deformation gradients have to be carefully constructed as to leave only the desired (non-zero) elements in the resulting Green-Lagrange strain tensor.
+In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. It relates the Lagrangian stresses $t_{ij}$ to the strain energy $E$ and the Green-Lagrange stresses $\eta_{ij}$. Eq. \ref{eqn:SM-conversion1} provides the formalism to convert between the Lagrangian stress tensor $t$ and the true (or linear) stress tensor $\sigma$, the latter which is calculated directly from DFT. For small strains, typically the approximation $\bm{\sigma} \approx \bm{t}$ is valid and no conversion is performed. However, the strains considered in this work are large enough that this approximation does not hold true anymore. \\
+
+We also provide the form of the deformation gradients that give rise to desired Green-Lagrange strain tensors that are required for the calculation of specific (linear combinations) of SOEC's and TOEC's. The terms $\delta$ appearing in the deformation gradients represent distortions applied to the crystal. Note that the deformation gradients have to be carefully constructed as to leave only the desired (non-zero) elements in the resulting Green-Lagrange strain tensor.
 
 \begin{equation}
 \label{eqn:SM-GL1} 
@@ -165,6 +167,11 @@ In this section, we consider again a deformation gradient $\mathbf{F}$, which le
 \begin{equation}
 \label{eqn:SM-stressexpansion1} 
 t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
+\end{equation}
+
+\begin{equation}
+\label{eqn:SM-conversion1} 
+\bm{t} = \|\bm{F}\| \bm{F}^{-1} \bm{\sigma} \bm{F}^{-T}
 \end{equation}
 
 \subsection{Cubic symmetry}
@@ -183,7 +190,7 @@ t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
 \begin{equation}
 \label{eqn:SM-hexs2}
   \left.\begin{aligned}
-        t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}\\
+        t_{2} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}\\
         \bm{F}&=\begin{bmatrix} 1+\delta & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
        \end{aligned}
 			\right\}
@@ -233,7 +240,7 @@ t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
 \label{eqn:SM-hexs7}
   \left.\begin{aligned}
         t_{4} \left(\eta_{4}, \eta_{5}, \eta_{6} \right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\substack{\eta_1=\eta_2=\eta_3=0 \\ \eta_{4}=\eta_{5}=\eta_{6}}} = C_{44} \eta_{4} + C_{456}\eta_{5}\eta_{6} \\
-        \bm{F}&=\begin{bmatrix} \sqrt{1-\delta^{2}} & \delta & \delta \\ \delta & \sqrt{1-\delta^{2}} & \delta \\ \delta & \delta & \sqrt{1-\delta^{2}} \end{bmatrix}
+        \bm{F}&=\begin{bmatrix} \sqrt{1-2\delta^{2}} & \delta & \delta \\ \delta & \sqrt{1-2\delta^{2}} & \delta \\ \delta & \delta & \sqrt{1-2\delta^{2}} \end{bmatrix}
        \end{aligned}
 			\right\}
 \end{equation}
