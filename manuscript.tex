@@ -89,76 +89,10 @@ Consider a hexagonal material under a uniaxial tension along the $c$-axis, thus 
 \subsubsection{Hexagonal symmetry}
 
 Into SM.
-\onecolumngrid
-
-%\begin{equation}
-%\label{eqn:s1} 
-%t_{1} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{111}\eta_{1}^2}{2} + C_{11}\eta_{1}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s2} 
-%t_{2} \left(\eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_1=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{222}\eta_{2}^2}{2} + C_{11}\eta_{2}
-%\end{equation}
+%\onecolumngrid
 %
 %
-%\begin{equation}
-%\label{eqn:s3} 
-%t_{3} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3}
-%\end{equation}
-%
-%
-%\begin{equation}
-%\label{eqn:s4} 
-%t_{3} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{13}\eta_{1}
-%\end{equation}
-%
-%
-%\begin{equation}
-%\label{eqn:s5} 
-%t_{1} \left(\eta_{3}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{1}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_5=\eta_6=0} = \frac{C_{133}\eta_{3}^2}{2} + C_{13}\eta_{3}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s6} 
-%t_{2} \left(\eta_{1}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{2}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{112}\eta_{1}^2}{2} + C_{12}\eta_{1}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s7} 
-%t_{4} \left(\eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_1=\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s8} 
-%t_{3} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s9} 
-%t_{5} \left(\eta_{3}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_1=\eta_2=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{344}\eta_{3}\eta_{5}
-%\end{equation}
-%
-%%\begin{equation}
-%%\label{eqn:s9} 
-%%t_{3} \left(\eta_{3}, \eta_{5}\right) = \frac{C_{333}\eta_{3}^2}{2} + C_{33}\eta_{3} + \frac{C_{344}\eta_{5}^2}{2}
-%%\end{equation}
-%\begin{equation}
-%\label{eqn:s10} 
-%t_{3} \left(\eta_{1}, \eta_{2}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{3}}\Bigr|_{\eta_3=\eta_4=\eta_5=\eta_6=0} = \frac{C_{113}\eta_{1}^2}{2} + C_{123}\eta_{1}\eta_{2} + C_{13}\eta_{1} +  \frac{C_{113}\eta_{2}^2}{2} + C_{13}\eta_{2}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s11} 
-%t_{4} \left(\eta_{1}, \eta_{4}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{4}}\Bigr|_{\eta_2=\eta_3=\eta_5=\eta_6=0} = C_{44}\eta_{4} + C_{144}\eta_{1}\eta_{4}
-%\end{equation}
-%
-%\begin{equation}
-%\label{eqn:s12} 
-%t_{5} \left(\eta_{1}, \eta_{5}\right) = \rho_{0} \frac{\partial E}{\partial \eta_{5}}\Bigr|_{\eta_2=\eta_3=\eta_4=\eta_6=0} = C_{44}\eta_{5} + C_{155}\eta_{1}\eta_{5}
-%\end{equation}
-
-\twocolumngrid
+%\twocolumngrid
 
 
 where the following Voigt-notation is employed: $11 \mapsto 1$, $22 \mapsto 2$, $33 \mapsto 3$, $23 \mapsto 4$, $13 \mapsto 5$, $12 \mapsto 6$.  In Eqs. \ref{eqn:s1}-\ref{eqn:s12}, $t_{i}$ denotes components of the Lagragian stress tensor, defined in terms of the true stress tensor components $\sigma_{i}$ as given in Appendix B, $\rho_0$ is the mass density in the undeformed state, and $E$ denotes the strain energy per unit mass \cite{lopuszynski2007ab}.
@@ -221,19 +155,21 @@ With increasing tensile stress, if $\lambda_{1}$ becomes negative before $\lambd
 
 The eigenvalues given in Eq.~\ref{eqn:Wallace3} and \ref{eqn:Wallace4} contain the elastic constants of the crystal in its deformed state. These can be obtained in principle by calculating the elastic tensor from DFT as a function of applied stress. However, this is a computationally expensive procedure that does not lead to a clear physical understanding of the underlying physics underlying the elastic instabilities. Alternatively, the elastic constants in the deformed configuration, $C_{ij}'$, can also be approximated from the third order elastic constants (TOEC's) and the standard second order elastic constants at zero stress (SOEC's).
 %For small strains, the elastic constants can be approximated to be constant as a function of strain, i.e. $C_{ij} = C_{ij}'$. However, elastic instabilities typically occur for strains of over 10 \% (with some exceptions, such as Nb) and hence, the elastic constants in the strained configuration will deviate significantly from those in the zero strain-configuration, i.e. $C_{ij} \neq C_{ij}'$.
-The TOEC's dictate how the elastic constants $C_{ij}'$ evolve as a function of the imposed strain. Let $\xi = \eta_{33}$ represent the (imposed) tensile strain along the $c$-axis of an HCP-materials and let $\eta = \eta_{11} = \eta_{22}$ be the resulting strain in the basal plane (usually contraction in accordance with a positive Poisson's ratio) corresponding to zero normal stress in these directions. For this strain state, the expressions for $C_{11}'$, $C_{12}'$, $C_{13}'$, $C_{33}'$ and $C_{44}'$ are given as follows \ref{eqn:Cprime} \cite{rao1969third,rao1974anderson}:
- \begin{widetext}
-\begin{subequations}
-\label{eqn:Cprime} 
-\begin{align}
-        C_{11}' &=C_{11} + \eta \left(4 C_{11} + 2C_{12} + C_{111} + C_{112}\right) + \xi \left(-C_{11} + 2C_{13} + C_{113}\right),\\
-        C_{12}' &=C_{12} + \eta \left(C_{111} + 2C_{112} - C_{222} + 2C_{12}\right) + \xi \left(-C_{12} + C_{123}\right),\\
-				C_{13}' &=C_{13} + \eta \left(C_{113} + C_{123} \right) + \xi \left(C_{13} + C_{133}\right),\\
-				C_{33}' &=C_{33} + \eta \left(4C_{13} - 2C_{33} + 2C_{133} \right) + \xi \left(5C_{33} + C_{333}\right),\\
-				C_{44}' &=C_{44} + \eta \left(\frac{1}{2} C_{11} + \frac{1}{2} C_{12} + C_{13} + C_{144} + C_{155} \right) + \xi \left(\frac{1}{2} C_{13} + \frac{1}{2} C_{33} + C_{44} + C_{344}\right)
-\end{align}
-\end{subequations}
-\end{widetext}
+
+
+%The TOEC's dictate how the elastic constants $C_{ij}'$ evolve as a function of the imposed strain. Let $\xi = \eta_{33}$ represent the (imposed) tensile strain along the $c$-axis of an HCP-materials and let $\eta = \eta_{11} = \eta_{22}$ be the resulting strain in the basal plane (usually contraction in accordance with a positive Poisson's ratio) corresponding to zero normal stress in these directions. For this strain state, the expressions for $C_{11}'$, $C_{12}'$, $C_{13}'$, $C_{33}'$ and $C_{44}'$ are given as follows \ref{eqn:Cprime} \cite{rao1969third,rao1974anderson}:
+ %\begin{widetext}
+%\begin{subequations}
+%\label{eqn:Cprime} 
+%\begin{align}
+        %C_{11}' &=C_{11} + \eta \left(4 C_{11} + 2C_{12} + C_{111} + C_{112}\right) + \xi \left(-C_{11} + 2C_{13} + C_{113}\right),\\
+        %C_{12}' &=C_{12} + \eta \left(C_{111} + 2C_{112} - C_{222} + 2C_{12}\right) + \xi \left(-C_{12} + C_{123}\right),\\
+				%C_{13}' &=C_{13} + \eta \left(C_{113} + C_{123} \right) + \xi \left(C_{13} + C_{133}\right),\\
+				%C_{33}' &=C_{33} + \eta \left(4C_{13} - 2C_{33} + 2C_{133} \right) + \xi \left(5C_{33} + C_{333}\right),\\
+				%C_{44}' &=C_{44} + \eta \left(\frac{1}{2} C_{11} + \frac{1}{2} C_{12} + C_{13} + C_{144} + C_{155} \right) + \xi \left(\frac{1}{2} C_{13} + \frac{1}{2} C_{33} + C_{44} + C_{344}\right)
+%\end{align}
+%\end{subequations}
+%\end{widetext}
 where the terms $C_{ijk}$ denote the 10 independent TOEC's for the HCP-materials studied in this work \cite{hearmon1953third,rose1968higher,fumi1951third,fumi1952third}. We now proceed by eliminating $\eta$ from Eqs. \ref{eqn:Cprime} by expressing it in terms of $\xi$.  As shown in Appendix A, from a third-order expansion of the energy versus strain, it can be derived that this value of $\eta=\bar{\eta}$ for a given $\xi$ can be obtained from the solution to the following equation:
 \begin{widetext}
 \begin{equation}
@@ -290,6 +226,40 @@ Results are shown in Table \ref{tab:Re_properties_total}. The analytical model p
     %\hline
   %\end{tabular}  
 %\end{table}
+
+
+\begin{table*}
+\caption{\label{tab:cubic_properties_total} Calculated SOEC's, TOEC's and ideal-failure characteristics for selected cubic metals and alloys (SQS). Failure modes are characterized as either shear (S) or tension (T).}
+\begin{ruledtabular}
+\begin{tabular}{l l l l l l l l}
+ & Mo & Nb & Mo-12.5\% Nb & Mo-18.75\% Nb & Mo-25\% Nb & Mo-31.25\% Nb & Mo-37.5\% Nb  \\
+\hline
+\textbf{SOEC's} (GPa) & & & & & & & \\
+$C_{11}$ & x & x & x & x & x & x & x \\
+$C_{12}$ & x & x & x & x & x & x & x \\
+$C_{44}$ & x & x & x & x & x & x & x \\
+\hline
+\textbf{TOEC's} (GPa) & & & & & & & \\
+$C_{111}$ & x & x & x & x & x & x & x \\
+$C_{112}$ & x & x & x & x & x & x & x \\
+$C_{123}$ & x & x & x & x & x & x & x \\
+$C_{144}$ & x & x & x & x & x & x & x \\
+$C_{155}$ & x & x & x & x & x & x & x \\
+$C_{456}$ & x & x & x & x & x & x & x \\
+\hline
+%\textbf{Failure characteristics} & & & & & & & & & & & & \\
+%$\bar{\xi}$ (direct DFT) & 0.22 & 0.20 & 0.19 & 0.14 & 0.19 & 0.18 & 0.19 & 0.15 & 0.15 &  0.12 & 0.22 & 0.17 \\
+%$\bar{\xi}$ (analytical) & 0.30 & 0.26 & 0.24 & 0.20 & 0.15 & 0.19 & 0.24 & 0.18 & 0.19 &  0.13 & 0.24 & 0.16 \\
+%$\sigma_{id}$ (GPa) (direct DFT) & 13 & 9 & 15 & 12 & 11 & 44 & 54 & 48 & 62 & 5 & 6 & 24 \\
+%$\sigma_{id}$ (GPa) (analytical) & 11 & 8 & 13 & 10 & 8  & 36 & 44 & 33 & 42 & 3 & 5 & 20 \\
+%Failure mode & S & S & S & S & S & S & S & T & T & T & T & T \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+
+
+
 
 \begin{table*}
 \caption{\label{tab:Re_properties_total} Calculated SOEC's, TOEC's and ideal-failure characteristics for 12 HCP metals. Failure modes are characterized as either shear (S) or tension (T).}

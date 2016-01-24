@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{23}%
+\begin{thebibliography}{21}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -93,20 +93,6 @@
   {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo
   {volume} {52}},\ \bibinfo {pages} {12627} (\bibinfo {year}
   {1995})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rao}\ and\ \citenamefont
-  {Srinivasan}(1969)}]{rao1969third}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~R.}\ \bibnamefont
-  {Rao}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Srinivasan}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {physica status solidi (b)}\ }\textbf {\bibinfo {volume} {31}},\ \bibinfo
-  {pages} {K39} (\bibinfo {year} {1969})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rao}(1974)}]{rao1974anderson}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~R.}\ \bibnamefont
-  {Rao}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical
-  Review B}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {4173}
-  (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hearmon}(1953)}]{hearmon1953third}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
