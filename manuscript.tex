@@ -210,7 +210,6 @@ Describe SQS procedure here, also rationale for looking at Mo-Nb.
 In this section, results for HCP Be, Mg, Sc, Y, Ti, Zr, Hf, Tc, Re, Ru, Os and Zn are presented. Lattice stabilities are calculated as a function of the strain $\eta_{33}$ along the $c$ axis, and the failure modes are determined. This results in a categorization of the HCP metals considered into two classes: those that fail in shear (intrinsically ductile) or in tension (intrinsically brittle) for this loading condition. Further, the effect of $d$-band filling is studied on the failure modes for the HCP transition metals, leading to guidelines for the compositions where their solid solutions are expected to be intrinsically brittle or ductile for tensile loading along $c$.
 
 \subsection{Elastic instabilities in HCP materials: A comparison of direct DFT and analytical model results}
-%MDA:  You have so much more data to present here, and you should do it to maximize citation potential.  You should report your values of second and third order elastic constants, and you should report your values of ideal strength (i.e., stress at failure) for each of the metals in table I, computed by both the analytical and direct methods.
 The Wallace-tensor (see Eq. \ref{eqn:Wallace2}) can be approximated from the above formalism by means of the SOEC's and TOEC's. However, it also can be calculated explicitly from DFT for each strain along the $c$-deformation path. This direct DFT approach is expensive since for every strain along the $c$-axis, a structural relaxation of the lattice vectors in the basal plane, and the atomic coordinates, must be performed to give zero shear stresses, zero normal stresses within the basal plane, and zero forces. Further, a calculation of the elastic constants in the deformed configuration, $C_{ijkl}'$, is required for each such relaxed strained configuration, which further increases the computational cost.  Such a direct approach to calculating the Wallace tensor and lattice instabilties is in principle more accurate than the analytical formalism based on the SOEC's and TOEC's, since it does not require the evaluation of the TOEC's and hence mitigates some of its associated inaccuracies. In this section, we present results based on both methods to compare the accuracy of the approaches.
 
 Results are shown in Table \ref{tab:Re_properties_total}. The analytical model predicts the ideal failure mode (either shear or tensile failure) correctly for the 10 transition metals considered, as well as Zn, Cd, Be and Mg.  Further, the critical $c$-axis strain ($\bar{\xi}$) at which an elastic instability first occurs is predicted to within an accuracy of approximately 4 \%. The differences in $\bar{\xi}$ calculated directly from DFT and from the analytical model can be attributed to two main factors. First, the calculation of TOEC's from DFT is prone to numerical errors, which will propagate through in the evaluation of $\bar{\xi}$. Second, in this work the strain energy is only expanded up to the third order in the strains. As strains increase, fourth-order terms would have to be included to increase numerical accuracy. Given the computational cost required to achieve numerically stable values of these higher-order elastic constants, the inclusion of these terms in the analytical models were not pursued in this work. We note that the discrepancies between the ideal strength predicted according to DFT and the analytical model are in reasonable agreement, with maximum errors comprising 50 \%, in particular for the transition metals near half $d$-band filling. The possible explanation for this is again that for relatively large strains, higher-order elastic constants would have to be included in the model.
@@ -248,17 +247,17 @@ Results are shown in Table \ref{tab:Re_properties_total}. The analytical model p
  & Mo & Nb & Mo-12.5\% Nb & Mo-18.75\% Nb & Mo-25\% Nb & Mo-31.25\% Nb & Mo-37.5\% Nb  \\
 \hline
 \textbf{SOEC's} (GPa) & & & & & & & \\
-$C_{11}$ & x & x & x & x & x & x & x \\
-$C_{12}$ & x & x & x & x & x & x & x \\
-$C_{44}$ & x & x & x & x & x & x & x \\
+$C_{11}$ & 476 & 237 & x & x & x & x & x \\
+$C_{12}$ & 166 & 137 & x & x & x & x & x \\
+$C_{44}$ & 110 & 14 & x & x & x & x & x \\
 \hline
 \textbf{TOEC's} (GPa) & & & & & & & \\
-$C_{111}$ & x & x & x & x & x & x & x \\
-$C_{112}$ & x & x & x & x & x & x & x \\
-$C_{123}$ & x & x & x & x & x & x & x \\
-$C_{144}$ & x & x & x & x & x & x & x \\
-$C_{155}$ & x & x & x & x & x & x & x \\
-$C_{456}$ & x & x & x & x & x & x & x \\
+$C_{111}$ & -3205 & -1308 & x & x & x & x & x \\
+$C_{112}$ & -463 & -472 & x & x & x & x & x \\
+$C_{123}$ & -246 & 3.7 & x & x & x & x & x \\
+$C_{144}$ & -485 & -13 & x & x & x & x & x \\
+$C_{155}$ & -492 & 97 & x & x & x & x & x \\
+$C_{456}$ & -469 & 238 & x & x & x & x & x \\
 \hline
 %\textbf{Failure characteristics} & & & & & & & & & & & & \\
 %$\bar{\xi}$ (direct DFT) & 0.22 & 0.20 & 0.19 & 0.14 & 0.19 & 0.18 & 0.19 & 0.15 & 0.15 &  0.12 & 0.22 & 0.17 \\

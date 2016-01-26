@@ -6,8 +6,11 @@ s1 = 2;
 %%
 % deformation mode 1, t_1
 figure(1)
+hold on
 plot(D1_Mo(:,1), D1_Mo(:,2), '.')
 f1 = polyfit(D1_Mo(s1:end,1), D1_Mo(s1:end,2)/10, 2);
+plot(D1_Mo(:,1), 10*polyval(f1, D1_Mo(:,1)))
+
 C11 = f1(2);
 C111 = f1(1)*2;
 C11
@@ -30,8 +33,8 @@ C112
 figure(3)
 plot(D2_Mo(:,1), D2_Mo(:,2)/10, '.')
 f3 = polyfit(D2_Mo(s1:end,1), D2_Mo(s1:end,2)/10, 2);
-f3;
-C12 = f3(2)/2
+f3
+% C12 = f3(2)/2
 C123 = f3(1)-C112
 
 
@@ -52,7 +55,7 @@ plot(D4_Mo(:,1), D4_Mo(:,2)/10, '.')
 f5 = polyfit(D4_Mo(s1:end,1), D4_Mo(s1:end,2)/10, 2);
 f5
 
-C44 = f5(2)/2
+% C44 = f5(2)/2
 C144 = f5(1)/2
 
 %%
@@ -63,7 +66,7 @@ plot(D5_Mo(:,1), D5_Mo(:,2)/10, '.')
 f6 = polyfit(D5_Mo(s1:end-3,1), D5_Mo(s1:end-3,2)/10, 2);
 f6
 
-C44 = f6(2)/2
+% C44 = f6(2)/2
 C155 = f6(1)/2
 
 
