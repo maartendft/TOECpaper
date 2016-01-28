@@ -14,7 +14,7 @@ C11 = f1(2);
 C111 = f1(1)*2;
 C11
 C111
-
+print -dpng -r400 pic1
 
 %%
 % deformation mode 1, t_2
@@ -30,7 +30,7 @@ C12 = f2(2);
 C112 = f2(1)*2;
 C12
 C112
-
+print -dpng -r400 pic2
 
 %%
 % deformation mode 2, t_1
@@ -45,7 +45,7 @@ ylabel('t_1')
 f3
 % C12 = f3(2)/2
 C123 = f3(1)-C112
-
+print -dpng -r400 pic3
 
 %%
 % deformation mode 3, t_4
@@ -56,7 +56,7 @@ xlabel('\eta_4')
 ylabel('t_4')
 f4;
 C44 = f4(1)/2
-
+print -dpng -r400 pic4
 
 %%
 % deformation mode 4, t_4
@@ -71,7 +71,7 @@ f5
 
 f5(2)/2
 C144 = f5(1)/2
-
+print -dpng -r400 pic5
 %%
 % deformation mode 5, t_5
 figure(6)
@@ -86,7 +86,7 @@ f6
 
 f6(2)/2
 C155 = f6(1)/2
-
+print -dpng -r400 pic6
 
 %%
 % deformation mode 6, t_4
@@ -102,7 +102,7 @@ f7
 
 f7(2)/2
 C456 = f7(1)/4
-
+print -dpng -r400 pic7
 
 
 
