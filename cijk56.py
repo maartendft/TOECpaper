@@ -8,18 +8,11 @@ import matplotlib.pyplot as plt
 import elastic_interface as elast
 
 #### INPUTS ####
-# emax:     maximum strain applied 
-# nstrain:  number of strains applied for a given strain state
-# runjob:   'y' means that jobs will be submitted to the queue automatically as the POSCARs are produced
-# param:    0 for analysis 1 for production
-# timer:    amount of time between each job submission
-# symon:    'y' if symmetry is applied to the elastic constants 'n' if no symmetry is applied
-# gen:      The generators of the point group.  This is only important if symon is 'y'
 ## NOTES:
-# nstrain must be odd
+# nstrain must be an even
 
-emax    = 0.04
-nstrain = 7
+emax    = 0.05
+nstrain = 9
 runjob  = 'y'
 param   = 0
 timer   = 2
@@ -71,6 +64,7 @@ MI      = np.genfromtxt('MI.csv',delimiter=',')
 M2I     = np.genfromtxt('M2I.csv',delimiter=',')
 count   = 0
 if param == 0:
+
 
         # determine all symmetry elements associated with the point group
         A       = elast.makegroup(gen)
@@ -135,6 +129,35 @@ if param == 0:
 
         f.close()
 
+        # symmetrize SOEC
+        c4s     = np.zeros((3, 3, 3, 3))
+        for a in xrange(ngroup):
+          for i in xrange(3):
+            for j in xrange(3):
+              for k in xrange(3):
+                for l in xrange(3):
+                  for m in xrange(3):
+                    for n in xrange(3):
+                      for p in xrange(3):
+                        for q in xrange(3):
+                          u1            = elast.idx(m,n)
+                          u2            = elast.idx(p,q)
+                          c4s[i,j,k,l]  = c4s[i,j,k,l] + A[a][i,m]*A[a][j,n]*A[a][k,p]*A[a][l,q]*Cij[u1,u2]
+
+        c4s     = c4s / ngroup
+        c2s     = np.zeros((6,6))
+        for i in xrange(3):
+          for j in xrange(3):
+            for k in xrange(3):
+              for l in xrange(3):
+                p       = elast.idx(i,j)
+                q       = elast.idx(k,l)
+                c2s[p,q]= c4s[i,j,k,l]
+
+        f       = open('SYMMETRIC_CIJ','w')
+        for i in xrange(6):
+                f.write('{0:5f}   {1:5f}   {2:5f}   {3:5f}   {4:5f}   {5:5f}\n'.format(c2s[i,0], c2s[i,1], c2s[i,2], c2s[i,3], c2s[i,4], c2s[i,5]))
+        f.close()
         print 'SOEC DONE'
 
         # calculate the TOEC
@@ -150,6 +173,7 @@ if param == 0:
                                 f.write('c' + str(i+1) + str(j+1) + str(k+1) + ' = {0:9f}\n'.format(c3vec[count]))
                                 count   = count + 1
         f.close()
+
 
         if symon[0] == 'y' or symon[0] == 'Y':
                 # write the TOEC in voigt notation
@@ -209,6 +233,8 @@ if param == 0:
                                         f.write('c' + str(i+1) + str(j+1) + str(k+1) + ' = {0:9f}\n'.format(c6s[i,j,k]))
 
                 f.close()
+
+
 plt.show()
 #### APPLY STRAINS ####
 if param == 1:
@@ -252,4 +278,5 @@ if param == 1:
                                 os.chdir('../')
                         os.chdir('../')
                 os.chdir('../')
+
 
