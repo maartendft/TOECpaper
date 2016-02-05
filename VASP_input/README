@@ -1,0 +1,31 @@
+** PREVIOUS CALCULATIONS **
+- Settings used by Maarten
+- INCAR_relax_unit_cells: was used for relaxation of BCC (elemental) Mo and Nb and for B2 MoNb
+- KPOINTS_relax_unit_cells: was used for relaxation of BCC (elemental) Mo and Nb and for B2 MoNb
+- POTCAR_Mo and POTCAR_Nb: were used for all calculations
+- KPOINTS_relax_SQS: was used for relaxation of the SQS
+- Note: SQS were fully relaxed with the constraint to remain cubic. 
+  In this way, I got all stresses down to below 1kB and all forces < 0.005 eV/atom. 
+  So, technically, not a full relaxation but close enough.
+
+** FUTURE TOEC CALCULATIONS Mo AND Nb **
+- (Applicable to Ian and Maarten) 
+- POSCAR_Mo_relaxed and POSCAR_Nb_relaxed: suggested starting configurations for TOEC calculations for BCC unit cells Mo and Nb
+- INCAR_unit_cells_TOEC: suggested INCAR for TOEC calculations on BCC unit cells Mo and Nb
+- KPOINTS_relax_unit_cells: suggested KPOINTS for TOEC calculations on BCC unit cells Mo and Nb
+- POTCAR_Mo and POTCAR_Nb: suggested pseudopotentials for TOEC calculations on BCC unit cells Mo and Nb (same as above)
+
+** FUTURE TOEC CALCULATIONS ON B2 Mo-Nb **
+- (Only applicable to Maarten) 
+- POSCAR_MoNb_B2_relaxed: suggested starting configuration for TOEC calculations on B2 MoNb
+- INCAR_unit_cells_TOEC: suggested INCAR for TOEC calculations on B2 MoNb
+- KPOINTS_relax_unit_cells: suggested KPOINTS for TOEC calculations on B2 MoNb
+- POTCAR_Mo and POTCAR_Nb: suggested pseudopotentials for TOEC calculations on B2 MoNb (same as above)
+
+** FUTURE TOEC CALCULATIONS ON Mo-Nb SQS **
+- (Applicable to Ian and Maarten)
+- Suggestion: 2-step process
+	1) After straining the SQS, first relax ions with INCAR_relax_SQS_TOEC and KPOINTS_relax_SQS_TOEC_1 (coarse kpoint mesh)
+	2) Once step 1) is done, copy CONTCAR to POSCAR and finish ionic relaxation and stress calculation for SQS with 
+	   INCAR_relax_SQS_TOEC and KPOINTS_relax_SQS_TOEC_2 (fine kpoint mesh)
+- POTCAR_Mo and POTCAR_Nb: suggested pseudopotentials for TOEC calculations on SQS (same as above)
