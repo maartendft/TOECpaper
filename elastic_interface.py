@@ -77,14 +77,11 @@ def writepos(F):
         if len(lines[5]) == 1:
             ntot = int(lines[5][0])
             ntype = 1
-            atype = np.ones(ntot)
         elif len(lines[5]) == 2:
             ntot1 = int(lines[5][0])
             ntot2 = int(lines[5][1])
             ntot  = ntot1 + ntot2
             ntype = 2
-            atype = np.ones(ntot)
-            atype[ntot1-1:] = 2*np.ones(ntot2)
         else:
             print "There are more than 2 types.  The script needs to be edited"
 
