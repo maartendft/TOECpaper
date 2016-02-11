@@ -68,13 +68,53 @@ Based on this description, a deformation gradient is formulated as in Eq. \ref{e
 \bm{\eta} = \frac{1}{2} \left(\bm{F}^{T} \bm{F} - \bm{I} \right)
 \end{equation}
 
-With the notation now established, the strain energy density can be expanded in terms of the second-order elastic constants (SOEC's), third-order elastic constants (TOEC's) and the Green-Lagrange strain  as in Eq. \ref{eqn:expansion1}, where $\rho_{0}$ represents the mass density in the undeformed state and the terms $\eta_{i}$ represent the components of the tensor defined in Eq. \ref{eqn:GL1}. The symmetry of the SOEC's and TOEC's will be applied in the expansions, which simplifies the resulting expressions considerably.
+With the notation now established, the strain energy density $E$ (per unit mass) can be expanded in terms of the second-order elastic constants (SOEC's), $C_{ij}$, third-order elastic constants (TOEC's), $C_{ijk}$, and the Green-Lagrange strain, $\bm{\eta}$,  as in Eq. \ref{eqn:expansion1}, where $\rho_{0}$ represents the mass density in the undeformed state and the terms $\eta_{i}$ represent the components of the tensor defined in Eq. \ref{eqn:GL1}. The symmetry of the SOEC's and TOEC's will be applied in the expansions, which simplifies the resulting expressions considerably. Note that in Eq. \ref{eqn:expansion1}, the Voigt notation $\eta_{11} \mapsto \eta_{1}$, $\eta_{22} \mapsto \eta_{2}$, $\eta_{33} \mapsto \eta_{3}$, $\eta_{23} \mapsto \eta_{4}/2$, $\eta_{13} \mapsto \eta_{5}/2$, $\eta_{12} \mapsto \eta_{6}/2$ has been applied.
+
 \begin{equation}
 \label{eqn:expansion1} 
 \rho_{0} E \left(\bm{\eta}\right) = \frac{1}{2!} \sum_{i,j=1}^{6} C_{ij} \eta_{i} \eta_{j} + \frac{1}{3!} \sum_{i,j,k=1}^{6} C_{ijk} \eta_{i} \eta_{j} \eta_{k} + \ldots
 \end{equation}
+In this work, strain control is assumed and the crystals are loaded uniaxially along the $c$-axis. All other degrees of freedom are allowed to relax to zero stress by means of Poisson contraction. The imposed strain components along $c$ is denoted by $\xi$ in this work and the resulting equilibrium strain along the $a$ and $b$ directions is $\eta_{1} = \eta_{2} = \bar{\eta}$. The deformation gradient $\bm{F}$ and the corresponding Green Lagrange strain tensor $\bm{E}$ that pertain to this loading situation are presented in Eqs. \ref{eqn:SM-section1-eqF} and \ref{eqn:SM-section1-eqE}.  
 
-In this section, it is assumed that strain control is applied along the $c$-axis of the crystal. To make this more explicit, we employ the notation $\xi = \eta_{3}$ in the following sections.
+\begin{equation}
+\label{eqn:SM-section1-eqF}
+  \begin{aligned}
+        \bm{F}&=\begin{bmatrix} \sqrt{2\bar{\eta}+1} & 0 & 0 \\ 0 & \sqrt{2\bar{\eta}+1} & 0 \\ 0 & 0 & \sqrt{2\xi+1} \end{bmatrix}
+       \end{aligned}
+\end{equation} 
+
+\begin{equation}
+\label{eqn:SM-section1-eqE}
+  \begin{aligned}
+        \bm{E}&=\begin{bmatrix} \bar{\eta} & 0 & 0 \\ 0 & \bar{\eta} & 0 \\ 0 & 0 & \xi \end{bmatrix}
+       \end{aligned}
+\end{equation} 
+Further, we introduce the different measured of stress that are used throughout this work. First, the second Piola-Kirchoff stress tensor $\mathbf{S}$ is defined in Eq. \ref{eqn:PKstress1} as a derivative of the strain energy density w.r.t. to Green Lagrange strains.
+
+\begin{equation}
+\label{eqn:PKstress1} 
+\mathbf{S}_{ij} = \rho_{0} \frac{E}{\eta_{ij}}  
+\end{equation}
+
+Nanson's equation is used to convert between $\mathbf{S}$ and the Cauchy stress tensor $\sigma$ according to Eq. \ref{eqn:Cauchystress1}, where $\left| \mathbf{F} \right|$ denotes the determinant of $\mathbf{F}$. 
+
+\begin{equation}
+\label{eqn:Cauchystress1} 
+\mathbf{S} = \left| \mathbf{F} \right| \mathbf{F}^{-1} \mathbf{\sigma} \mathbf{F}^{-T} \leftrightarrow \mathbf{\sigma} = \frac{1}{\left| \mathbf{F} \right| } \mathbf{F} \mathbf{S} \mathbf{F}^{T}
+\end{equation}
+
+For a loading direction where only $\sigma_{33}$ (and $S_{33}$) are nonzero, and $\mathbf{F}$ given by Eq. \ref{eqn:SM-section1-eqF}, the relation between $\sigma_{33}$ and $S_{33}$ is particularly simple, see Eq. \ref{eqn:SigmaSEqn1}.
+
+\begin{equation}
+\label{eqn:SigmaSEqn1} 
+\sigma_{33} = \frac{\sqrt{2\xi + 1}}{2\bar{\eta} + 1} S_{33}
+\end{equation}
+
+In the next sections, we derive explicit relations between strain, stress and elastic constants for cubic and hexagonal crystals under a uniaxial stress along $c$.
+
+%In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. It relates the Lagrangian stresses $t_{ij}$ to the strain energy $E$ and the Green-Lagrange stresses $\eta_{ij}$. Eq. \ref{eqn:SM-conversion1} provides the formalism to convert between the Lagrangian stress tensor $t$ and the true (or linear) stress tensor $\sigma$, the latter which is calculated directly from DFT. For small strains, typically the approximation $\bm{\sigma} \approx \bm{t}$ is valid and no conversion is performed. However, the strains considered in this work are large enough that this approximation does not hold true anymore. \\
+
+
 
 \subsection{Cubic crystal system}
 We consider a cubic material that is loaded along the $c$-axis by a Green Lagrangian strain denoted by $\xi$. Initially, we allow for additional strains denoted by $\eta_1, \eta_2, \eta_4, \eta_5, \eta_6$. Consider an expansion of the strain energy density up to and including SOEC's. When the symmetry of the SOEC's is invoked, the expression in Eq. \ref{eqn:cubicexpansion1} is obtained.
@@ -104,28 +144,51 @@ Eq. \ref{eqn:cubicexpansion1} generally suffices for small strains. For larger s
 \end{align}
 \end{subequations}
 
+In this work, we consider deformations of the type shown in Eq. \ref{eqn:SM-section1-eqF}, resulting in a strain tensor as shown in Eq. \ref{eqn:SM-section1-eqE}. This implies that $\eta_{4} = \eta_{5} = \eta_{6} = 0$ and also $\eta_{1} = \eta_{2}$. If we further invoke that $\eta_{1} = \eta_{2} = \bar{\eta}$ and $\eta_{3} = \xi$, Eq. \ref{eqn:cubicexpansion3} is obtained. 
 
+\begin{equation}
+\label{eqn:cubicexpansion3} 
+\rho_{0} E \left(\bm{\eta}\right) = \left(\frac{C_{111}}{3} + C_{112}\right) \bar{\eta}^{3} + 
+\left(C_{11} + C_{12} + C_{112} \xi + C_{123} \xi \right) \bar{\eta}^{2} + 
+\left(C_{112} \xi^{2} + 2 C_{12} \xi \right) \bar{\eta} + 
+\frac{C_{111} \xi^{3}}{6} + \frac{C_{11} \xi^{2}}{2}
+\end{equation}
 
+The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
 
+\begin{equation}
+\label{eqn:cubicexpansion4} 
+3 \left(\frac{C_{111}}{3} + C_{112}\right) \bar{\eta}^{2} + 2 \left(C_{11} + C_{12} + C_{112} \xi + C_{123} \xi \right) \bar{\eta} + 2 C_{12} \xi + C_{112} \xi^{2} = 0 \Rightarrow \bar{\eta} = \bar{\eta} \left(\xi\right)
+\end{equation}
 
+The component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} and is shown in Eq. \ref{eqn:S33Eq1}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
 
+\begin{equation}
+\label{eqn:S33Eq1} 
+S_{33} = \left(2 C_{12} + 2 C_{112} \xi \right) \bar{\eta} + C_{11} \xi + \left(C_{112} + C_{123} \xi \right) \bar{\eta}^{2} + \frac{C_{111} \xi^{2}}{2}
+\end{equation}
+
+The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $\xi$ as follows.
+
+\begin{enumerate}
+\itemsep-1.5em 
+\item Consider an applied strain $\xi$
+\item Compute the resulting strain $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
+\item Compute $S_{33}$ from Eq. \ref{eqn:S33Eq1}
+\item Compute $\sigma_{33}$ from Eq. \ref{eqn:SigmaSEqn1}
+\end{enumerate}
 
 
 
 \subsection{Hexagonal crystal system}
-Consider an imposed strain $\xi$ along the $c$-axis of an HCP-metal, in addition to strains denoted by $\eta_1, \eta_2, \eta_4, \eta_5, \eta_6$. Consider first the expansion of Eq. \ref{eqn:expansion1}, retaining only terms up to and including the SOEC's (hence, ignoring the TOEC's for now). This gives the energy-expression in Eq. \ref{eqn:expansion3}, in which the symmetry of the SOEC's has been applied. 
+For the hexagonal crystal system, the formalism follows a similar path as for the cubic crystal system. The various expressions are longer however, due to the lower amount of symmetry present. 
 
-%To obtain the equilibrium strain in the basal plane due to the application of $\xi$, we perform strain energy-minimization and set $\bar{\eta} = \eta = \eta_{1} = \eta_{2}$, $\eta_{3} = \xi$ and $\eta_{4} = \eta_{5} = \eta_{6} = 0$ in Eq. \ref{eqn:expansion3} and solve $\frac{\partial \left(\rho_{0} E\right)}{\partial \eta}|_{\xi} = 0$. We find the equilibrium strain $\eta = \bar{\eta}$, given in Eq. \ref{eqn:eqstr1}, where the minus-sign signifies the Poisson-contraction in the basal plane.
+Consider an imposed strain $\xi$ along the $c$-axis of a hexagonal material, in addition to strains denoted by $\eta_1, \eta_2, \eta_4, \eta_5, \eta_6$. Consider first the expansion of Eq. \ref{eqn:expansion1}, retaining only terms up to and including the SOEC's (hence, ignoring the TOEC's for now). This gives the energy expression in Eq. \ref{eqn:expansion3}, in which the symmetry of the SOEC's has been applied. 
 
 \begin{equation}
 \label{eqn:expansion3} 
 \rho_{0} E \left(\bm{\eta}\right) = C_{11}\frac{\eta_{1}^2}{2} + C_{11}\frac{\eta_{2}^2}{2} +  C_{33}\frac{\xi^2}{2} + C_{44}\frac{\eta_{4}^2}{2} + C_{44}\frac{\eta_{5}^2}{2} + \frac{1}{2} \left(C_{11}-C_{12}\right)\frac{\eta_{6}^2}{2} + C_{12}\eta_{1}\eta_{2} + C_{13}\eta_{1}\xi + C_{13}\eta_{2}\xi
 \end{equation}
-
-%\begin{equation}
-%\label{eqn:eqstr1} 
-%\eta = \bar{\eta} = -\frac{\xi C_{13}}{C_{11} + C_{12}}
-%\end{equation}
 
 For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient and instead, TOEC's have to be included as well. The expansion of the strain energy up to the third order in strain is given in Eq. \ref{eqn:expansion2}, in which the terms $P$ are given in Eq. \ref{eqn:expansion2detailed}. Note that in Eq. \ref{eqn:expansion2}, the symmetry of the SOEC's and TOEC's has been incorporated to simplify the resulting expression. 
 \begin{multline}
@@ -154,8 +217,11 @@ For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient a
 \end{align}
 \end{subequations}
 
+Similar to the cubic materials, we now 
+
+
 \section{Details of calculating TOEC's}
-In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. It relates the Lagrangian stresses $t_{ij}$ to the strain energy $E$ and the Green-Lagrange stresses $\eta_{ij}$. Eq. \ref{eqn:SM-conversion1} provides the formalism to convert between the Lagrangian stress tensor $t$ and the true (or linear) stress tensor $\sigma$, the latter which is calculated directly from DFT. For small strains, typically the approximation $\bm{\sigma} \approx \bm{t}$ is valid and no conversion is performed. However, the strains considered in this work are large enough that this approximation does not hold true anymore. \\
+%In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. It relates the Lagrangian stresses $t_{ij}$ to the strain energy $E$ and the Green-Lagrange stresses $\eta_{ij}$. Eq. \ref{eqn:SM-conversion1} provides the formalism to convert between the Lagrangian stress tensor $t$ and the true (or linear) stress tensor $\sigma$, the latter which is calculated directly from DFT. For small strains, typically the approximation $\bm{\sigma} \approx \bm{t}$ is valid and no conversion is performed. However, the strains considered in this work are large enough that this approximation does not hold true anymore. \\
 
 We also provide the form of the deformation gradients that give rise to desired Green-Lagrange strain tensors that are required for the calculation of specific (linear combinations) of SOEC's and TOEC's. The terms $\delta$ appearing in the deformation gradients represent distortions applied to the crystal. Note that the deformation gradients have to be carefully constructed as to leave only the desired (non-zero) elements in the resulting Green-Lagrange strain tensor.
 
@@ -173,6 +239,72 @@ t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
 \label{eqn:SM-conversion1} 
 \bm{t} = \|\bm{F}\| \bm{F}^{-1} \bm{\sigma} \bm{F}^{-T}
 \end{equation}
+
+
+\subsection{General method}
+Below is an outline of the method used to calculate the third-order elastic constants.
+
+The third-order elastic constants are defined as 
+\begin{equation}
+C_{ijklmn} = \frac{1}{V_0} \frac{\partial^3F}{\partial \eta_{ij} \partial \eta_{kl} \partial \eta_{mn}} | _ {\mathbf{\eta} = 0},
+\end{equation}
+
+where $F$ is the Helmholtz free energy, $\eta_{ij}$, the Green-Lagrange strain, and $V_0$, the volume of the primitive unit cell.  Using Voigt notation this can be written as
+\begin{equation}
+C_{ijk} = \frac{1}{V_0} \frac{\partial^3F}{\partial \eta_{i} \partial \eta_{j} \partial \eta_{k}} | _ {\mathbf{\eta} = 0}.
+\end{equation}
+
+If the TOEC contains Voigt symmetry, but no point symmetry other than the identity, the sixth-order elastic tensor will consist of 56 unique constants.  By evaluating the second derivative of the stress components with respect to $\eta$ for 21 unique strain states defined as 
+
+ \begin{widetext}
+\begin{subequations}
+\label{eqn:strainstates} 
+\begin{align}
+        \underline{\eta}^1 =\left(\begin{matrix} \eta & 0 & 0 & 0 & 0 & 0 \end{matrix}\right)\\
+		\underline{\eta}^2 =\left(\begin{matrix} 0 & \eta & 0 & 0 & 0 & 0 \end{matrix}\right)\\
+		\underline{\eta}^3 =\left(\begin{matrix} 0 & 0 & \eta & 0 & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^4 =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^5 =\left(\begin{matrix} 0 & 0 & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\underline{\eta}^6 =\left(\begin{matrix} 0 & 0 & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\underline{\eta}^7 =\left(\begin{matrix} \eta & \eta & 0 & 0 & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^9 =\left(\begin{matrix} \eta & 0 & \eta & 0 & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{10} =\left(\begin{matrix} \eta & 0 & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{11} =\left(\begin{matrix} \eta & 0 & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{12} =\left(\begin{matrix} \eta & 0 & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\underline{\eta}^{13} =\left(\begin{matrix} 0 & \eta & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{14} =\left(\begin{matrix} 0 & \eta & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{15} =\left(\begin{matrix} 0 & \eta & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\underline{\eta}^{16} =\left(\begin{matrix} 0 & 0 & \eta & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{17} =\left(\begin{matrix} 0 & 0 & \eta & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{18} =\left(\begin{matrix} 0 & 0 & \eta & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\underline{\eta}^{19} =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 2\eta & 0 \end{matrix}\right)\\
+    	\underline{\eta}^{20} =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 0 & 2\eta \end{matrix}\right)\\
+    	\underline{\eta}^{21} =\left(\begin{matrix} 0 & 0 & 0 & 0 & 2\eta & 2\eta \end{matrix}\right)\\
+\end{align}
+\end{subequations}
+\end{widetext} 
+
+results in a vector, $\mathbf{\tau}$, containing 126 terms that consist of the 56 TOEC.  Writing the TOEC as a $56\times1$ array, $\mathbf{\xi}$, the $126\times56$ matrix, $\mathbf{A}$, can be defined as
+\begin{equation}
+A_{ik} = \frac{\partial \tau_i}{\partial \xi_k}
+\end{equation}
+
+Defining $\mathbf{B}$ to be the pseudoinverse of $\mathbf{A}$ the TOEC can be defined as
+\begin{equation}
+\xi_i = B_{i k} \tau_k
+\end{equation}
+
+The components of $\mathbf{\tau}$ were evaluated numerically using the finite difference method.  A 9 point central difference stencil about $\eta=0$ was used to calculate the second derivative of the 2nd Piola-Kirchoff stress components.    While the maximum strain used in the finite difference calculations is system dependent and determined from convergence testing with respect to the TOEC, a maximum strain of $\eta_{max} = 0.05$ has been shown to be appropriate for most systems studied.
+
+In the calculation of the TOEC no considerations with regards to symmetry are given.  In the case where the point group of the crystal is larger than the identity or it is desired to approximate the closest tensor of a higher symmetry (such as in the case of a solid solution), the TOEC must be symmetrized as follows
+
+\begin{equation}
+\hat{C}_{ijklmn} = \frac{1}{n_G} \sum\limits_{\alpha=1}^{n_G}  a^{(\alpha)}_{ip}  a^{(\alpha)}_{jq}  a^{(\alpha)}_{kr}  a^{(\alpha)}_{ls}  a^{(\alpha)}_{mt}  a^{(\alpha)}_{nv} C_{pqrstu}
+\end{equation}
+
+where $n_G$ is the number of elements in the group, and $a_{ip}^{(\alpha)}$, the transformation matrix associated with the $\alpha^{th}$ element of the group.  Note that Einstein summation is applied to all latin subscripts.
+
+
 
 \subsection{Cubic symmetry}
 
