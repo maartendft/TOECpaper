@@ -151,7 +151,7 @@ def volcalc(poscar):
                 natom = float(tmppos[11])
         except:
                 natom = float(tmppos[12])
-        vol =  np.dot(v1,np.cross(v2,v3))/natom
+        vol =  np.dot(v1,np.cross(v2,v3))
         return vol
 
 def centraldiff(k, n):
