@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.4.4)  26 JAN 2016 10:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.4.4)  13 FEB 2016 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,7 +990,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
 
 (c:/texlive/2012/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box60
@@ -1013,36 +1013,36 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
 Class revtex4-1 Info: colortbl package is loaded. (Proceeding with fingers cros
-sed.) on input line 35.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 35.
+sed.) on input line 33.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 33.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 35.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 35.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 35.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 33.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 33.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 33.
  (./SM.aux)
 \openout1 = `SM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
 
 (c:/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 (c:/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1073,7 +1073,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring ON on input line 35.
+Package hyperref Info: Link coloring ON on input line 33.
 
 (c:/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1083,63 +1083,69 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
  (./SM.out) (./SM.out)
 \@outlinefile=\write4
 \openout4 = `SM.out'.
 
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 35.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 33.
 \openout3 = `SMNotes.bib'.
 
  [1{c:/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (c:/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (c:/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+) [2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-[4] [5] [6] (./SM.bbl) [7]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 722.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 722.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+[6] [7] [8] [9] [10] (./SM.bbl) [11]
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 936.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 936.
  (./SM.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 722.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 936.
 Package rerunfilecheck Info: File `SM.out' has not changed.
-(rerunfilecheck)             Checksum: E74D9A03069722F94F4F313C09D8F8C1;631.
+(rerunfilecheck)             Checksum: EF3FBAE3E1460E429639603BE214A3A3;908.
  ) 
 Here is how much of TeX's memory you used:
- 16056 strings out of 493481
- 256149 string characters out of 3144420
- 467977 words of memory out of 3000000
- 19051 multiletter control sequences out of 15000+200000
+ 16138 strings out of 493481
+ 257320 string characters out of 3144420
+ 475494 words of memory out of 3000000
+ 19073 multiletter control sequences out of 15000+200000
  9727 words of font info for 37 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,17n,35p,2592b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,17n,35p,2592b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2012
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2012/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2012/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmib10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/201
-2/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2012/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2012/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on SM.pdf (7 pages, 156614 bytes).
+ic/amsfonts/cm/cmmi5.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib
+10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2012/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2012/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb>
+Output written on SM.pdf (11 pages, 193131 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 72 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
