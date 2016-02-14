@@ -1,5 +1,3 @@
-%\documentclass[article,preprint]{revtex4}
-%\usepackage{amsmath, amsthm, amssymb,graphicx,subfigure,array}
 \documentclass[showpacs,aps,floatfix,prb,reprint,superscriptaddress,onecolumn]{revtex4-1} 
 %\documentclass[showpacs,floatfix,aps,prb,preprint,superscriptaddress]{revtex4-1}
 %\documentclass[reprint,aps,groupedaddress]{revtex4-1}
@@ -153,6 +151,29 @@ In this work, we consider deformations of the type shown in Eq. \ref{eqn:SM-sect
 \left(C_{112} \xi^{2} + 2 C_{12} \xi \right) \bar{\eta} + 
 \frac{C_{111} \xi^{3}}{6} + \frac{C_{11} \xi^{2}}{2}
 \end{equation}
+<<<<<<< HEAD
+
+The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
+
+\begin{equation}
+\label{eqn:cubicexpansion4} 
+3 \left(\frac{C_{111}}{3} + C_{112}\right) \bar{\eta}^{2} + 2 \left(C_{11} + C_{12} + C_{112} \xi + C_{123} \xi \right) \bar{\eta} + 2 C_{12} \xi + C_{112} \xi^{2} = 0 \Rightarrow \bar{\eta} = \bar{\eta} \left(\xi\right)
+\end{equation}
+
+The component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} and is shown in Eq. \ref{eqn:S33Eq1}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
+
+\begin{equation}
+\label{eqn:S33Eq1} 
+S_{33} = \left(2 C_{12} + 2 C_{112} \xi \right) \bar{\eta} + C_{11} \xi + \left(C_{112} + C_{123} \xi \right) \bar{\eta}^{2} + \frac{C_{111} \xi^{2}}{2}
+\end{equation}
+
+The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $\xi$ as follows.
+
+\begin{enumerate}
+\itemsep-1.5em 
+\item Consider an applied strain $\xi$
+\item Compute the resulting strain (Poisson contraction) $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
+=======
 
 The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
 
@@ -174,6 +195,7 @@ The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $
 \itemsep-1.5em 
 \item Consider an applied strain $\xi$
 \item Compute the resulting strain $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
+>>>>>>> origin/Local
 \item Compute $S_{33}$ from Eq. \ref{eqn:S33Eq1}
 \item Compute $\sigma_{33}$ from Eq. \ref{eqn:SigmaSEqn1}
 \end{enumerate}
@@ -217,7 +239,95 @@ For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient a
 \end{align}
 \end{subequations}
 
+<<<<<<< HEAD
+Similar to the cubic materials, we now invoke the symmetry of the material and the specifics of the loading condition to simplify the resulting expressions that relate stress, strain and elastic constants. As a hexagonal material is loaded uniaxially along $c$ by a strain $\xi$, it contracts or expands in the basal plane by an amount $\eta_{1} = \eta_{2} = \bar{\eta}$. In addition, no shear strain can result from this type of loading, hence $\eta_{4} = \eta_{5} = \eta_{6} = 0$. These constraints simplify Eq. \ref{eqn:expansion2} considerably, to the expression shown in Eq. \ref{eqn:hexEsimple1}.
+
+\begin{equation}
+\label{eqn:hexEsimple1} 
+\rho_{0} E \left(\bm{\eta}\right) = \left(\frac{2 C_{111}}{3} + C_{112} - \frac{C_{222}}{3}\right)\bar{\eta}^{3} + \left(C_{11} + C_{12} + C_{113} \xi + C_{123} \xi \right) \bar{\eta}^{2} + \left(C_{113} \xi^{2} + 2 C_{23} \xi  \right) \bar{\eta} +  \frac{C_{333}}{6}\xi^{3} + \frac{C_{33}}{2} \xi^{2}
+\end{equation}
+
+The equilibrium strain in the basal plane due to the application of $\xi$ is obtained by a strain-energy minimization of Eq. \ref{eqn:hexEsimple1} with respect to $\bar{\eta}$. This equation and the resulting solution of the type $\bar{\eta} = \bar{\eta}\left(\xi \right)$ are rather long and are not shown here. \\
+
+Similar to the case of a cubic crystal, the component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} and is shown in Eq. \ref{eqn:S33EqHex}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
+
+\begin{equation}
+\label{eqn:S33EqHex} 
+S_{33} = 2 C_{23} \bar{\eta} + C_{33} \xi + \left(C_{113}+C_{123}\right) \bar{\eta}^{2} + \frac{C_{333}}{2}\xi^{2} + 2 C_{133} \bar{\eta} \xi
+\end{equation}
+
+The Cauchy (true) stress component $\sigma_{33}$ can now be calculated for every strain $\xi$ from Eq. \ref{eqn:SigmaSEqn1}. The detailed procedure is summarized below.
+
+\newpage
+
+\begin{enumerate}
+%\itemsep-1.5em 
+\item Consider an applied strain $\xi$
+\item Compute the resulting strain (Poisson contraction) $\bar{\eta}$ from strain-energy minimization according to Eq. \ref{eqn:hexEsimple1}
+\item Compute $S_{33}$ from Eq. \ref{eqn:S33EqHex}
+\item Compute $\sigma_{33}$ from Eq. \ref{eqn:SigmaSEqn1}
+\end{enumerate}
+
+
+\section{Derivation of Wallace tensors}
+The Wallace tensor is defined in Eq. \ref{eqn:Wallace1}, where the terms $C_{ijkl}'$ represent the elastic constants in the deformed configuration and $\sigma_{ij}$ are the components of the Cauchy (true) stress tensor. Further, $\delta$ is the Kronecker delta function. The eigenvalues of the symmetrized Wallace tensor govern the mechanical stability of a solid under stress and its eigenvectors describe the type of deformation (e.g. shear or tensile deformation modes). \\
+
+For the loading situations considered in this work, the Cauchy stress tensor can be written out as in Eq. \ref{eqn:SM-Wallace1}. Note that $\sigma_{33}$ can be expressed as a function of only the SOEC's, TOEC's and $\xi$ (see Eq. \ref{eqn:Wallace2}). Similarly, $C_{ijkl}'$ can be expressed in terms of the SOEC's, TOEC's and $\xi$ (see Eq. \ref{eqn:Wallace2}). Hence, the formalism proposed in this work can be used to express the mechanical stability of any solid under uniaxial loading in terms of material constants and the applied strain. 
+
+\begin{equation}
+\label{eqn:Wallace1}
+B_{ijkl} = C_{ijkl}' + \frac{1}{2} \left(\sigma_{il} \delta_{jk} + \sigma_{jl} \delta_{ik} + \sigma_{ik} \delta_{jl} + \sigma_{jk} \delta_{il} - 2\sigma_{ij} \delta_{kl} \right)
+\end{equation}
+
+\begin{equation}
+\label{eqn:Wallace2}
+\bm{\sigma} = \bm{\sigma} \left(C_{ijkl}, C_{ijklmn}, \xi \right)
+\end{equation}
+
+\begin{equation}
+\label{eqn:Wallace3}
+C_{ijkl}' = C_{ijkl}' \left(C_{ijkl}, C_{ijklmn}, \xi \right)
+\end{equation}
+
+\begin{equation}
+\label{eqn:SM-Wallace1}
+  \begin{aligned}
+        \bm{\sigma}&=\begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & \sigma_{33} \end{bmatrix}
+       \end{aligned}
+\end{equation} 
+
+\begin{equation}
+\label{eqn:SM-Wallace2}
+\bar{B}_{ij} = \frac{1}{2} \left(B_{ij} + B_{ji} \right)
+\end{equation}
+
+
+Note that the Wallace tensor as defined in Eq. \ref{eqn:Wallace1} does not in general lead to a symmetric tensor. The stability is in fact governed by the symmetrized Wallace tensor, denoted by $\bar{B}$, and defined in Eq. \ref{eqn:SM-Wallace2} (in Voigt notation). The simplicity of Eq. \ref{eqn:SM-Wallace1} allows Eq. \ref{eqn:Wallace1} to be written in a particularly simple form. Expressions are derived specifically for cubic and hexagonal materials. Note that the term $\frac{1}{2} \left(\sigma_{il} \delta_{jk} + \sigma_{jl} \delta_{ik} + \sigma_{ik} \delta_{jl} + \sigma_{jk} \delta_{il} - 2\sigma_{ij} \delta_{kl} \right)$ in the Wallace tensor will be identical for cubic and hexagonal materials considered in this work, and the difference comes in only in the symmetry of $C_{ijkl}'$. In Voigt notation, the term $\frac{1}{2} \left(\sigma_{il} \delta_{jk} + \sigma_{jl} \delta_{ik} + \sigma_{ik} \delta_{jl} + \sigma_{jk} \delta_{il} - 2\sigma_{ij} \delta_{kl} \right)$ is shown in Eq. \ref{eqn:SM-Wallace3}.
+
+\begin{equation}
+\label{eqn:SM-Wallace3}
+  \begin{aligned}
+        \frac{1}{2} \left(\sigma_{il} \delta_{jk} + \sigma_{jl} \delta_{ik} + \sigma_{ik} \delta_{jl} + \sigma_{jk} \delta_{il} - 2\sigma_{ij} \delta_{kl} \right)&=\begin{bmatrix} 0 & 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 0 \\ -\sigma_{33} & -\sigma_{33} & \sigma_{33} & 0 & 0 & 0 \\ 0 & 0 & 0 & \frac{\sigma_{33}}{2} & 0 & 0 \\ 0 & 0 & 0 & 0 & \frac{\sigma_{33}}{2} & 0 \\ 0 & 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+       \end{aligned}
+\end{equation} 
+
+\subsection{Cubic crystal system}
+For cubic materials, 3 independent SOEC's exist, which are taken here to be $C_{11}$, $C_{12}$ and $C_{44}$. Further, 6 independent TOEC's exist, chosen here as $C_{111}$, $C_{112}$, $C_{123}$, $C_{144}$, $C_{155}$ and $C_{456}$. Employing Eq. \ref{eqn:Wallace1} and subsequently symmetrizing according to Eq. \ref{eqn:SM-Wallace2} yields the symmetrized Wallace tensor (in Voigt notation) as shown in \ref{eqn:SM-Wallace4}.
+
+\begin{equation}
+\label{eqn:SM-Wallace4}
+  \begin{aligned}
+        \bar{B}_{ij}&=\begin{bmatrix} C_{11}' & C_{12}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{12}' & C_{11}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{13}'-\frac{\sigma_{33}}{2} & C_{13}'-\frac{\sigma_{33}}{2} & C_{33}'+\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 & 0 \\ 0 & 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 \\ 0 & 0 & 0 & 0 & 0 & C_{66}' \end{bmatrix}
+       \end{aligned}
+\end{equation} 
+
+
+
+\subsection{Hexagonal crystal system}
+
+=======
 Similar to the cubic materials, we now 
+>>>>>>> origin/Local
 
 
 \section{Details of calculating TOEC's}
@@ -232,12 +342,12 @@ We also provide the form of the deformation gradients that give rise to desired 
 
 \begin{equation}
 \label{eqn:SM-stressexpansion1} 
-t_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
+S_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
 \end{equation}
 
 \begin{equation}
 \label{eqn:SM-conversion1} 
-\bm{t} = \|\bm{F}\| \bm{F}^{-1} \bm{\sigma} \bm{F}^{-T}
+\bm{S} = \|\bm{F}\| \bm{F}^{-1} \bm{\sigma} \bm{F}^{-T}
 \end{equation}
 
 
@@ -851,4 +961,3 @@ where $n_G$ is the number of elements in the group, and $a_{ip}^{(\alpha)}$, the
 
 
 \end{document} 
-
