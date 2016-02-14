@@ -256,45 +256,44 @@ C_{ijk} = \frac{1}{V_0} \frac{\partial^3F}{\partial \eta_{i} \partial \eta_{j} \
 
 If the TOEC contains Voigt symmetry, but no point symmetry other than the identity, the sixth-order elastic tensor will consist of 56 unique constants.  By evaluating the second derivative of the stress components with respect to $\eta$ for 21 unique strain states defined as 
 
- \begin{widetext}
 \begin{subequations}
 \label{eqn:strainstates} 
 \begin{align}
-        \underline{\eta}^1 =\left(\begin{matrix} \eta & 0 & 0 & 0 & 0 & 0 \end{matrix}\right)\\
-		\underline{\eta}^2 =\left(\begin{matrix} 0 & \eta & 0 & 0 & 0 & 0 \end{matrix}\right)\\
-		\underline{\eta}^3 =\left(\begin{matrix} 0 & 0 & \eta & 0 & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^4 =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^5 =\left(\begin{matrix} 0 & 0 & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
-    	\underline{\eta}^6 =\left(\begin{matrix} 0 & 0 & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
-    	\underline{\eta}^7 =\left(\begin{matrix} \eta & \eta & 0 & 0 & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^9 =\left(\begin{matrix} \eta & 0 & \eta & 0 & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{10} =\left(\begin{matrix} \eta & 0 & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{11} =\left(\begin{matrix} \eta & 0 & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{12} =\left(\begin{matrix} \eta & 0 & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
-    	\underline{\eta}^{13} =\left(\begin{matrix} 0 & \eta & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{14} =\left(\begin{matrix} 0 & \eta & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{15} =\left(\begin{matrix} 0 & \eta & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
-    	\underline{\eta}^{16} =\left(\begin{matrix} 0 & 0 & \eta & 2\eta & 0 & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{17} =\left(\begin{matrix} 0 & 0 & \eta & 0 & 2\eta & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{18} =\left(\begin{matrix} 0 & 0 & \eta & 0 & 0 & 2\eta \end{matrix}\right)\\
-    	\underline{\eta}^{19} =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 2\eta & 0 \end{matrix}\right)\\
-    	\underline{\eta}^{20} =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 0 & 2\eta \end{matrix}\right)\\
-    	\underline{\eta}^{21} =\left(\begin{matrix} 0 & 0 & 0 & 0 & 2\eta & 2\eta \end{matrix}\right)\\
+        \bm{\eta}^1 =\left(\begin{matrix} \eta & 0 & 0 & 0 & 0 & 0 \end{matrix}\right)\\
+	\bm{\eta}^2 =\left(\begin{matrix} 0 & \eta & 0 & 0 & 0 & 0 \end{matrix}\right)\\
+	\bm{\eta}^3 =\left(\begin{matrix} 0 & 0 & \eta & 0 & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^4 =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^5 =\left(\begin{matrix} 0 & 0 & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\bm{\eta}^6 =\left(\begin{matrix} 0 & 0 & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\bm{\eta}^7 =\left(\begin{matrix} \eta & \eta & 0 & 0 & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^9 =\left(\begin{matrix} \eta & 0 & \eta & 0 & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{10} =\left(\begin{matrix} \eta & 0 & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{11} =\left(\begin{matrix} \eta & 0 & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{12} =\left(\begin{matrix} \eta & 0 & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\bm{\eta}^{13} =\left(\begin{matrix} 0 & \eta & 0 & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{14} =\left(\begin{matrix} 0 & \eta & 0 & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{15} =\left(\begin{matrix} 0 & \eta & 0 & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\bm{\eta}^{16} =\left(\begin{matrix} 0 & 0 & \eta & 2\eta & 0 & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{17} =\left(\begin{matrix} 0 & 0 & \eta & 0 & 2\eta & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{18} =\left(\begin{matrix} 0 & 0 & \eta & 0 & 0 & 2\eta \end{matrix}\right)\\
+    	\bm{\eta}^{19} =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 2\eta & 0 \end{matrix}\right)\\
+    	\bm{\eta}^{20} =\left(\begin{matrix} 0 & 0 & 0 & 2\eta & 0 & 2\eta \end{matrix}\right)\\
+    	\bm{\eta}^{21} =\left(\begin{matrix} 0 & 0 & 0 & 0 & 2\eta & 2\eta \end{matrix}\right)\\
 \end{align}
 \end{subequations}
-\end{widetext} 
+ 
 
-results in a vector, $\mathbf{\tau}$, containing 126 terms that consist of the 56 TOEC.  Writing the TOEC as a $56\times1$ array, $\mathbf{\xi}$, the $126\times56$ matrix, $\mathbf{A}$, can be defined as
+results in a vector, $\bm{\tau}$, containing 126 terms that consist of the 56 TOEC.  Writing the TOEC as a $56\times1$ array, $\bm{\xi}$, the $126\times56$ matrix, $\bm{A}$, can be defined as
 \begin{equation}
 A_{ik} = \frac{\partial \tau_i}{\partial \xi_k}
 \end{equation}
 
-Defining $\mathbf{B}$ to be the pseudoinverse of $\mathbf{A}$ the TOEC can be defined as
+Defining $\bm{B}$ to be the pseudoinverse of $\bm{A}$ the TOEC can be defined as
 \begin{equation}
 \xi_i = B_{i k} \tau_k
 \end{equation}
 
-The components of $\mathbf{\tau}$ were evaluated numerically using the finite difference method.  A 9 point central difference stencil about $\eta=0$ was used to calculate the second derivative of the 2nd Piola-Kirchoff stress components.    While the maximum strain used in the finite difference calculations is system dependent and determined from convergence testing with respect to the TOEC, a maximum strain of $\eta_{max} = 0.05$ has been shown to be appropriate for most systems studied.
+The components of $\bm{\tau}$ were evaluated numerically using the finite difference method.  A 9 point central difference stencil about $\eta=0$ was used to calculate the second derivative of the 2nd Piola-Kirchoff stress components.    While the maximum strain used in the finite difference calculations is system dependent and determined from convergence testing with respect to the TOEC, a maximum strain of $\eta_{max} = 0.05$ has been shown to be appropriate for most systems studied.
 
 In the calculation of the TOEC no considerations with regards to symmetry are given.  In the case where the point group of the crystal is larger than the identity or it is desired to approximate the closest tensor of a higher symmetry (such as in the case of a solid solution), the TOEC must be symmetrized as follows
 
