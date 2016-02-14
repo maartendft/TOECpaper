@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.4.4)  13 FEB 2016 18:11
+=======
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.4.4)  11 FEB 2016 14:32
+>>>>>>> origin/Local
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,7 +1206,11 @@ fonts/cm/cmr9.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
 c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive
 /2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+<<<<<<< HEAD
 Output written on manuscript.pdf (9 pages, 387443 bytes).
+=======
+Output written on manuscript.pdf (9 pages, 387516 bytes).
+>>>>>>> origin/Local
 PDF statistics:
  387 PDF objects out of 1000 (max. 8388607)
  350 compressed objects within 4 object streams

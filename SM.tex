@@ -151,6 +151,7 @@ In this work, we consider deformations of the type shown in Eq. \ref{eqn:SM-sect
 \left(C_{112} \xi^{2} + 2 C_{12} \xi \right) \bar{\eta} + 
 \frac{C_{111} \xi^{3}}{6} + \frac{C_{11} \xi^{2}}{2}
 \end{equation}
+<<<<<<< HEAD
 
 The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
 
@@ -172,6 +173,29 @@ The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $
 \itemsep-1.5em 
 \item Consider an applied strain $\xi$
 \item Compute the resulting strain (Poisson contraction) $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
+=======
+
+The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
+
+\begin{equation}
+\label{eqn:cubicexpansion4} 
+3 \left(\frac{C_{111}}{3} + C_{112}\right) \bar{\eta}^{2} + 2 \left(C_{11} + C_{12} + C_{112} \xi + C_{123} \xi \right) \bar{\eta} + 2 C_{12} \xi + C_{112} \xi^{2} = 0 \Rightarrow \bar{\eta} = \bar{\eta} \left(\xi\right)
+\end{equation}
+
+The component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} and is shown in Eq. \ref{eqn:S33Eq1}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
+
+\begin{equation}
+\label{eqn:S33Eq1} 
+S_{33} = \left(2 C_{12} + 2 C_{112} \xi \right) \bar{\eta} + C_{11} \xi + \left(C_{112} + C_{123} \xi \right) \bar{\eta}^{2} + \frac{C_{111} \xi^{2}}{2}
+\end{equation}
+
+The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $\xi$ as follows.
+
+\begin{enumerate}
+\itemsep-1.5em 
+\item Consider an applied strain $\xi$
+\item Compute the resulting strain $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
+>>>>>>> origin/Local
 \item Compute $S_{33}$ from Eq. \ref{eqn:S33Eq1}
 \item Compute $\sigma_{33}$ from Eq. \ref{eqn:SigmaSEqn1}
 \end{enumerate}
@@ -215,6 +239,7 @@ For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient a
 \end{align}
 \end{subequations}
 
+<<<<<<< HEAD
 Similar to the cubic materials, we now invoke the symmetry of the material and the specifics of the loading condition to simplify the resulting expressions that relate stress, strain and elastic constants. As a hexagonal material is loaded uniaxially along $c$ by a strain $\xi$, it contracts or expands in the basal plane by an amount $\eta_{1} = \eta_{2} = \bar{\eta}$. In addition, no shear strain can result from this type of loading, hence $\eta_{4} = \eta_{5} = \eta_{6} = 0$. These constraints simplify Eq. \ref{eqn:expansion2} considerably, to the expression shown in Eq. \ref{eqn:hexEsimple1}.
 
 \begin{equation}
@@ -300,6 +325,9 @@ For cubic materials, 3 independent SOEC's exist, which are taken here to be $C_{
 
 \subsection{Hexagonal crystal system}
 
+=======
+Similar to the cubic materials, we now 
+>>>>>>> origin/Local
 
 
 \section{Details of calculating TOEC's}
