@@ -70,6 +70,18 @@ if param == 0:
         A       = elast.makegroup(gen)
         ngroup  = len(A)
 
+        oldir   = 'D0/0/' + str(nstrain/2)
+        os.chdir(oldir)
+        for j in xrange(6):
+                for k in xrange(j,6):
+                        jkdir   = hdir + '/D' + str(j) + '/' + str(k) + '/' + str(nstrain/2)
+                        if j > 0 or k > 0:
+                                shutil.copy('OUTCAR', jkdir)
+
+        os.chdir(hdir)
+
+
+
         for j in xrange(6):
                 for k in xrange(j,6):
                         jkdir   = 'D' + str(j) + '/' + str(k)
@@ -270,7 +282,7 @@ if param == 1:
                                 # run simulations
                                 print 'mode:  {0:2d} {1:2d} {2:2d}'.format(j, k, m)
 
-                                if runjob[0] == 'y' or runjob[0] == 'Y':
+                                if runjob[0] == 'y' or runjob[0] == 'Y' and ( m != nstrain/2 or (j == 0 and k == 0)):
                                      # run job
                                      time.sleep(timer)
                                      os.system('sbatch runjob.sh')
