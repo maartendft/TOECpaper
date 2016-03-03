@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{21}%
+\begin{thebibliography}{4}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,14 +50,6 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {{\L}opuszy{\'n}ski}\ and\ \citenamefont
-  {Majewski}(2007)}]{lopuszynski2007ab}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {{\L}opuszy{\'n}ski}}\ and\ \bibinfo {author} {\bibfnamefont {J.~A.}\
-  \bibnamefont {Majewski}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
-  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo
-  {pages} {045202} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wallace}(1998)}]{wallace1998thermodynamics}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~C.}\ \bibnamefont
@@ -93,138 +85,4 @@
   {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo
   {volume} {52}},\ \bibinfo {pages} {12627} (\bibinfo {year}
   {1995})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Hearmon}(1953)}]{hearmon1953third}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Hearmon}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Acta
-  Crystallographica}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {331}
-  (\bibinfo {year} {1953})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rose}\ and\ \citenamefont
-  {Ramsey}(1968)}]{rose1968higher}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Rose}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Ramsey}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {physica status
-  solidi (b)}\ }\textbf {\bibinfo {volume} {25}},\ \bibinfo {pages} {103}
-  (\bibinfo {year} {1968})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Fumi}(1951)}]{fumi1951third}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
-  {Fumi}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical
-  Review}\ }\textbf {\bibinfo {volume} {83}},\ \bibinfo {pages} {1274}
-  (\bibinfo {year} {1951})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Fumi}(1952)}]{fumi1952third}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
-  {Fumi}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical
-  Review}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages} {561} (\bibinfo
-  {year} {1952})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kresse}\ and\ \citenamefont
-  {Furthm\"uller}(1996)}]{PhysRevB.54.11169}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Kresse}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Furthm\"uller}},\ }\href {\doibase 10.1103/PhysRevB.54.11169} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
-  {54}},\ \bibinfo {pages} {11169} (\bibinfo {year} {1996})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Kresse}\ and\ \citenamefont
-  {Hafner}(1993)}]{PhysRevB.47.558}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Kresse}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Hafner}},\ }\href {\doibase 10.1103/PhysRevB.47.558} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {47}},\
-  \bibinfo {pages} {558} (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Perdew}\ \emph {et~al.}(1996)\citenamefont {Perdew},
-  \citenamefont {Burke},\ and\ \citenamefont
-  {Ernzerhof}}]{PhysRevLett.77.3865}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
-  {Perdew}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Burke}}, \
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ernzerhof}},\ }\href
-  {\doibase 10.1103/PhysRevLett.77.3865} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {77}},\ \bibinfo
-  {pages} {3865} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bl\"ochl}(1994)}]{PhysRevB.50.17953}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~E.}\ \bibnamefont
-  {Bl\"ochl}},\ }\href {\doibase 10.1103/PhysRevB.50.17953} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
-  {50}},\ \bibinfo {pages} {17953} (\bibinfo {year} {1994})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Kresse}\ and\ \citenamefont
-  {Joubert}(1999)}]{PhysRevB.59.1758}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Kresse}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Joubert}},\ }\href {\doibase 10.1103/PhysRevB.59.1758} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {59}},\
-  \bibinfo {pages} {1758} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Methfessel}\ and\ \citenamefont
-  {Paxton}(1989)}]{PhysRevB.40.3616}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Methfessel}}\ and\ \bibinfo {author} {\bibfnamefont {A.~T.}\ \bibnamefont
-  {Paxton}},\ }\href {\doibase 10.1103/PhysRevB.40.3616} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {40}},\
-  \bibinfo {pages} {3616} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Monkhorst}\ and\ \citenamefont
-  {Pack}(1976)}]{PhysRevB.13.5188}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont
-  {Monkhorst}}\ and\ \bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
-  {Pack}},\ }\href {\doibase 10.1103/PhysRevB.13.5188} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {13}},\
-  \bibinfo {pages} {5188} (\bibinfo {year} {1976})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Giannozzi}\ \emph {et~al.}(2009)\citenamefont
-  {Giannozzi}, \citenamefont {Baroni}, \citenamefont {Bonini}, \citenamefont
-  {Calandra}, \citenamefont {Car}, \citenamefont {Cavazzoni}, \citenamefont
-  {Ceresoli}, \citenamefont {Chiarotti}, \citenamefont {Cococcioni},
-  \citenamefont {Dabo} \emph {et~al.}}]{giannozzi2009quantum}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Giannozzi}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Baroni}},
-  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Bonini}}, \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Calandra}}, \bibinfo {author}
-  {\bibfnamefont {R.}~\bibnamefont {Car}}, \bibinfo {author} {\bibfnamefont
-  {C.}~\bibnamefont {Cavazzoni}}, \bibinfo {author} {\bibfnamefont
-  {D.}~\bibnamefont {Ceresoli}}, \bibinfo {author} {\bibfnamefont {G.~L.}\
-  \bibnamefont {Chiarotti}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Cococcioni}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Dabo}},
-  \emph {et~al.},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Journal of Physics: Condensed Matter}\ }\textbf {\bibinfo {volume} {21}},\
-  \bibinfo {pages} {395502} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Troullier}\ and\ \citenamefont
-  {Martins}(1991)}]{troullier1991efficient}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
-  {Troullier}}\ and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
-  {Martins}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review B}\ }\textbf {\bibinfo {volume} {43}},\ \bibinfo {pages}
-  {1993} (\bibinfo {year} {1991})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Romaner}\ \emph {et~al.}(2010)\citenamefont
-  {Romaner}, \citenamefont {Ambrosch-Draxl},\ and\ \citenamefont
-  {Pippan}}]{romaner2010effect}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Romaner}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Ambrosch-Draxl}}, \ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Pippan}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev. Lett.}\ }\textbf {\bibinfo {volume} {104}},\ \bibinfo {pages} {195503}
-  (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Fuchs}\ and\ \citenamefont
-  {Scheffler}(1999)}]{fuchs1999ab}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Fuchs}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Scheffler}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Computer Physics Communications}\ }\textbf {\bibinfo {volume} {119}},\
-  \bibinfo {pages} {67} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yoo}(1981)}]{yoo1981slip}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Yoo}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Metallurgical Transactions A}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo
-  {pages} {409} (\bibinfo {year} {1981})}\BibitemShut {NoStop}%
 \end{thebibliography}%
