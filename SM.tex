@@ -151,7 +151,6 @@ In this work, we consider deformations of the type shown in Eq. \ref{eqn:SM-sect
 \left(C_{112} \xi^{2} + 2 C_{12} \xi \right) \bar{\eta} + 
 \frac{C_{111} \xi^{3}}{6} + \frac{C_{11} \xi^{2}}{2}
 \end{equation}
-<<<<<<< HEAD
 
 The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
 
@@ -160,7 +159,7 @@ The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we c
 3 \left(\frac{C_{111}}{3} + C_{112}\right) \bar{\eta}^{2} + 2 \left(C_{11} + C_{12} + C_{112} \xi + C_{123} \xi \right) \bar{\eta} + 2 C_{12} \xi + C_{112} \xi^{2} = 0 \Rightarrow \bar{\eta} = \bar{\eta} \left(\xi\right)
 \end{equation}
 
-The component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} and is shown in Eq. \ref{eqn:S33Eq1}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
+The component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} (upon the insertion of $\bar{\eta}$ and $\xi$) and is shown in Eq. \ref{eqn:S33Eq1}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
 
 \begin{equation}
 \label{eqn:S33Eq1} 
@@ -173,33 +172,9 @@ The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $
 \itemsep-1.5em 
 \item Consider an applied strain $\xi$
 \item Compute the resulting strain (Poisson contraction) $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
-=======
-
-The strains $\bar{\eta}$ and $\xi$ are clearly not independent and in fact, we can write $\bar{\eta} = \bar{\eta} \left(\xi\right)$.The value of $\bar{\eta}$ can be obtained by differentiating Eq. \ref{eqn:cubicexpansion3} with respect to $\bar{\eta}$ and setting the resulting expression equal to zero. The governing quadratic equation in $\bar{\eta}$ is shown in Eq. \ref{eqn:cubicexpansion4}. The resulting expression for $\bar{\eta}$ is rather long and is not shown here. 
-
-\begin{equation}
-\label{eqn:cubicexpansion4} 
-3 \left(\frac{C_{111}}{3} + C_{112}\right) \bar{\eta}^{2} + 2 \left(C_{11} + C_{12} + C_{112} \xi + C_{123} \xi \right) \bar{\eta} + 2 C_{12} \xi + C_{112} \xi^{2} = 0 \Rightarrow \bar{\eta} = \bar{\eta} \left(\xi\right)
-\end{equation}
-
-The component $S_{33}$ of the second Piola-Kirchoff stress tensor can be obtained from Eq. \ref{eqn:PKstress1} and is shown in Eq. \ref{eqn:S33Eq1}. All other components in $\mathbf{S}$ are zero and the same is true for $\mathbf{\sigma}$.
-
-\begin{equation}
-\label{eqn:S33Eq1} 
-S_{33} = \left(2 C_{12} + 2 C_{112} \xi \right) \bar{\eta} + C_{11} \xi + \left(C_{112} + C_{123} \xi \right) \bar{\eta}^{2} + \frac{C_{111} \xi^{2}}{2}
-\end{equation}
-
-The Cauchy stress component $\sigma_{33}$ can now be obtained for every strain $\xi$ as follows.
-
-\begin{enumerate}
-\itemsep-1.5em 
-\item Consider an applied strain $\xi$
-\item Compute the resulting strain $\bar{\eta}$ from Eq. \ref{eqn:cubicexpansion4}
->>>>>>> origin/Local
 \item Compute $S_{33}$ from Eq. \ref{eqn:S33Eq1}
 \item Compute $\sigma_{33}$ from Eq. \ref{eqn:SigmaSEqn1}
 \end{enumerate}
-
 
 
 \subsection{Hexagonal crystal system}
@@ -239,7 +214,6 @@ For large strains, the expansion in Eq. \ref{eqn:expansion3} is not sufficient a
 \end{align}
 \end{subequations}
 
-<<<<<<< HEAD
 Similar to the cubic materials, we now invoke the symmetry of the material and the specifics of the loading condition to simplify the resulting expressions that relate stress, strain and elastic constants. As a hexagonal material is loaded uniaxially along $c$ by a strain $\xi$, it contracts or expands in the basal plane by an amount $\eta_{1} = \eta_{2} = \bar{\eta}$. In addition, no shear strain can result from this type of loading, hence $\eta_{4} = \eta_{5} = \eta_{6} = 0$. These constraints simplify Eq. \ref{eqn:expansion2} considerably, to the expression shown in Eq. \ref{eqn:hexEsimple1}.
 
 \begin{equation}
@@ -256,14 +230,14 @@ Similar to the case of a cubic crystal, the component $S_{33}$ of the second Pio
 S_{33} = 2 C_{23} \bar{\eta} + C_{33} \xi + \left(C_{113}+C_{123}\right) \bar{\eta}^{2} + \frac{C_{333}}{2}\xi^{2} + 2 C_{133} \bar{\eta} \xi
 \end{equation}
 
-The Cauchy (true) stress component $\sigma_{33}$ can now be calculated for every strain $\xi$ from Eq. \ref{eqn:SigmaSEqn1}. The detailed procedure is summarized below.
+The Cauchy (true) stress component $\sigma_{33}$ can now be calculated for every strain $\xi$ from Eq. \ref{eqn:SigmaSEqn1}. The detailed procedure is summarized below. 
 
 \newpage
 
 \begin{enumerate}
-%\itemsep-1.5em 
+\itemsep-0.0em 
 \item Consider an applied strain $\xi$
-\item Compute the resulting strain (Poisson contraction) $\bar{\eta}$ from strain-energy minimization according to Eq. \ref{eqn:hexEsimple1}
+\item Compute the resulting strain (Poisson contraction) $\bar{\eta}$ from Eq. \ref{eqn:hexEsimple1}
 \item Compute $S_{33}$ from Eq. \ref{eqn:S33EqHex}
 \item Compute $\sigma_{33}$ from Eq. \ref{eqn:SigmaSEqn1}
 \end{enumerate}
@@ -317,39 +291,33 @@ For cubic materials, 3 independent SOEC's exist, which are taken here to be $C_{
 \begin{equation}
 \label{eqn:SM-Wallace4}
   \begin{aligned}
-        \bar{B}_{ij}&=\begin{bmatrix} C_{11}' & C_{12}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{12}' & C_{11}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{13}'-\frac{\sigma_{33}}{2} & C_{13}'-\frac{\sigma_{33}}{2} & C_{33}'+\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 & 0 \\ 0 & 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 \\ 0 & 0 & 0 & 0 & 0 & C_{66}' \end{bmatrix}
+        \bar{B}_{ij}&=\begin{bmatrix} C_{11}' & C_{12}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{12}' & C_{11}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{13}'-\frac{\sigma_{33}}{2} & C_{13}'-\frac{\sigma_{33}}{2} & C_{33}'+\sigma_{33} & 0 & 0 & 0 \\ 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 & 0 \\ 0 & 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 \\ 0 & 0 & 0 & 0 & 0 & C_{66}' \end{bmatrix}
        \end{aligned}
 \end{equation} 
 
 
 
 \subsection{Hexagonal crystal system}
+Similar to cubic materials, the Wallace tensor for hexagonal materials can be expressed in terms of the Cauchy stress component $\sigma_{33}$ and the deformed elastic constants, both of which can be derived from the SOEC's, TOEC's and the applied strain $\xi$ along the $c$-axis. For this crystal system, we have 5 independent SOEC's, taken to be $C_{11}$, $C_{12}$, $C_{13}$, $C_{33}$ and $C_{44}$. Further, the 10 independent TOEC's are taken in this work to be UPDATE. Employing Eq. \ref{eqn:Wallace1} and subsequently symmetrizing according to Eq. \ref{eqn:SM-Wallace2} yields the symmetrized Wallace tensor (in Voigt notation) as shown in \ref{eqn:SM-Wallace5}.
 
-=======
-Similar to the cubic materials, we now 
->>>>>>> origin/Local
+
+\begin{equation}
+\label{eqn:SM-Wallace5}
+  \begin{aligned}
+        \bar{B}_{ij}&=\begin{bmatrix} C_{11}' & C_{12}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{12}' & C_{11}' & C_{13}'-\frac{\sigma_{33}}{2} & 0 & 0 & 0 \\ C_{13}'-\frac{\sigma_{33}}{2} & C_{13}'-\frac{\sigma_{33}}{2} & C_{33}'+\sigma_{33} & 0 & 0 & 0 \\ 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 & 0 \\ 0 & 0 & 0 & 0 & C_{44}'+\frac{\sigma_{33}}{2} & 0 \\ 0 & 0 & 0 & 0 & 0 & \frac{C_{11}'-C_{12}'}{2} \end{bmatrix}
+       \end{aligned}
+\end{equation} 
+
+
+\section{Derivation of deformed elastic constants}
+Written by Daryl?
+
+\subsection{Cubic crystal system}
+
+\subsection{Hexagonal crystal system}
 
 
 \section{Details of calculating TOEC's}
-%In this section, we consider again a deformation gradient $\mathbf{F}$, which leads to a Green-Lagrange strain, $\mathbf{\mathbf{\eta}}$, as defined in Eq. \ref{eqn:SM-GL1}. As before, $\mathbf{\bm{\eta}}$ has 6 independent components, indicated by $\eta_{1}, \eta_{2}, \eta_{3}, \eta_{4}, \eta_{5}, \eta_{6}$. In this section, expressions are derived relating the Lagrangian stress, Lagrangian strain, true stress, SOEC's and TOEC's for various crystal symmetries. Eq. \ref{eqn:SM-stressexpansion1} is the starting point for all these derivations. It relates the Lagrangian stresses $t_{ij}$ to the strain energy $E$ and the Green-Lagrange stresses $\eta_{ij}$. Eq. \ref{eqn:SM-conversion1} provides the formalism to convert between the Lagrangian stress tensor $t$ and the true (or linear) stress tensor $\sigma$, the latter which is calculated directly from DFT. For small strains, typically the approximation $\bm{\sigma} \approx \bm{t}$ is valid and no conversion is performed. However, the strains considered in this work are large enough that this approximation does not hold true anymore. \\
-
-We also provide the form of the deformation gradients that give rise to desired Green-Lagrange strain tensors that are required for the calculation of specific (linear combinations) of SOEC's and TOEC's. The terms $\delta$ appearing in the deformation gradients represent distortions applied to the crystal. Note that the deformation gradients have to be carefully constructed as to leave only the desired (non-zero) elements in the resulting Green-Lagrange strain tensor.
-
-\begin{equation}
-\label{eqn:SM-GL1} 
-\bm{\eta} = \frac{1}{2} \left(\bm{F}^{T} \bm{F} - \bm{I} \right)
-\end{equation}
-
-\begin{equation}
-\label{eqn:SM-stressexpansion1} 
-S_{ij} = \rho_{0} \frac{\partial E}{\eta_{ij}}
-\end{equation}
-
-\begin{equation}
-\label{eqn:SM-conversion1} 
-\bm{S} = \|\bm{F}\| \bm{F}^{-1} \bm{\sigma} \bm{F}^{-T}
-\end{equation}
-
 
 \subsection{General method}
 Below is an outline of the method used to calculate the third-order elastic constants.
@@ -415,7 +383,7 @@ where $n_G$ is the number of elements in the group, and $a_{ip}^{(\alpha)}$, the
 
 
 
-\subsection{Cubic symmetry}
+\subsection{Deformation Gradients}
 
 
 \begin{equation}
@@ -490,7 +458,7 @@ where $n_G$ is the number of elements in the group, and $a_{ip}^{(\alpha)}$, the
 
 
 
-\subsection{Hexagonal symmetry}
+%\subsection{Deformation Gradients: Hexagonal symmetry}
 
 
 \begin{equation}
