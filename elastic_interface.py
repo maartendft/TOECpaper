@@ -110,13 +110,17 @@ def writepos(F):
         f.write('1.0000\n')
 
         for j in xrange(3):
-            f.write('   {0:15f}   {1:15f}   {2:15f}\n'.format(newlv[j,0], newlv[j,1], newlv[j,2]))
+            f.write('   {0:.15f}   {1:.15f}   {2:.15f}\n'.format(newlv[j,0], newlv[j,1], newlv[j,2]))
 
-        f.write('   ' + str(ntot) + '\n')
+        if ntype == 1:
+                f.write('   ' + str(ntot) + '\n')
+        elif ntype == 2:
+                f.write('   {0:5d}   {1:5d}\n'.format(ntot1, ntot2))
+
         f.write('Direct\n')
 
         for j in xrange(ntot):
-            f.write('   {0:15f}   {1:15f}   {2:15f}\n'.format(posdir[j,0],posdir[j,1],posdir[j,2]))
+            f.write('   {0:.15f}   {1:.15f}   {2:.15f}\n'.format(posdir[j,0],posdir[j,1],posdir[j,2]))
 
         f.close()
 
